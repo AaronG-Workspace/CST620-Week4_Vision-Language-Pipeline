@@ -203,11 +203,12 @@ def _overlap(pred, gt) -> float:
 
 
 class Selector:
-    def __init__(self, records, cfg, prompts):
+    def __init__(self, records, cfg, prompts, seed_base: int = 200):
+        """seed_base 200 gives the val generators. eval.py passes 300 for the test ones in its spec."""
         self.records, self.cfg, self.tuning, self.prompts = records, cfg, cfg["tuning"], prompts
         self.categories = {c: e["wordings"] for c, e in prompts["grounding_dino"]["categories"].items()}
         seed = int(cfg["seed"])
-        self.rng = {"match": _rng(seed, 201), "bootstrap": _rng(seed, 202), "nms": _rng(seed, 203), "stage": _rng(seed, 204)}
+        self.rng = {name: _rng(seed, seed_base + i) for i, name in enumerate(("match", "bootstrap", "nms", "stage"), 1)}
         self.ties: list[dict] = []
         self.thr = self.tuning["match_iou"]
 
@@ -223,8 +224,15 @@ class Selector:
             chosen = [b for b in record["boxes"][(category, setup)] if b["score"] > threshold]
         return [b for b in chosen if keep is None or keep(b)]
 
-    def score(self, category, setup, threshold, keep=None):
-        images = [(self.preds(r, category, setup, threshold, keep), r["gts"][category]) for r in self.records]
+    def verified(self, category, setup, threshold) -> bool:
+        """True when every box of this setup above the threshold carries a verifier decision."""
+        ks = range(len(self.categories[category])) if setup == "ensemble" else [setup]
+        return all(b.get("kept") is not None for r in self.records for k in ks
+                   for b in r["boxes"][(category, k)] if b["score"] > threshold)
+
+    def score(self, category, setup, threshold, keep=None, records=None):
+        images = [(self.preds(r, category, setup, threshold, keep), r["gts"][category])
+                  for r in (self.records if records is None else records)]
         counts, details, score_ties, iou_ties = metrics.score_images(images, self.thr, self.rng["match"], _overlap)
         return counts, details, images, score_ties + iou_ties
 
@@ -325,14 +333,15 @@ def report(sel: Selector, chosen: dict, out: Path, cfg: dict) -> dict:
     z, n_boot = cfg["reporting"]["wilson_z"], cfg["reporting"]["bootstrap_resamples"]
     threshold, margin = chosen["threshold"], chosen["margin"]
     on = lambda b: b.get("kept") is True  # noqa: E731
-    for s in chosen["sweep"]:
-        s["chosen"] = s["threshold"] == threshold
-    _write_csv(out / "sweep.csv", [_fmt(s) for s in chosen["sweep"]])
-    plt.figure(figsize=(6, 3.5))
-    plt.plot([s["threshold"] for s in chosen["sweep"]], [s["macro_f1"] for s in chosen["sweep"]], marker="o")
-    plt.axvline(threshold, linestyle="--", color="gray")
-    plt.xlabel("Grounding DINO threshold"), plt.ylabel("macro F1 on val, verifier off"), plt.tight_layout()
-    plt.savefig(out / "sweep.png", dpi=120), plt.close()
+    if chosen["sweep"]:  # val only. eval.py scores at the frozen threshold and never sweeps.
+        for s in chosen["sweep"]:
+            s["chosen"] = s["threshold"] == threshold
+        _write_csv(out / "sweep.csv", [_fmt(s) for s in chosen["sweep"]])
+        plt.figure(figsize=(6, 3.5))
+        plt.plot([s["threshold"] for s in chosen["sweep"]], [s["macro_f1"] for s in chosen["sweep"]], marker="o")
+        plt.axvline(threshold, linestyle="--", color="gray")
+        plt.xlabel("Grounding DINO threshold"), plt.ylabel("macro F1 on val, verifier off"), plt.tight_layout()
+        plt.savefig(out / "sweep.png", dpi=120), plt.close()
 
     # Wording sensitivity: every wording and the ensemble, verifier off and on.
     sensitivity, summary = [], {}
@@ -340,8 +349,9 @@ def report(sel: Selector, chosen: dict, out: Path, cfg: dict) -> dict:
         groups = len({g["group_id"] for r in sel.records for g in r["gts"][category]})
         for setup in list(range(len(wordings))) + ["ensemble"]:
             name = "ensemble" if setup == "ensemble" else wordings[setup]
-            # The verifier's decision was computed for the headline boxes, so "on" rows exist for that setup only.
-            for state, keep in (("off", None), ("on", on)) if setup == chosen["setups"][category] else (("off", None),):
+            # On val the verifier's decision exists for the headline boxes only. eval.py computes it for every wording.
+            has_verifier = setup == chosen["setups"][category] or sel.verified(category, setup, threshold)
+            for state, keep in (("off", None), ("on", on)) if has_verifier else (("off", None),):
                 counts, _, _, _ = sel.score(category, setup, threshold, keep)
                 row = {"category": category, "setup": name, "verifier": state, "headline": setup == chosen["setups"][category],
                        "groups": groups, **metrics.summarize(counts, z, n_boot, sel.rng["bootstrap"])}
