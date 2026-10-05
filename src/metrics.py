@@ -204,18 +204,23 @@ def ece(conf: Sequence[float], correct: Sequence[float], n_bins: int) -> tuple[f
 
 # ---------------------------------------------------------------- error types
 
+def _mask_overlap(pred: Mapping, gt: Mapping) -> float:
+    return mask_iou(pred["mask"], gt["mask"])[0]
+
+
 def fp_type(pred: Mapping, category: str, gts: Sequence[Mapping], negatives: Sequence[Mapping],
-            matched_ids, match_iou: float, localization_iou: float) -> str:
+            matched_ids, match_iou: float, localization_iou: float, mask_iou_of=_mask_overlap) -> str:
     """Why an unmatched box is wrong. First rule that applies wins.
 
     pred needs "box" and "mask". gts are this category's ground truth with "instance_id",
-    "box" and "mask". negatives need "box" and "kind".
+    "box" and "mask". negatives need "box" and "kind". A caller that already holds the mask
+    overlaps passes mask_iou_of(pred, gt) and can leave the masks out.
     """
     overlaps = [(box_iou(pred["box"], gt["box"]), gt) for gt in gts]
     on_gt = [gt for iou, gt in overlaps if iou >= match_iou]
     if any(gt["instance_id"] in matched_ids for gt in on_gt):
         return "duplicate"
-    if any(mask_iou(pred["mask"], gt["mask"])[0] < match_iou for gt in on_gt):
+    if any(mask_iou_of(pred, gt) < match_iou for gt in on_gt):
         return "bad_mask"
     kinds_hit = {neg["kind"] for neg in negatives if box_iou(pred["box"], neg["box"]) >= match_iou}
     if ATTRIBUTE_NEGATIVE.get(category) in kinds_hit:
@@ -229,7 +234,7 @@ def fp_type(pred: Mapping, category: str, gts: Sequence[Mapping], negatives: Seq
 
 
 def stage(item: Mapping, detections: Sequence[Mapping], match_iou: float, rng: np.random.Generator,
-          fp_label: str | None = None) -> tuple[str, bool]:
+          fp_label: str | None = None, mask_iou_of=_mask_overlap) -> tuple[str, bool]:
     """Which stage started the error. Returns (stage, verifier_also_failed).
 
     False positive: pass the prediction as item and its fp_type as fp_label.
@@ -244,6 +249,76 @@ def stage(item: Mapping, detections: Sequence[Mapping], match_iou: float, rng: n
     judged = reaching[int(_score_order([d["score"] for d in reaching], rng)[0])]
     if judged.get("kept") is False:
         return "CLIP", False
-    if mask_iou(judged["mask"], item["mask"])[0] < match_iou:
+    if mask_iou_of(judged, item) < match_iou:
         return "SAM", False
     return "other", False
+
+
+# ---------------------------------------------------------------- scoring a set of images
+# tune_val.py and eval.py both score through these, so val and test are counted the same way.
+
+def truth_from_coco(doc: Mapping) -> dict[str, dict]:
+    """Per image name: its ground truth by category name, its negatives and its condition. Boxes become x1, y1, x2, y2."""
+    names = {c["id"]: c["name"] for c in doc["categories"]}
+    images = {im["id"]: {"name": im["name"], "condition": im.get("condition", ""), "negatives": [],
+                         "gts": {name: [] for name in names.values()}} for im in doc["images"]}
+
+    def record(a):
+        x, y, w, h = a["bbox"]
+        return {**a, "box": [x, y, x + w, y + h]}
+
+    for a in doc["annotations"]:
+        images[a["image_id"]]["gts"][names[a["category_id"]]].append(record(a))
+    for n in doc.get("negatives", []):
+        images[n["image_id"]]["negatives"].append(record(n))
+    return {im["name"]: im for im in images.values()}
+
+
+def record_mask(record: Mapping) -> np.ndarray:
+    seg = record["segmentation"]
+    return decode_rle({"size": seg["size"], "counts": seg["counts"].encode("ascii")})
+
+
+def score_images(images: Sequence[tuple], thr: float, rng: np.random.Generator, iou_of=_mask_overlap):
+    """Match one category and one setup, image by image. images holds a (preds, gts) pair per image.
+
+    Returns (per-image counts [tp, fp, fn, summed IoU of matches, matches], match details, score ties, IoU ties).
+    """
+    counts, details, score_ties, iou_ties = [], [], 0, 0
+    for preds, gts in images:
+        pairs, fp_idx, fn_idx, n_score, n_iou = match(preds, gts, iou_of, thr, rng)
+        counts.append([len(pairs), len(fp_idx), len(fn_idx), sum(iou for _, _, iou in pairs), len(pairs)])
+        details.append({"pairs": pairs, "fp": fp_idx, "fn": fn_idx})
+        score_ties, iou_ties = score_ties + n_score, iou_ties + n_iou
+    return np.array(counts, dtype=float).reshape(-1, 5), details, score_ties, iou_ties
+
+
+def summarize(per_image: np.ndarray, z: float, n_resamples: int, rng: np.random.Generator) -> dict:
+    """Precision and recall with Wilson intervals, F1 and mIoU with image-level bootstrap intervals, and every n."""
+    tp, fp, fn, iou_sum, matched = (float(v) for v in per_image.sum(axis=0)) if len(per_image) else (0.0,) * 5
+    precision, recall, f1 = prf(tp, fp, fn)
+    f1_lo, f1_hi, f1_dropped = bootstrap_ci(per_image[:, :3], lambda c: prf(*c)[2], n_resamples, rng)
+    miou_lo, miou_hi, miou_dropped = bootstrap_ci(per_image[:, 3:], lambda c: c[0] / c[1] if c[1] else NAN, n_resamples, rng)
+    p_lo, p_hi = wilson(tp, tp + fp, z)
+    r_lo, r_hi = wilson(tp, tp + fn, z)
+    return {"tp": int(tp), "fp": int(fp), "fn": int(fn), "n_predictions": int(tp + fp), "n_truth": int(tp + fn),
+            "n_images": int(len(per_image)), "precision": precision, "precision_lo": p_lo, "precision_hi": p_hi,
+            "recall": recall, "recall_lo": r_lo, "recall_hi": r_hi, "f1": f1, "f1_lo": f1_lo, "f1_hi": f1_hi,
+            "miou": iou_sum / matched if matched else NAN, "miou_n": int(matched), "miou_lo": miou_lo,
+            "miou_hi": miou_hi, "bootstrap_dropped": f1_dropped + miou_dropped}
+
+
+def attribute_rate(images: Sequence[tuple], kind: str, thr: float, z: float) -> dict:
+    """Absent-attribute rate: negatives of this kind hit by at least one box (box IoU), over all such negatives.
+
+    images holds a (preds, negatives) pair per image. The raw number of such boxes is reported beside the rate.
+    """
+    hit = total = boxes = 0
+    for preds, negatives in images:
+        wanted = [n for n in negatives if n["kind"] == kind]
+        total += len(wanted)
+        hit += sum(any(box_iou(p["box"], n["box"]) >= thr for p in preds) for n in wanted)
+        boxes += sum(any(box_iou(p["box"], n["box"]) >= thr for n in wanted) for p in preds)
+    lo, hi = wilson(hit, total, z)
+    return {"negatives_hit": hit, "negatives": total, "rate": hit / total if total else NAN, "rate_lo": lo,
+            "rate_hi": hi, "boxes": boxes}
