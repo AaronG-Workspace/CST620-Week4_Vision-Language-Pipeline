@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# val-only model caches, rebuilt by tune_val.py
+cache/
+
+# image payloads: originals, cutouts, composites, timing and live photos
+data/raw/own/products/
+data/raw/own/backgrounds/
+data/raw/public/
+data/assets/cutouts/
+data/synth/*/images/
+data/timing/
+data/showcase_live/
+
+# eval.py scratch folder, moved to results/test when a run completes
+results/test_tmp/

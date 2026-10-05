@@ -1,0 +1,87 @@
+# prompts.yaml : CST 620 Week 4, RetailEdge open-vocabulary inspection
+# Written 2026-10-03, before any val results. Wording is operator vocabulary,
+# not copied from any dataset caption or label file.
+# Any change after the first val run goes in change_log with a date and reason.
+#
+# Grounding DINO: one wording per call, passed as text=[[wording]].
+# The processor lowercases it and adds the trailing period, so no wording
+# may contain a period.
+
+version: 1
+written: 2026-10-03
+
+grounding_dino:
+  categories:
+    cereal_box:
+      gt: any cereal box, intact or damaged
+      wordings:
+        - cereal box
+        - box of cereal
+        - cereal carton            # carton may pull toward juice and milk
+    damaged_cereal_box:
+      gt: physically dented cereal boxes only, intact boxes are negatives
+      wordings:
+        - damaged cereal box
+        - dented cereal box
+        - crushed cereal box
+    misaligned_label:
+      gt: labels rotated 8 to 25 degrees, labels at 0 to 2 degrees are negatives
+      wordings:
+        - misaligned label
+        - crooked label
+        - crooked sticker          # noun swap, replays the discussion example
+  # Design, fixed before results:
+  #   cereal_box varies word order, then the noun
+  #   damaged_cereal_box varies only the adjective
+  #   misaligned_label varies the adjective (misaligned vs crooked), then the noun (label vs sticker)
+
+clip_verifier:
+  # Fixed before results. Not an experimental variable.
+  # Negatives for cereal_box must name distractors you actually photographed.
+  templates:
+    - "a photo of {}."
+    - "a close-up photo of {}."
+    - "a cropped photo of {}."
+  contrasts:
+    cereal_box:
+      positive: [a cereal box]
+      negative: [a cracker box, a soup can, a bottle, an empty shelf]
+    damaged_cereal_box:
+      positive: [a dented and damaged cereal box]
+      negative: [an undamaged cereal box in good condition]
+    misaligned_label:
+      positive: [a label stuck on crooked at an angle]
+      negative: [a label applied straight and level]
+  # Text embedding per phrase = mean over templates, then normalized.
+  # Confidence = softmax over all phrases in the contrast using logit_scale.
+  # Margin = P(positive) minus the largest P(negative). Keep the box when the
+  # margin clears the value chosen on val.
+
+open_images_slice:  # optional real-photo slice, scored separately, no CLIP verifier
+  box:
+    gt: Open Images class Box
+    wordings:
+      - box
+      - cardboard box
+      - carton
+
+probe:             # showcase/ only, never scored
+  cereal_box_attribute:
+    - cereal box
+    - damaged cereal box
+    - undamaged cereal box
+    - dented cereal box
+  label_attribute:
+    - label
+    - misaligned label
+    - straight label
+
+demo:              # showcase/ only, never scored. Tell Priya these are unevaluated.
+  new_sku:
+    - soup can
+    - cracker box
+    - water bottle
+  out_of_scope:
+    - suspicious object
+
+change_log: []

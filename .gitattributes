@@ -1,0 +1,3 @@
+# No line-ending conversion. frozen.json stores the sha256 of config.yaml and
+# prompts.yaml, so a checkout that rewrites LF as CRLF would break the hash check.
+* -text
