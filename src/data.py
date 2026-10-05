@@ -32,7 +32,8 @@ SPLITS = ("val", "test", "showcase")
 KINDS = ("cereal_box", "distractor", "background")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".heic", ".heif", ".tif", ".tiff", ".webp", ".bmp"}
 MIN_CAPTURE_DATE = date(2024, 1, 1)
-STRATA = ("background", "damaged-box", "intact-only box", "distractor")
+# The subtle-dent stratum is last, so the first four keep the generators they had before it existed.
+STRATA = ("background", "damaged-box (clear dent)", "intact-only box", "distractor", "damaged-box (subtle dent)")
 RENDERED_SET = "data/raw/synthetic/synthetic_retail_set"
 SET_CATEGORIES = {"cereal_intact": ("cereal_box", "no"), "cereal_dented": ("cereal_box", "yes"),
                   "distractor": ("distractor", ""), "background": ("background", "")}
@@ -421,14 +422,16 @@ def split_groups(rows: list[dict], cfg: dict) -> dict[str, str]:
     """group_id -> split, for groups with at least one usable asset."""
     strata: list[set] = [set() for _ in STRATA]
     dented = {r["group_id"] for r in rows if r["status"] == "ok" and r["damaged"] == "yes"}
+    # Damaged boxes are split by dent severity, so each split gets subtle dents as well as clear ones.
+    subtle = {r["group_id"] for r in rows if r["status"] == "ok" and r["damaged"] == "yes" and r["dent_severity"] == "subtle"}
     for r in rows:
         if r["status"] != "ok":
             continue
-        index = {"background": 0, "distractor": 3}.get(r["kind"], 1 if r["group_id"] in dented else 2)
-        strata[index].add(r["group_id"])
+        box_stratum = 4 if r["group_id"] in subtle else 1 if r["group_id"] in dented else 2
+        strata[{"background": 0, "distractor": 3}.get(r["kind"], box_stratum)].add(r["group_id"])
 
-    short = [f"{STRATA[i]} groups: found {len(strata[i])}, need at least 3. {3 - len(strata[i])} more needed."
-             for i in (0, 1, 3) if len(strata[i]) < 3]
+    sizes = {"background": len(strata[0]), "damaged-box": len(strata[1]) + len(strata[4]), "distractor": len(strata[3])}
+    short = [f"{name} groups: found {n}, need at least 3. {3 - n} more needed." for name, n in sizes.items() if n < 3]
     if short:
         _fail("Not enough groups to give every split one of each kind", short)
 
@@ -437,7 +440,7 @@ def split_groups(rows: list[dict], cfg: dict) -> dict[str, str]:
         ordered = sorted(group_ids)  # sorted first, so the order of rows in a listing cannot matter
         rng = np.random.default_rng(np.random.SeedSequence([int(cfg["seed"]), index]))
         shuffled = [ordered[i] for i in rng.permutation(len(ordered))]
-        one_each = index != 2 or len(ordered) >= 3
+        one_each = index in (0, 3) or len(ordered) >= 3  # the three box strata skip one-each when they are small
         counts = allocate(len(ordered), cfg["splits"], one_each)
         labels = list(SPLITS) if one_each else []
         for s in SPLITS:
