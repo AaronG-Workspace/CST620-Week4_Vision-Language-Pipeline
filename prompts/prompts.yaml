@@ -79,10 +79,8 @@ probe:             # showcase/ only, never scored
     - straight label
 
 demo:              # showcase/ only, never scored. Tell Priya these are unevaluated.
-  new_sku:
-    - soup can
-    - cracker box
-    - water bottle
+  new_sku:                         # a product type that is in the showcase split and is never evaluated
+    - foil box
   out_of_scope:
     - suspicious object
 
