@@ -1,6 +1,7 @@
 # prompts.yaml : CST 620 Week 4, RetailEdge open-vocabulary inspection
-# Written 2026-10-03, before any val results. Wording is operator vocabulary,
-# not copied from any dataset caption or label file.
+# Written 2026-10-03 and revised 2026-10-04 for the rendered set, both before any
+# val results. Wording is operator vocabulary, not copied from any dataset caption
+# or label file.
 # Any change after the first val run goes in change_log with a date and reason.
 #
 # Grounding DINO: one wording per call, passed as text=[[wording]].
@@ -8,7 +9,7 @@
 # may contain a period.
 
 version: 1
-written: 2026-10-03
+written: 2026-10-04
 
 grounding_dino:
   categories:
@@ -37,7 +38,8 @@ grounding_dino:
 
 clip_verifier:
   # Fixed before results. Not an experimental variable.
-  # Negatives for cereal_box must name distractors you actually photographed.
+  # Negatives for cereal_box name the distractor product types in the asset pools,
+  # one phrase per type, plus an empty shelf.
   templates:
     - "a photo of {}."
     - "a close-up photo of {}."
@@ -45,7 +47,7 @@ clip_verifier:
   contrasts:
     cereal_box:
       positive: [a cereal box]
-      negative: [a cracker box, a soup can, a bottle, an empty shelf]
+      negative: [a tea box, a tissue box, a foil box, a medicine box, a shipping box, a bottle, a can, an empty shelf]
     damaged_cereal_box:
       positive: [a dented and damaged cereal box]
       negative: [an undamaged cereal box in good condition]
