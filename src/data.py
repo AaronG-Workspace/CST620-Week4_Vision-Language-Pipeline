@@ -181,7 +181,7 @@ def read_rendered_set(errors: list[str]) -> list[dict]:
             "lighting": "", "notes": m.get("damage_types", ""),
             "license": "rendered for this project on a CC BY 2.0 Open Images photo" if rendered else "CC BY 2.0",
             "annotation_method": ("mask from the set's renderer" if rendered
-                                  else "Open Images box" if boxed else "none (background)"),
+                                  else "rembg inside the Open Images box" if boxed else "none (background)"),
             "openimages_id": m["openimages_id"],
             "generator_sha256": generator.hexdigest() if rendered else "",
             "seed": _render_seeds(stem) if rendered else "",

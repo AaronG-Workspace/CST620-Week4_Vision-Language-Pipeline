@@ -5,6 +5,7 @@ The paste mask becomes ground truth later, so nothing here may use SAM, Groundin
 CLIP, transformers or torch. rembg (onnxruntime) is the only model allowed.
 
 A file that ships with its own mask (the rendered set) is cut out with that mask.
+A real photo with an annotated box and no mask (the set's real distractors) goes to rembg, inside the box.
 An own photo on a plain sheet is cut out by backdrop threshold, with rembg as the fallback.
 
     python src/cutouts.py [--force] [--only <asset_id>]
@@ -33,6 +34,9 @@ REPORT_FIELDS = ["asset_id", "filename", "method", "status", "reason", "fg_frac"
                  "solidity", "touches_border", "width", "height"]
 ALL_RULES = ("foreground share", "largest piece", "solidity", "border")
 MASK_RULES = ("largest piece", "border")  # a shipped mask is exact, and its object is small in a real scene
+BOX_RULES = ("foreground share", "largest piece", "solidity")  # measured inside the box; the border is checked on the photo
+BOX_MARGIN = 0.08  # context rembg gets around an annotated box, as a share of the box's width and height
+REVIEW_FIELDS = ["asset_id", "keep", "note", "file", "method"]
 
 SHEET_COLUMNS = 5
 TILE_PX = 250
@@ -183,6 +187,32 @@ def cutout_from_mask(path: Path, mask_path: Path, cfg: dict) -> tuple[dict, Imag
     return _accepted("mask", metrics, make_cutout(np.asarray(image), mask, int(cfg["pad_px"])))
 
 
+def cutout_from_box(path: Path, box: str, cfg: dict) -> tuple[dict, Image.Image | None]:
+    """A real photo with a human-drawn box and no mask: rembg traces the object, looking only inside the box."""
+    if cfg["fallback"] != "rembg":
+        return _rejected("rembg_box", "this file needs rembg, and cutouts.fallback is none")
+    with Image.open(path) as original:
+        full_width = ImageOps.exif_transpose(original).width
+    image = load_photo(path, cfg["max_long_side"])
+    scale = image.width / full_width  # the box is in the original photo's pixels
+    x1, y1, x2, y2 = (float(v) * scale for v in box.split(","))
+    mx, my = BOX_MARGIN * (x2 - x1), BOX_MARGIN * (y2 - y1)
+    left, top = max(0, int(x1 - mx)), max(0, int(y1 - my))
+    right, bottom = min(image.width, int(x2 + mx) + 1), min(image.height, int(y2 + my) + 1)
+
+    inside, largest_frac = clean_mask(rembg_mask(image.crop((left, top, right, bottom)), cfg), cfg)
+    metrics, failures = qa(inside, largest_frac, cfg, rules=BOX_RULES)
+    mask = np.zeros((image.height, image.width), dtype=bool)
+    mask[top:bottom, left:right] = inside
+    touches = bool(mask[0].any() or mask[-1].any() or mask[:, 0].any() or mask[:, -1].any())
+    metrics["touches_border"] = "yes" if touches else "no"
+    if touches and not cfg["qa"]["allow_border_touch"]:
+        failures.append("mask touches the image border")
+    if failures:
+        return _rejected("rembg_box", "rembg inside the box: " + "; ".join(failures), metrics)
+    return _accepted("rembg_box", metrics, make_cutout(np.asarray(image), mask, int(cfg["pad_px"])))
+
+
 def cutout_from_photo(path: Path, cfg: dict) -> tuple[dict, Image.Image | None]:
     """An own photo on a plain sheet: threshold first, rembg only if that fails QA."""
     image = load_photo(path, cfg["max_long_side"])
@@ -205,9 +235,11 @@ def process(product: dict, cfg: dict) -> tuple[dict, Image.Image | None]:
     try:
         if product["mask_path"]:
             return cutout_from_mask(path, _p(product["mask_path"]), cfg)
+        if product["box"]:
+            return cutout_from_box(path, product["box"], cfg)
         if product["source"] == "own":
             return cutout_from_photo(path, cfg)
-        return _rejected("", "no mask ships with this file, and it is not an own photo on a plain sheet")
+        return _rejected("", "no mask or box ships with this file, and it is not an own photo on a plain sheet")
     except OSError as err:
         return _rejected("", f"cannot open: {err}")
 
@@ -343,15 +375,23 @@ def main() -> None:
 
     write_report(report_path, rows)
     write_sheet(sheet_path, rows, kept_products)
+    # A list to copy and fill in by hand. The filled file lives in data/raw/own, which code never writes.
+    template_path = _p("data", "assets", "cutout_review_template.csv")
+    with open(template_path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=REVIEW_FIELDS, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows({"asset_id": r["asset_id"], "keep": "", "note": "", "file": Path(r["filename"]).name,
+                          "method": r["method"]} for r in rows if r["status"] == "ok")
 
     n_ok = sum(r["status"] == "ok" for r in rows)
-    by_method = {m: sum(r["status"] == "ok" and r["method"] == m for r in rows) for m in ("mask", "threshold", "rembg")}
+    by_method = {m: sum(r["status"] == "ok" and r["method"] == m for r in rows)
+                 for m in ("mask", "rembg_box", "threshold", "rembg")}
     box_groups, distractor_groups = _group_counts(rows, kept_products)
     share = f"{100 * n_ok / len(rows):.0f}%" if rows else "n/a"
     print(f"[cutout] {len(rows)} product rows: {n_ok} ok ({share}), {len(rows) - n_ok} rejected, "
           f"{n_reused} kept from the last run")
-    print(f"[cutout] ok by method: {by_method['mask']} shipped mask, {by_method['threshold']} threshold, "
-          f"{by_method['rembg']} rembg")
+    print(f"[cutout] ok by method: {by_method['mask']} shipped mask, {by_method['rembg_box']} rembg inside a box, "
+          f"{by_method['threshold']} threshold, {by_method['rembg']} rembg fallback")
     if n_waiting:
         print(f"[cutout] {n_waiting} product rows have no cutout yet. Run without --only to make them.")
     print(f"[cutout] cereal-box groups with an intact and a dented cutout: {box_groups} (gate: 9 or more after review)")
@@ -359,6 +399,7 @@ def main() -> None:
     print(f"[cutout] report {report_path.relative_to(ROOT).as_posix()}, sheet {sheet_path.relative_to(ROOT).as_posix()}")
     print("[cutout] Next: look at the sheet, then fill data/raw/own/cutout_review.csv by hand "
           "(asset_id, keep yes or no, note).")
+    print(f"[cutout] {template_path.relative_to(ROOT).as_posix()} lists the ids to copy; keep is left blank for you.")
     print(f"[time] cutouts {time.perf_counter() - start:.1f} s")
 
 

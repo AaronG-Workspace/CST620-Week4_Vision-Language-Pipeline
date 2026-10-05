@@ -22,7 +22,7 @@ When summarizing results in this session, say what it means for Priya first, the
 | File | Job | Test access |
 |---|---|---|
 | src/data.py | reads both sources, inventory, EXIF dates for own photos, MD5 and pHash, grouping, splits asset pools once, optional Open Images pull, provides load_split() | writes test pool rows, its main() never reads them back |
-| src/cutouts.py | makes RGBA product cutouts once (the mask a rendered file ships with, or backdrop threshold with rembg fallback, never SAM) | none |
+| src/cutouts.py | makes RGBA product cutouts once (the mask a rendered file ships with, rembg inside the annotated box for the set's real distractors, or backdrop threshold with rembg fallback, never SAM) | none |
 | src/make_synth.py | builds composites for each split from that split's pools only, writes exact masks as COCO | writes test images and GT, never reads them back |
 | src/check_splits.py | verifies pools, splits, provenance and test access | test lists: path, asset_id, md5, phash, group_id, parent_asset_ids only |
 | src/models.py | loads the three models once, sets threads | none |
