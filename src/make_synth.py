@@ -82,15 +82,26 @@ class Env:
     def cutout(self, asset_id: str) -> Image.Image:
         return Image.open(_p("data", "assets", "cutouts", f"{asset_id}.png")).convert("RGBA")
 
-    def scaled(self, asset_id: str, height: int) -> tuple[np.ndarray, np.ndarray]:
-        """The cutout at the given height: (rgb, hard mask), cropped tight to the mask."""
+    @functools.lru_cache(maxsize=None)
+    def native_height(self, asset_id: str) -> int:
+        """Height of the object itself in its cutout, without the transparent padding."""
+        rows = np.flatnonzero((np.asarray(self.cutout(asset_id))[..., 3] > 127).any(axis=1))
+        return int(rows[-1] - rows[0] + 1)
+
+    def scaled(self, asset_id: str, height: int) -> tuple[np.ndarray, np.ndarray, bool]:
+        """The cutout with its object at the given height: (rgb, hard mask, capped), cropped tight to the mask.
+
+        A source too small for the target is placed smaller, never enlarged past scene.max_upscale.
+        """
         cut = self.cutout(asset_id)
-        size = (max(1, round(cut.width * height / cut.height)), max(1, height))
+        wanted = height / self.native_height(asset_id)
+        scale = min(wanted, float(self.cfg["scene"]["max_upscale"]))
+        size = (max(1, round(cut.width * scale)), max(1, round(cut.height * scale)))
         arr = np.asarray(cut.resize(size, Image.Resampling.LANCZOS))  # Pillow resizes RGBA premultiplied
         mask = arr[..., 3] >= 128
         rows, cols = np.flatnonzero(mask.any(axis=1)), np.flatnonzero(mask.any(axis=0))
         box = np.s_[rows[0]:rows[-1] + 1, cols[0]:cols[-1] + 1]
-        return arr[..., :3][box], mask[box]
+        return arr[..., :3][box], mask[box], scale < wanted
 
     def __hash__(self):  # lru_cache on methods needs a hashable self
         return id(self)
@@ -253,7 +264,7 @@ def _try_layout(rng, slots, n_labels, n_misaligned, canvas_shape, shelf, max_ove
         ids = pool["cereal"][group][want] if kind == "cereal_box" else pool["distractor"][group]
         asset_id = ids[int(rng.integers(len(ids)))]
         used.add(group)  # one asset per group per image: a box never stands beside its own dented copy
-        rgb, mask = env.scaled(asset_id, round(float(rng.uniform(*scene["object_height_frac"])) * H))
+        rgb, mask, capped = env.scaled(asset_id, round(float(rng.uniform(*scene["object_height_frac"])) * H))
         h, w = mask.shape
         if w > W or h > H:
             return None
@@ -271,7 +282,8 @@ def _try_layout(rng, slots, n_labels, n_misaligned, canvas_shape, shelf, max_ove
         full[y:y + h, x:x + w] = mask
         b = float(scene["brightness_jitter"])
         placed.append({"kind": kind, "dented": bool(dented), "asset_id": asset_id, "x": x, "y": y, "w": w, "h": h,
-                       "rgb": rgb, "mask": mask, "full": full, "area": area, "bright": 1 + float(rng.uniform(-b, b))})
+                       "rgb": rgb, "mask": mask, "full": full, "area": area, "capped": capped,
+                       "bright": 1 + float(rng.uniform(-b, b))})
 
     covered = np.zeros((H, W), dtype=bool)
     for obj in reversed(placed):  # later pastes hide earlier ones
@@ -415,7 +427,8 @@ def build_image(split: str, index: int, plan: Plan, pool: dict, env: Env, previe
             "background_id": background["asset_id"], "asset_ids": [o["asset_id"] for o in placed],
             "groups": {(o["kind"], pool["assets"][o["asset_id"]]["group_id"]) for o in placed},
             "annotations": annotations, "negatives": negatives, "retries": retries, "entropy": entropy,
-            "min_visible": min(o["visible_frac"] for o in placed), "thumb": thumb}
+            "min_visible": min(o["visible_frac"] for o in placed), "thumb": thumb,
+            "size_capped": sum(o["capped"] for o in placed)}
 
 
 # ---------------------------------------------------------------- one split
@@ -431,7 +444,8 @@ def build_split(split: str, env: Env, write: bool, preview: bool) -> dict:
     counts = {"split": split, "images": 0, "instances": dict.fromkeys(CATEGORIES, 0),
               "negatives": {"intact_cereal_box": 0, "straight_label": 0, "distractor": 0},
               "distinct_groups_used": {}, "condition_balance": dict.fromkeys(env.cfg["conditions"], 0),
-              "smallest_visible_frac": 1.0, "capped_draws": plan.capped, "layout_retries": 0}
+              "smallest_visible_frac": 1.0, "capped_draws": plan.capped, "layout_retries": 0,
+              "placements_capped_by_max_upscale": 0}
     groups, by_id = set(), {v: k for k, v in CATEGORIES.items()}
     for index in range(int(env.cfg["images_per_split"][split])):
         made = build_image(split, index, plan, pool, env, preview)
@@ -461,6 +475,7 @@ def build_split(split: str, env: Env, write: bool, preview: bool) -> dict:
         counts["condition_balance"][made["condition"]] += 1
         counts["smallest_visible_frac"] = round(min(counts["smallest_visible_frac"], made["min_visible"]), 4)
         counts["layout_retries"] += made["retries"]
+        counts["placements_capped_by_max_upscale"] += made["size_capped"]
         thumbs.append((made["image_id"], made["condition"], made["thumb"]))
 
     counts["distinct_groups_used"] = {kind: sum(1 for k, _ in groups if k == kind)
@@ -494,7 +509,7 @@ def _update_provenance(split: str, rows: list[dict]) -> None:
 
 
 def write_preview(split: str, thumbs: list) -> Path:
-    columns, cell_w, cell_h = 4, 410, 330
+    columns, cell_w, cell_h = 4, 410, 430  # thumbnails fit in 400 x 400, portrait or landscape
     sheet = Image.new("RGB", (columns * cell_w, 24 + -(-len(thumbs) // columns) * cell_h), "white")
     draw, font = ImageDraw.Draw(sheet), ImageFont.load_default(size=12)
     x = 6
@@ -505,7 +520,7 @@ def write_preview(split: str, thumbs: list) -> Path:
     for i, (image_id, condition, thumb) in enumerate(thumbs):
         left, top = (i % columns) * cell_w + 5, 24 + (i // columns) * cell_h
         sheet.paste(thumb, (left, top))
-        draw.text((left, top + 304), f"{image_id}  {condition}", fill="black", font=font)
+        draw.text((left, top + 404), f"{image_id}  {condition}", fill="black", font=font)
     path = _p("data", "synth", split, "preview.png")
     path.parent.mkdir(parents=True, exist_ok=True)
     sheet.save(path, format="PNG")
@@ -522,7 +537,8 @@ def report(split: str, counts: dict) -> None:
     print(f"  negatives: {counts['negatives']}")
     print(f"  groups used: {counts['distinct_groups_used']} | conditions: {counts['condition_balance']}")
     print(f"  smallest visible share {counts['smallest_visible_frac']} | capped draws {counts['capped_draws']} | "
-          f"layout retries {counts['layout_retries']}")
+          f"layout retries {counts['layout_retries']} | placed smaller by max_upscale "
+          f"{counts['placements_capped_by_max_upscale']}")
 
 
 def verify_split(split: str, env: Env) -> bool:

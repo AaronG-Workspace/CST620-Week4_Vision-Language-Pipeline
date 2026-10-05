@@ -41,6 +41,7 @@ scene:
   min_visible_frac: 0.5              # placements below this are retried
   max_placement_tries: 50
   cap_at_available_groups: true      # a draw larger than the split's groups is capped and logged in counts.json
+  max_upscale: 1.5                   # a cutout is never enlarged past this; a small source is placed smaller instead
   feather_radius_px: 2
   brightness_jitter: 0.10            # per paste, plus or minus
 
