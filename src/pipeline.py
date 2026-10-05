@@ -67,18 +67,23 @@ def forward_dino(models, image: Image.Image, wording: str) -> dict:
             "query_index": torch.arange(out.logits.shape[1]), "_inputs": inputs, "_outputs": out}
 
 
+def boxes_from_raw(raw: dict, size: tuple[int, int]) -> torch.Tensor:
+    """Every query's box as x1, y1, x2, y2 in pixels, whatever its score."""
+    width, height = size
+    cx, cy, w, h = raw["pred_boxes"].float().unbind(-1)
+    return torch.stack([cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2], dim=-1) * torch.tensor(
+        [width, height, width, height], dtype=torch.float32)
+
+
 def select(models, raw: dict, size: tuple[int, int], wording: str, threshold: float) -> list[Detection]:
     """The library's selection rule, kept here so query indices and per-word scores survive.
 
     Copied from the installed post_process_grounded_object_detection: sigmoid, box score = max over
     text positions, keep when score > threshold (strict), boxes from centre format scaled to the image.
     """
-    width, height = size
     probs = torch.sigmoid(raw["logits"].float())
     scores = probs.max(dim=-1).values
-    cx, cy, w, h = raw["pred_boxes"].float().unbind(-1)
-    boxes = torch.stack([cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2], dim=-1) * torch.tensor(
-        [width, height, width, height], dtype=torch.float32)
+    boxes = boxes_from_raw(raw, size)
     words = _token_words(models, wording, raw["input_ids"])
     detections = []
     for q in torch.nonzero(scores > threshold).flatten().tolist():
