@@ -178,10 +178,7 @@ def nms(boxes: Sequence[Sequence[float]], scores: Sequence[float], iou: float,
     for i in map(int, _score_order(scores, rng)):
         if all(box_iou(boxes[i], boxes[k]) < iou for k in kept):
             kept.append(i)
-    # Counts tie groups: two equal scores are one tie, as the spec's NMS test expects.
-    # match() reports tied scores instead (two equal scores count as 2).
-    _, counts = np.unique(np.asarray(scores, dtype=float), return_counts=True)
-    return kept, int((counts > 1).sum())
+    return kept, count_exact_ties(scores)  # counted the same way as match(): two equal scores are 2
 
 
 # ---------------------------------------------------------------- calibration

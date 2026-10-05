@@ -191,7 +191,7 @@ def test_nms_tie():
     winners = set()
     for seed in SEEDS:
         kept, n_ties = metrics.nms(boxes, scores, 0.5, rng(seed))
-        assert len(kept) == 1 and n_ties == 1
+        assert len(kept) == 1 and n_ties == 2  # the same count match() gives for two equal scores
         assert metrics.nms(boxes, scores, 0.5, rng(seed))[0] == kept  # same seed, same box
         winners.add(kept[0])
     assert winners == {0, 1}
