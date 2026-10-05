@@ -1,0 +1,21 @@
+temperature,ece,bin,lo,hi,count,mean_conf,accuracy
+verifier at the frozen temperature,0.214,0,0.0,0.1,4,0.0217,0.0
+verifier at the frozen temperature,0.214,1,0.1,0.2,1,0.1998,0.0
+verifier at the frozen temperature,0.214,2,0.2,0.3,2,0.271,0.0
+verifier at the frozen temperature,0.214,3,0.3,0.4,6,0.3332,0.1667
+verifier at the frozen temperature,0.214,4,0.4,0.5,1,0.4599,0.0
+verifier at the frozen temperature,0.214,5,0.5,0.6,3,0.5443,0.6667
+verifier at the frozen temperature,0.214,6,0.6,0.7,5,0.6588,0.4
+verifier at the frozen temperature,0.214,7,0.7,0.8,4,0.7564,0.25
+verifier at the frozen temperature,0.214,8,0.8,0.9,3,0.864,0.3333
+verifier at the frozen temperature,0.214,9,0.9,1.0,7,0.9805,1.0
+raw Grounding DINO score (information only),0.1131,0,0.0,0.1,0,nan,nan
+raw Grounding DINO score (information only),0.1131,1,0.1,0.2,0,nan,nan
+raw Grounding DINO score (information only),0.1131,2,0.2,0.3,0,nan,nan
+raw Grounding DINO score (information only),0.1131,3,0.3,0.4,8,0.3826,0.25
+raw Grounding DINO score (information only),0.1131,4,0.4,0.5,12,0.4329,0.25
+raw Grounding DINO score (information only),0.1131,5,0.5,0.6,8,0.5411,0.5
+raw Grounding DINO score (information only),0.1131,6,0.6,0.7,6,0.6567,0.6667
+raw Grounding DINO score (information only),0.1131,7,0.7,0.8,2,0.7139,0.5
+raw Grounding DINO score (information only),0.1131,8,0.8,0.9,0,nan,nan
+raw Grounding DINO score (information only),0.1131,9,0.9,1.0,0,nan,nan

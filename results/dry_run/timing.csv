@@ -1,0 +1,5 @@
+stage,seconds,seconds_per_image
+dino,308.8,102.94
+sam_encode,33.4,11.14
+sam_decode,8.8,2.92
+clip,8.9,2.98

@@ -1,0 +1,42 @@
+{
+ "prompt": "dented cereal box",
+ "image": "s_showcase_0001",
+ "status": "evaluated",
+ "category": "damaged_cereal_box",
+ "verifier": "on",
+ "threshold": 0.35,
+ "timing_seconds": {
+  "dino": 13.44,
+  "sam_encode": 0.0,
+  "sam_decode": 0.14,
+  "clip": 0.18
+ },
+ "detections": [
+  {
+   "box": [
+    437.4,
+    666.4,
+    655.1,
+    969.5
+   ],
+   "score": 0.6147,
+   "word_scores": {
+    "dented": 0.4117010533809662,
+    "cereal": 0.6146527528762817,
+    "box": 0.6141018867492676
+   },
+   "mask": {
+    "size": [
+     1024,
+     680
+    ],
+    "counts": "Ufh=?_o0c0^O2O1N2O001O1kSOWOaMBYk0[1YUO`1Zj0]2eUOWKkh0V6I7I2M7J2N1O2M4M1O2N1O1O2N1N2O1O2N001N3N1O1N3N2N1N2O1O1O1N1000000O10O100O10O0100O100000O10O1000O10O10000O10O10O10000O10O1000O01000O1000O010000O1000O010000O1O1000O10O1000O10O0mMZXOnKfg0R4ZXOmKgg0S4YXOmKgg0S4YXOlKhg0S4YXOmKgg0S4YXOmKfg0U4YXOjKhg0V4XXOjKhg0V4XXOjKhg0V6010000O0100O10O100000O0100000O10000O10O10O1O10000O100O01000O10000O01000kMTXOULmg0o5OO2O00100O10O100000000O100000000O10O10000000O10O100000000O10O10O100O100O2O0O2O001N101O1N2O1O1O1N101O001N101O0O2M3M2M4B>]Ob0^Oc0[Oe0_O`0@a0ZOf0]Oc0^Ob0YOj0WOmZj0"
+   },
+   "mask_area": 51414,
+   "sam_iou_pred": 0.9742796421051025,
+   "p_positive": 0.33239123225212097,
+   "margin": -0.33521750569343567,
+   "kept": false
+  }
+ ]
+}

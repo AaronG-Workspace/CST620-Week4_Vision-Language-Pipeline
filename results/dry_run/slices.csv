@@ -1,0 +1,14 @@
+category,slice,verifier,bootstrap_dropped,f1,f1_hi,f1_lo,fn,fp,groups,miou,miou_hi,miou_lo,miou_n,n_images,n_predictions,n_truth,precision,precision_hi,precision_lo,recall,recall_hi,recall_lo,tp
+cereal_box,condition clean,on,2000,nan,nan,nan,0,0,,nan,nan,nan,0,0,0,0,nan,nan,nan,nan,nan,nan,0
+cereal_box,condition typical,on,0,0.8889,0.8889,0.8889,0,1,,0.9431,0.9431,0.9431,4,1,5,4,0.8,0.9638,0.3755,1.0,1.0,0.5101,4
+cereal_box,condition hard,on,0,0.9412,1.0,0.8889,0,1,,0.8823,0.9087,0.8559,8,2,9,8,0.8889,0.9801,0.565,1.0,1.0,0.6756,8
+damaged_cereal_box,condition clean,on,2000,nan,nan,nan,0,0,,nan,nan,nan,0,0,0,0,nan,nan,nan,nan,nan,nan,0
+damaged_cereal_box,condition typical,on,1000,0.0,0.0,0.0,1,1,,nan,nan,nan,0,1,1,1,0.0,0.7935,0.0,0.0,0.7935,0.0,0
+damaged_cereal_box,condition hard,on,244,0.4,0.6667,0.0,3,0,,0.9595,0.9595,0.9595,1,2,1,4,1.0,1.0,0.2065,0.25,0.6994,0.0456,1
+misaligned_label,condition clean,on,2000,nan,nan,nan,0,0,,nan,nan,nan,0,0,0,0,nan,nan,nan,nan,nan,nan,0
+misaligned_label,condition typical,on,1000,0.0,0.0,0.0,1,5,,nan,nan,nan,0,1,5,1,0.0,0.4345,0.0,0.0,0.7935,0.0,0
+misaligned_label,condition hard,on,1000,0.0,0.0,0.0,2,2,,nan,nan,nan,0,2,2,2,0.0,0.6576,0.0,0.0,0.6576,0.0,0
+damaged_cereal_box,dent severity clear,off,,,,,,,3,,,,,,,4,,,,0.25,0.6994,0.0456,
+damaged_cereal_box,dent severity subtle,off,,,,,,,1,,,,,,,1,,,,1.0,1.0,0.2065,
+damaged_cereal_box,dent severity clear,on,,,,,,,3,,,,,,,4,,,,0.25,0.6994,0.0456,
+damaged_cereal_box,dent severity subtle,on,,,,,,,1,,,,,,,1,,,,0.0,0.7935,0.0,

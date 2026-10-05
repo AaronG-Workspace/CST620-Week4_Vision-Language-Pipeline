@@ -1,0 +1,7 @@
+Verdict: mixed.
+On an intact cereal box, 'damaged cereal box' scored 0.72 and 'undamaged cereal box' scored 0.13.
+Word by word for 'damaged cereal box': 'damaged' 0.09, 'cereal' 0.70, 'box' 0.72.
+The pattern is mixed: neither clearly ignored nor clearly used.
+At the frozen threshold of 0.35 this object is reported for 'damaged cereal box'.
+SAM masked it at IoU 0.96 with the real outline. SAM never sees the words.
+The CLIP check gave it probability 0.36 (margin -0.27), so it was rejected.

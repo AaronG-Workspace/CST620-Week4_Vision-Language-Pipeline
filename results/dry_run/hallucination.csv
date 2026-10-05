@@ -1,0 +1,11 @@
+image_id,category,wording,score,box,fp_type,word_scores,verifier_margin
+s_val_0002,cereal_box,cereal box,0.6962,"[3.7, 770.0, 372.4, 993.6]",wrong_product,"{""cereal"": 0.687, ""box"": 0.696}",0.0677
+s_val_0002,damaged_cereal_box,damaged cereal box,0.6647,"[580.5, 546.9, 749.7, 805.4]",attribute,"{""damaged"": 0.036, ""cereal"": 0.66, ""box"": 0.665}",0.0914
+s_val_0002,cereal_box,box of cereal,0.6631,"[3.6, 769.6, 372.4, 993.6]",wrong_product,"{""box"": 0.663, ""of"": 0.021, ""cereal"": 0.104}",0.0677
+s_val_0002,cereal_box,cereal carton,0.5964,"[3.6, 770.1, 372.4, 993.8]",wrong_product,"{""cereal"": 0.59, ""carton"": 0.596}",0.0677
+s_val_0002,misaligned_label,crooked label,0.5541,"[263.2, 579.6, 449.5, 863.3]",wrong_product,"{""crooked"": 0.148, ""label"": 0.554}",0.3375
+s_val_0002,misaligned_label,crooked sticker,0.541,"[451.5, 739.0, 624.8, 971.4]",background,"{""crooked"": 0.21, ""sticker"": 0.541}",0.2481
+s_val_0000,cereal_box,cereal box,0.5341,"[378.5, 695.1, 737.0, 876.4]",wrong_product,"{""cereal"": 0.513, ""box"": 0.534}",0.4687
+s_val_0002,misaligned_label,crooked label,0.5264,"[451.5, 739.3, 624.7, 971.4]",background,"{""crooked"": 0.145, ""label"": 0.526}",0.2481
+s_val_0002,misaligned_label,crooked label,0.4606,"[441.7, 472.7, 598.1, 698.0]",wrong_product,"{""crooked"": 0.132, ""label"": 0.461}",0.5508
+s_val_0000,misaligned_label,crooked sticker,0.4522,"[74.7, 721.5, 282.2, 995.9]",wrong_product,"{""crooked"": 0.449, ""sticker"": 0.452}",0.5885
