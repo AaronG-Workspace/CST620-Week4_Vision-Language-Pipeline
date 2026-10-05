@@ -5,6 +5,7 @@ Spec: docs/data_spec.md. Order: cutouts.py, then data.py, then make_synth.py.
     python src/data.py            # build; if the split already exists, verify it and write nothing
     python src/data.py --force    # rebuild everything, including the split
     python src/data.py --verify   # rebuild in memory, compare with disk, write nothing
+    python src/data.py --background-sheet   # the sheet and template for the background review
 """
 from __future__ import annotations
 
@@ -23,7 +24,7 @@ from pathlib import Path
 import imagehash
 import numpy as np
 import yaml
-from PIL import ExifTags, Image, ImageOps
+from PIL import ExifTags, Image, ImageDraw, ImageFont, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -301,8 +302,9 @@ def apply_background_review(rows: list[dict]) -> list[str]:
     if not todo:
         return []
     if not path.exists():
-        return ["data/raw/own/background_review.csv is missing. Look at each background in the rendered set and fill "
-                "it in by hand: file, bg_clean (yes or no), shelf_lines (optional, y pixels separated by |), note."]
+        return ["data/raw/own/background_review.csv is missing. Run src/data.py --background-sheet, look at "
+                "data/assets/backgrounds_sheet.png, then copy data/assets/background_review_template.csv there and "
+                "fill it in by hand: file, bg_clean (yes or no), shelf_lines (optional, y pixels separated by |), note."]
     review = {r["file"].lower(): r for r in _read_csv(path)}
     errors = []
     for r in todo:
@@ -354,6 +356,41 @@ def apply_cutout_status(rows: list[dict], log: list[str]) -> list[str]:
     for group_id in sorted({r["group_id"] for r in rows} - usable):
         log.append(f"  group {group_id} has no usable asset left and is excluded as a whole")
     return errors
+
+
+def write_background_sheet() -> None:
+    """Every listed background on one sheet with a pixel ruler, for the bg_clean and shelf-line review.
+
+    The one place data.py opens background pixels for viewing. Nothing is computed from them.
+    """
+    rows = [r for r in read_sources() if r["kind"] == "background"]
+    columns, cell_w, cell_h, font = 4, 420, 446, ImageFont.load_default(size=12)
+    sheet = Image.new("RGB", (columns * cell_w, -(-len(rows) // columns) * cell_h), "white")
+    draw = ImageDraw.Draw(sheet)
+    for i, r in enumerate(rows):
+        photo = ImageOps.exif_transpose(Image.open(_p(r["source_path"]))).convert("RGB")
+        full_w, full_h = photo.size
+        photo.thumbnail((380, 400), Image.Resampling.LANCZOS)
+        left, top = (i % columns) * cell_w + 34, (i // columns) * cell_h + 4
+        sheet.paste(photo, (left, top))
+        for y in range(0, full_h, 100):  # ruler in the photo's own pixels, which is what shelf_lines uses
+            at = top + round(y * photo.height / full_h)
+            draw.line([left - (8 if y % 200 == 0 else 4), at, left - 1, at], fill="black")
+            if y % 200 == 0:
+                draw.text((left - 32, at - 6), str(y), fill="black", font=font)
+        draw.text((left, top + 404), f"{Path(r['filename']).name}  {full_w}x{full_h}", fill="black", font=font)
+        draw.text((left, top + 420), "bg_clean in intake.csv" if r["source"] == "own" else "needs a row in background_review.csv",
+                  fill=(110, 110, 110), font=font)
+    out = _p("data", "assets", "backgrounds_sheet.png")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    sheet.save(out, format="PNG")
+    template = [{"file": Path(r["filename"]).name, "bg_clean": "", "shelf_lines": "", "note": ""}
+                for r in rows if r["source"] != "own"]
+    _p("data", "assets", "background_review_template.csv").write_bytes(
+        _csv_bytes(["file", "bg_clean", "shelf_lines", "note"], template))
+    print(f"[data] {len(rows)} backgrounds on data/assets/backgrounds_sheet.png. The ruler is in each photo's own pixels.")
+    print("[data] Copy data/assets/background_review_template.csv to data/raw/own/background_review.csv and fill in "
+          "bg_clean (yes or no). shelf_lines is optional: y pixels of surfaces a box can stand on, separated by |.")
 
 
 # ---------------------------------------------------------------- step 5: split
@@ -513,7 +550,11 @@ def main() -> None:
     mode.add_argument("--force", action="store_true", help="rebuild everything, including the split")
     mode.add_argument("--verify", action="store_true", help="rebuild in memory and compare with disk")
     mode.add_argument("--openimages", action="store_true", help="optional real-photo slice (not built yet)")
+    mode.add_argument("--background-sheet", action="store_true", help="write the sheet for the background review")
     args = parser.parse_args()
+    if args.background_sheet:
+        write_background_sheet()
+        return
     if args.openimages:
         sys.exit("The Open Images slice is not built yet. It is optional (build stage 9), "
                  "open_images.enabled is false in config.yaml, and it needs the fiftyone package.")
