@@ -1,0 +1,21 @@
+check_splits.py 2026-10-05T17:33:25 git 0cdaf46
+[PASS] 01 own assets have a capture date after 2024-01-01: 0 own assets
+[PASS] 02 provenance rows have a source and a license, synthetic parents exist: 101 rows
+[PASS] 03 every usable asset is in exactly one split: 42 usable assets
+[PASS] 04 no group in two splits: 32 groups
+[PASS] 05 every split has a background, a damaged-box group and a distractor group
+[PASS] 06 data.py --verify: exit code 0
+[PASS] 07 image counts match config.yaml: 20 / 30 / 6
+[PASS] 08 every composite is built from its own split's pool
+[PASS] 09 no md5 in two splits: 98 files
+[PASS] 10 no test image near a val or showcase image: near-duplicate pairs inside test: 1 (information only)
+[PASS] 11 make_synth.py --verify: exit code 0
+[PASS] 12 Open Images rows sit in val or test only, none near an own asset: no Open Images slice
+[PASS] 13 the test split refuses without permission: PermissionError raised
+[PASS] 14 static scan of test access and model imports: 12 files scanned
+[PASS] 15 nothing test-related under cache/: no cache yet
+[PASS] 16 label words avoid prompt words: 51 words against 33 prompt words
+[SKIP] 17 frozen.json hashes match the current files: no frozen.json yet
+[SKIP] 18 prompts were written before the first val run, later changes carry a reason: no val run yet
+[SKIP] 19 test scored at most once: test has not been scored
+19 checks: 16 PASS, 0 FAIL, 3 SKIP

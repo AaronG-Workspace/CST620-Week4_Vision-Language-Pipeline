@@ -1,0 +1,17 @@
+data.py log. No timestamps, so a rebuild is byte-identical.
+step 1 sources: 45 rows (22 openimages_asset, 23 rendered); 20 cereal_box, 9 distractor, 16 background
+step 2 inventory: 45 files; no own photos; 45 from the rendered set, which has no camera EXIF
+step 3 duplicates and groups:
+  0 exact duplicates excluded, 0 near-duplicate pairs across group names, 35 groups
+step 4 reviews and cutout status:
+  excluded data/raw/synthetic/synthetic_retail_set/images/background_oi_03.jpg: bg_clean no
+  excluded data/raw/synthetic/synthetic_retail_set/images/background_oi_07.jpg: bg_clean no
+  excluded data/raw/synthetic/synthetic_retail_set/images/background_oi_13.jpg: bg_clean no
+  group background__background_oi_03 has no usable asset left and is excluded as a whole
+  group background__background_oi_07 has no usable asset left and is excluded as a whole
+  group background__background_oi_13 has no usable asset left and is excluded as a whole
+  42 usable assets, 3 excluded in total
+step 5 split (groups, not images):
+  val       backgrounds 5 | cereal-box groups 4 (4 with a dented box) | distractor groups 3 | assets 16
+  test      backgrounds 6 | cereal-box groups 4 (4 with a dented box) | distractor groups 4 | assets 18
+  showcase  backgrounds 2 | cereal-box groups 2 (2 with a dented box) | distractor groups 2 | assets 8

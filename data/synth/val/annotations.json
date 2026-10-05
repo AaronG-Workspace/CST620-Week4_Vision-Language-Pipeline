@@ -1,0 +1,6059 @@
+{
+ "annotations": [
+  {
+   "area": 52448,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    247.0,
+    555.0,
+    239.0,
+    370.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 0,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "Zbg7i0Vo0i0WO2Nm0TOg0XO1Om0SOi0XO000M30000O1O1O2O0O1N200O1O1O2O000O1O1O1PYObJaL=]f0Q5c\\ObKYc0a4V\\OPLjc0P4c[OcL]d0]3R[O_JfNa2Wf0Q3`ZOfM_e0\\2oYOVNoe0o5N1O1O10000O2O01O0002N00000010O1O00000001O1O0000010O000000001O11N0O11O1O0001O000001O001O1O01O1O000001O0000002N01O0001O0001O1O0001O1O0000010O000000001O1O01O1O01O000000100O00000000000010O1O02N000001O000hIjZOg1Ue0XNmZORLM0AP5ee0nNc[OULhNf4ee0UO^\\O6bc0J^\\OSLbNO[OY3ee0d0Z]O]Oeb0c0V^ObNja0^1W^OTLTL00W2ee0e1^^OZNba0f1^^OZNba0f1^^O[Naa0e1_^O[Naa0e1_^O[Naa0e1_^O[Nca0c1]^O^Nba0b1_^O^N`a0b1`^O]Naa0c1_^O]Naa0c1_^O^N`a0b1`^O_N_a0a1a^O_N_a0a1a^O_N`a0`1`^O`N`a0`1`^OaN_a0_1a^OaN_a0_1b^O`N^a0_1d^O`N\\a0_1e^OaN[a0_1e^ObN\\a0\\1d^OeN[a0[1e^OeN[a0[1e^OeN[a0[1e^OeN[a0[1e^OeN[a0[1f^OdNZa0\\1f^OeNZa0Z1f^OfNZa0Z1f^OfNZa0Z1f^OfNZa0Z1f^OgNYa0Y1g^OhNXa0X1h^OhNXa0X1h^OhNYa0W1g^OiNZa0V1f^OjNZa0U1g^OlNXa0T1i^OkNWa0U1j^OjNVa0V1j^OjNVa0V1j^OkNUa0U1k^OlNca0e0]^O[OWb01i]OOhb0@X]O`0\\c0lNd\\OU1lc0ZNU\\Oe1^d0hMb[OX2Si00000002N0000001O0001O10O1O000000001O01L3O100M3M300N2N2O1O1M301N2L3O1O1M300M3O1O1N2O2N1M3N2O1O1CoUb9",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.6839
+  },
+  {
+   "area": 52448,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    247.0,
+    555.0,
+    239.0,
+    370.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_01",
+   "id": 1,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "Zbg7i0Vo0i0WO2Nm0TOg0XO1Om0SOi0XO000M30000O1O1O2O0O1N200O1O1O2O000O1O1O1PYObJaL=]f0Q5c\\ObKYc0a4V\\OPLjc0P4c[OcL]d0]3R[O_JfNa2Wf0Q3`ZOfM_e0\\2oYOVNoe0o5N1O1O10000O2O01O0002N00000010O1O00000001O1O0000010O000000001O11N0O11O1O0001O000001O001O1O01O1O000001O0000002N01O0001O0001O1O0001O1O0000010O000000001O1O01O1O01O000000100O00000000000010O1O02N000001O000hIjZOg1Ue0XNmZORLM0AP5ee0nNc[OULhNf4ee0UO^\\O6bc0J^\\OSLbNO[OY3ee0d0Z]O]Oeb0c0V^ObNja0^1W^OTLTL00W2ee0e1^^OZNba0f1^^OZNba0f1^^O[Naa0e1_^O[Naa0e1_^O[Naa0e1_^O[Nca0c1]^O^Nba0b1_^O^N`a0b1`^O]Naa0c1_^O]Naa0c1_^O^N`a0b1`^O_N_a0a1a^O_N_a0a1a^O_N`a0`1`^O`N`a0`1`^OaN_a0_1a^OaN_a0_1b^O`N^a0_1d^O`N\\a0_1e^OaN[a0_1e^ObN\\a0\\1d^OeN[a0[1e^OeN[a0[1e^OeN[a0[1e^OeN[a0[1e^OeN[a0[1f^OdNZa0\\1f^OeNZa0Z1f^OfNZa0Z1f^OfNZa0Z1f^OfNZa0Z1f^OgNYa0Y1g^OhNXa0X1h^OhNXa0X1h^OhNYa0W1g^OiNZa0V1f^OjNZa0U1g^OlNXa0T1i^OkNWa0U1j^OjNVa0V1j^OjNVa0V1j^OkNUa0U1k^OlNca0e0]^O[OWb01i]OOhb0@X]O`0\\c0lNd\\OU1lc0ZNU\\Oe1^d0hMb[OX2Si00000002N0000001O0001O10O1O000000001O01L3O100M3M300N2N2O1O1M301N2L3O1O1M300M3O1O1N2O2N1M3N2O1O1CoUb9",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.6839
+  },
+  {
+   "area": 40824,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    429.0,
+    497.0,
+    180.0,
+    274.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 2,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o3",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "T`]=:a0Gcn0]1]Oc0]Oc0^Od0[Ob0^Oe0\\Oa0^Od0\\Od0]Ob0]O1O2O0O1O2N100O2O0O1O2O0O2N100O2N100O10001O01O01O00001O000010O0001O00010O00010O001O00010O000000010O0000010O001O00010O000010O000001O010O001O00001O01O000001O01O0001O010O00001O01O0001O00010O001O010O00001O01O00000010O00001O01O01O00001O001O01O01O0000010O001O01O01O000010N11O0001O0O1N2O2N1N2O1O2O0N2O1N2O2N1N2O1O1O2M2O1O1N2O1^Ob0^Ob0\\Oe0_O`0_Oa0[Oe0_Ob0]Ob0^Ob0POa`g5",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 34651,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    611.0,
+    478.0,
+    166.0,
+    250.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 3,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o4",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "g_Sc0b0^o0n0ROa0_Oa0_OS1lN`0AQ1oNc0]O`0_O2O1O1O0O3N002N1O1O1O0O2O1O2N001N2O1O1O1O1O1N2O1O1O1N1000O1000O10O100O100O10O1000O10O10O1000O010000O100O10O1000O10O10O100O100000O010000O10O10O10O010000O100000O010000O010O1000000O010O1000000O010O1000O01000000O100O010O1000O10O10000O01000O10000O01000O101O0O101O0O2O1N10001O0O2O000O2O001N101N10001N101O0F;^Oa0nNR1]Od0nNR1^Oa0\\Od0oNea?",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 34651,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    611.0,
+    478.0,
+    166.0,
+    250.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 4,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o4",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "g_Sc0b0^o0n0ROa0_Oa0_OS1lN`0AQ1oNc0]O`0_O2O1O1O0O3N002N1O1O1O0O2O1O2N001N2O1O1O1O1O1N2O1O1O1N1000O1000O10O100O100O10O1000O10O10O1000O010000O100O10O1000O10O10O100O100000O010000O10O10O10O010000O100000O010000O010O1000000O010O1000000O010O1000O01000000O100O010O1000O10O10000O01000O10000O01000O101O0O101O0O2O1N10001O0O2O000O2O001N101N10001N101O0F;^Oa0nNR1]Od0nNR1^Oa0\\Od0oNea?",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 48742,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    75.0,
+    723.0,
+    206.0,
+    275.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 5,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o5",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "\\g[2<co0b0`POSOin0a1Af0ZO?Ad0\\Oc0]Ob0]Od0]Oa0VUOkJ0Afi0g6@a0_O4L1O1O1N200N3N1O1O1O100000001O0001O0001O00000000001O0001O000001O000000010O00000000000010O000000000001O0000001O01O00000001O0001O00000001O000000001O0001O00000001O000001O0001O000000010O00000000001O0000000001O01OO11O0000000000000000001O0001O0001O00000000001O000001O0001O0000000001O01O000000000010O00000001O00000000001O01O000001O00000001O01O0000O1M3N2L4N3L3M3M3M3M3M3M4J5POlVOhJ`i0i4`VOoJ0FUj0f4S1@`0YOYTOaL[l0P3b0_Oa0]Oc0_OoQOfN^n0g0h0^O[Yo?",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2446,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    655.0,
+    645.0,
+    66.0,
+    49.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0000_o4",
+   "id": 6,
+   "image_id": 0,
+   "instance_id": "s_val_0000_l1",
+   "iscrowd": 0,
+   "label_angle": 8.25,
+   "name": "save",
+   "segmentation": {
+    "counts": "^d_d03mo06J8G8I7I6J3M00O10O1000000000O10O1000000000O10O1000000000O10O10000000O10O1000000000O10O1000000000O10O1000000000O10O1003M6J7I7H9H6JfZW2",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3676,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    99.0,
+    626.0,
+    86.0,
+    60.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "distractor__tin_can_peas",
+   "host_instance_id": "s_val_0000_o1",
+   "id": 7,
+   "image_id": 0,
+   "instance_id": "s_val_0000_l2",
+   "iscrowd": 0,
+   "label_angle": 10.03,
+   "name": "deal",
+   "segmentation": {
+    "counts": "PdS32no05J7J6J5K6J5K6I5L1OO1000O100000O1000O100000O1000O1000O1000O100000O1000O100000O1000O1000O1000O100000O1000O100000O1000O1000O1000O100000O1000O100000O1000O11O4K7J5K6J5K6J6I6KR[ob0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 27012,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    492.0,
+    763.0,
+    168.0,
+    258.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 8,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "\\l\\?1no0a0Ab0\\Oa0fQO\\NXm0g2_O1O1N2O001O2M102N002N001O1N2O2N001N2O1O1O1O1O1N2O1O1O1O0O10O1000000O010O1000O01000000O100O10O10O1000O10O10O010000O100O11N010N1]Od0A?YOf0B?0O20OO1O101O0O10001O1NN300O0N3N2O001N1O3MPJTVOo5li03O0O2O1O0O2M202N0O2O0N30ON3O1E:02J4100O100O0100000O01000O100O0100000O10000O010O101O001N10001N101N100O20OO2O001N1O101O001N101O000O2O0O2UOjVO`J`i0m4T1]Ob0nNiTOhLkk0c2S1@a0jNTROSO<0Un0;hXW3",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7306
+  },
+  {
+   "area": 27012,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    492.0,
+    763.0,
+    168.0,
+    258.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 9,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "\\l\\?1no0a0Ab0\\Oa0fQO\\NXm0g2_O1O1N2O001O2M102N002N001O1N2O2N001N2O1O1O1O1O1N2O1O1O1O0O10O1000000O010O1000O01000000O100O10O10O1000O10O10O010000O100O11N010N1]Od0A?YOf0B?0O20OO1O101O0O10001O1NN300O0N3N2O001N1O3MPJTVOo5li03O0O2O1O0O2M202N0O2O0N30ON3O1E:02J4100O100O0100000O01000O100O0100000O10000O010O101O001N10001N101N100O20OO2O001N1O101O001N101O000O2O0O2UOjVO`J`i0m4T1]Ob0nNiTOhLkk0c2S1@a0jNTROSO<0Un0;hXW3",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7306
+  },
+  {
+   "area": 49785,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    29.0,
+    484.0,
+    219.0,
+    330.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 10,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "m_m0180]o0;Nh0YOg0XOg0YOh0YOi0VOf0ZOj0WO0Of0ZOh0XOi0XOf0YO2N101O0O1O2O1N1O101N100O1O2N100O2N100O2N10000O2N100010O0001O1OO1100O0000000010O0001O00010O00001O01O0001O00010O00001O1O00010O000001O10O00001O00010O00000010O000001O00010O00002N01O0001O00010O00001O01O000001O00010O00001O01O1O0001O0000100O00001O010O00001O0001O000^Nb1O101O000O1000001O000O1000b0^O>Ba0_Ob0^Oa0_O`0@`0_Oc0^O?A?A3MO02O0000000O10000000001O0000000O2O0000000O101O00000000001O00000O101O00000O10001O00000000000O2O0I7XOh0\\Od0OhZS`0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7793
+  },
+  {
+   "area": 49785,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    29.0,
+    484.0,
+    219.0,
+    330.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_03",
+   "id": 11,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "m_m0180]o0;Nh0YOg0XOg0YOh0YOi0VOf0ZOj0WO0Of0ZOh0XOi0XOf0YO2N101O0O1O2O1N1O101N100O1O2N100O2N100O2N10000O2N100010O0001O1OO1100O0000000010O0001O00010O00001O01O0001O00010O00001O1O00010O000001O10O00001O00010O00000010O000001O00010O00002N01O0001O00010O00001O01O000001O00010O00001O01O1O0001O0000100O00001O010O00001O0001O000^Nb1O101O000O1000001O000O1000b0^O>Ba0_Ob0^Oa0_O`0@`0_Oc0^O?A?A3MO02O0000000O10000000001O0000000O2O0000000O101O00000000001O00000O101O00000O10001O00000000000O2O0I7XOh0\\Od0OhZS`0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7793
+  },
+  {
+   "area": 44607,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    184.0,
+    437.0,
+    197.0,
+    262.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 12,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o4",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "\\^h5<co0b0_POSOkn0S2nN?Ab0^Oc0]Ob0]Ob0_Oa0@b0]O`0@`0@4L0O3M200N200O1O1O1000001O000001O01O00000000001O000001O0001O000000001O000000000010O000000000001O000000010O000000001O0001O00000001O0000001O0001O0000000000001O0001O0000000010O0000000001O00000000010O00000000000010O0000000001O0001O01O0000000000001O000001O01O0000000001O01O000000001O01O000001O0000000000000000001O00000001O01O000000M3N2L4M4L3N2M3KSWOTIPi0i6PWOWISi0f65L5C<\\Od0A?]Oc0@`0ZOSTOgL_l0k2b0_Oa0PO\\ROgN09Un0>R1^OZbn;",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 61631,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    387.0,
+    491.0,
+    228.0,
+    333.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 13,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o5",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "W`S<f0Yo02Of0XOk0WOe0[O1dSORMck0g3Nj0WOh0VOh0YO10k0TOg0YOa0_O101M201N2N1O101O0O1O101N1N200O1O2N2N1O100O1O2O01O1O01O00001O10O00000001O0000010O0000000010O1O01O1O0001O0001O00001O0001O0002N00000010O1O0001O0001O0001O1O00010O000000001O0001O01O1O0001O10O000000000010O01O1O0001O0001O00000011N00000001O1O00010O0000001O0001O01O1O00000100O00000001O01O0001O000010N11O1O0000001O01O10O00000000100O00000010O000001O0001O10O1OM300O1M4M2O1O1N2N2NoXOUGQg0j83O2M2O1O1N2M4N2N1N2O1M300M3O2D;O1WOi0XOh0ZOf0YO_UOnKcj0P4g0YOg0YOg0XOmSObMTl0]2h0[Of0YOg0YOg0N^_d4",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 37671,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    568.0,
+    546.0,
+    183.0,
+    275.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 14,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o0",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "keha07io0a0@d0ZO7I2M2N2O1N2O1N2N3N1N2N2O1O1O1N2N2G9_Oa0@`0@`0@`0@a0@>02O0000000000001N100000000O101O000O100000001N100000000O1eWO\\JZf0d5WYOQJlNg0mg0X5gXOZKZg0g4VXOhKjg0W6000O01000O1000O0100O10O10O100000O010000O100O10O010000000O0100O10O1000O10O010000O10O1000O10000O100O01000O1000O10O100O0100000O010O100O1000000O01000O1000O0100O1000O1000O10O010001N101O0O2O0O2O00001N101O0O2O001N100O2O001O0O101O0O2O001N1SOoVO`J\\i0l4W1[Od0\\Oe0]Ob0jNW1YOg0\\Oc0]OP_`0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.8563
+  },
+  {
+   "area": 34857,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    451.0,
+    740.0,
+    175.0,
+    233.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 15,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o1",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "jgS>9fo0`0\\POXOPo0Z1Bb0^Ol0TOa0_O`0_O`0Ao0QO>B>B4L1O1N200N3N1O1O100000001O01O000000000001O000001O0001O0000010O000000000010O0000000000000001O000000001O0001O000001O0000001O0001O000001OO110O0000000000010O0000000001O000000001O00000000010O000000000001O0001O00000000001O0001O0001O00000001O01O000000000000001O00000001OO20O000001O000001O01O00O1N2N2L5K4M3N2M3L4M3L5D;_Oa0ROn0B>]OcSOSMml0`2`0SOnRO]Nam0T1TROlNfn0d0d0@jX]4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 34857,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    451.0,
+    740.0,
+    175.0,
+    233.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 16,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o1",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "jgS>9fo0`0\\POXOPo0Z1Bb0^Ol0TOa0_O`0_O`0Ao0QO>B>B4L1O1N200N3N1O1O100000001O01O000000000001O000001O0001O0000010O000000000010O0000000000000001O000000001O0001O000001O0000001O0001O000001OO110O0000000000010O0000000001O000000001O00000000010O000000000001O0001O00000000001O0001O0001O00000001O01O000000000000001O00000001OO20O000001O000001O01O00O1N2N2L5K4M3N2M3L4M3L5D;_Oa0ROn0B>]OcSOSMml0`2`0SOnRO]Nam0T1TROlNfn0d0d0@jX]4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 29067,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    442.0,
+    473.0,
+    156.0,
+    227.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 17,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o3",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "[_j=`0>Abn0`1_O?@b0^Ob0_Oa0]O9I0cTOWLbj0T5_O<D101N1O101N1O101M200O1O2N100O2O01O01O00000000001O00010O000010O0001O01O0001O0010O0001O000010O0001O01O0001OO20O00001O00010O00010O000000001O1O0001O01O00010O0000001O01O01O0000010O0000010O00000010O01O0001O01O00001O01O01O000010O0001O0001OO11O01OO1O1N3M2O1N2O1N3M2O1N2N3N1O1O1N2N3F9_Oa0@`0@a0_O`0@`0@`0_Oa0A`0QOcQOJY_Z5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.999
+  },
+  {
+   "area": 44208,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    263.0,
+    580.0,
+    187.0,
+    286.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 18,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "hbW8:eo0e0\\Oc0\\Od0dQOZNXm0l2ZOc0]Of0[Oa0^Oe0[Od0]Oc0\\O2N101N1O101N1O2O0O101N1O101N1O101N1O1O2O000010O0001O01O01O000001O01O000010O0001O00001O00010O00001O01O01O00010O00001O01O01O000010O0000010O0001O0010O01O00010O00000001O01O00010O00001O01O0001O00010O001O0010O0001O01O0001O00010O00001O00001O00010O001O01O01O0000010OO11O01O01O00001O01O01O01O000N2O2N1N2O1O1O2N1N2O1N2O2N1O1N2O2N1N2O1O1N3N1L4@`0^Ob0[Of0^Oa0_Oa0ZOf0lN`SOTN0BSm0f1U1A?]O_]m9",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1872,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    472.0,
+    602.0,
+    60.0,
+    44.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0002_o3",
+   "id": 19,
+   "image_id": 2,
+   "instance_id": "s_val_0002_l1",
+   "iscrowd": 0,
+   "label_angle": 10.36,
+   "name": "weight value brand",
+   "segmentation": {
+    "counts": "Tch>1oo05J7J5K5K6J5J2O00O100000O10O100000O1000O100000O10O100000O1000O100000O10O100000O1000O100000O10O100000O1001N6K6J5K5K6I6KU\\[7",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 22059,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    448.0,
+    300.0,
+    138.0,
+    184.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 20,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "l]k7d0Xa0?Bh0XOi0WO=Cg0YO?Ae0[O3M1N2O1O2N1O100000001O00000000001O0001O000000010O0000000001O00000000000010O000001O0000000000000010O00000001O01O0000000001O000000001O0001O00000000010O00000001O0000000000001O01O0001O000001O00000001O0000000000000010O0001O000001O00000M3M3L4N2L4N2M3L5YOf0E;XOh0WOm@WNc?]1e0YOh_OSOm`0`0[We7",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 14534,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    111.0,
+    330.0,
+    110.0,
+    166.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 21,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "man1d0Ya0h0YOg0YOe0[Of0ZOg0XO2O1O1O1O1N2O1O1O1O1O1N2O1O1O1O1N2O000000O10O01000000O10O010000O10O10O1000O010000O1000O0100O1000O01000000O01000O1000O010000O10O01000000O010O10000O01000O1000O010000O101O0O101O0QNeBZO]=e0XCfNh<Y1nCRNS<l1P201N1O2O0O1O2O0O2O0O2N1]Od0WOniQ>",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9516
+  },
+  {
+   "area": 14534,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    111.0,
+    330.0,
+    110.0,
+    166.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 22,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "man1d0Ya0h0YOg0YOe0[Of0ZOg0XO2O1O1O1O1N2O1O1O1O1O1N2O1O1O1O1N2O000000O10O01000000O10O010000O10O10O1000O010000O1000O0100O1000O01000000O01000O1000O010000O10O01000000O010O10000O01000O1000O010000O101O0O101O0QNeBZO]=e0XCfNh<Y1nCRNS<l1P201N1O2O0O1O2O0O2O0O2N1]Od0WOniQ>",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9516
+  },
+  {
+   "area": 25018,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    247.0,
+    222.0,
+    146.0,
+    211.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 23,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o2",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "RfZ4>_a0?Aa0@>Aa0@n0POa0Aa0^O?A;E2O1N1O101N1O1O1O1O2N1O100O20O0001O0010O000001O01O01OO110O0001O01O01O001O00001O00010O000001O01O00010O00000010O01O00010O000000001O0001O01O0010O000001O01O01O0000010O000010O000001O00001O01O01O0000010O0000010O000010O01O0001O000N2N2O1O1N2N2O2M2O1N3M2O1O1N2N3G8@`0A?B?_O`0TOl0_Oa0C>A?@Y_Q;",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 25018,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    247.0,
+    222.0,
+    146.0,
+    211.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_01",
+   "id": 24,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o2",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "RfZ4>_a0?Aa0@>Aa0@n0POa0Aa0^O?A;E2O1N1O101N1O1O1O1O2N1O100O20O0001O0010O000001O01O01OO110O0001O01O01O001O00001O00010O000001O01O00010O00000010O01O00010O000000001O0001O01O0010O000001O01O01O0000010O000010O000001O00001O01O01O0000010O0000010O000010O01O0001O000N2N2O1O1N2N2O2M2O1N3M2O1O1N2N3G8@`0A?B?_O`0TOl0_Oa0C>A?@Y_Q;",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 13549,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    204.0,
+    399.0,
+    104.0,
+    159.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 25,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "Rhb36ha0e0ZOf0ZOf0[Oe0ZOg0YO<E0O1O2O0O2O0O1O2O0O1O2O01O01O0000010O00001O01O01O000010O0001O00010O00000010O01O000010O0001O0001O01O000010O0001O00010O00001O01O0001O010O00000010O0001O00010O00O1O2M2O1O1O1N3N1O1O1N2O2N1E;ZOf0]Oc0ZOg0[Od0]Ojn`<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1040,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    131.0,
+    424.0,
+    52.0,
+    34.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0003_o1",
+   "id": 26,
+   "image_id": 3,
+   "instance_id": "s_val_0003_l1",
+   "iscrowd": 0,
+   "label_angle": 14.94,
+   "name": "best",
+   "segmentation": {
+    "counts": "_kY21la04M4L3L5L4L2NO01000O0100000O0100000O0100000O010000O010000O0100000O0100000O0100000O01000O012N4L4K4M4L3Lcof>",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 20614,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    460.0,
+    391.0,
+    132.0,
+    192.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 27,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "kVc9=md0>Cj0UO`0@`0@k0UO`0@?B9F1O2N101N1O1O2O0O1O1O101N11O01O00010O0000001O0000010O0010O000001O01O01O00001O0001O0001O010O00000010O000001O0000010O1O0001O01O0001O0001O001O00010O00000010O0000010O01O0001O0001O00001O00010O0001O01O00010ON2O1N2O1N2N2O2N1N2N3N1N2O1N2O2ZOe0B>C=UOk0C=A`0WOi0APho8",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 21603,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    268.0,
+    471.0,
+    138.0,
+    186.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 28,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o2",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "eXc5>ld0>Aj0XO<Ci0VO=D=C1O1N2N3N1O1O1N2O1O1N2O2N1O1L4B>A`0O01O00000000010O00000001O0000000000000010O000001O01O000000000001O000000001O01O00000000010O00000001O0000000000000010O000000000001O000000001O01O000000000010O000000001O0000000000001O01O0001O0001O00000O1N2L4M3M3M3M3M4D;A?YOg0D<WOi0D<XO\\\\OTOYd0?kgk<",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9571
+  },
+  {
+   "area": 21603,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    268.0,
+    471.0,
+    138.0,
+    186.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 29,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o2",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "eXc5>ld0>Aj0XO<Ci0VO=D=C1O1N2N3N1O1O1N2O1O1N2O2N1O1L4B>A`0O01O00000000010O00000001O0000000000000010O000001O01O000000000001O000000001O01O00000000010O00000001O0000000000000010O000000000001O000000001O01O000000000010O000000001O0000000000001O01O0001O0001O00000O1N2L4M3M3M3M3M4D;A?YOg0D<WOi0D<XO\\\\OTOYd0?kgk<",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9571
+  },
+  {
+   "area": 36319,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    840.0,
+    404.0,
+    170.0,
+    256.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 30,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o3",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "Vf`a0b0id0o0POb0_Ob0^OS1mN`0@c0]OQ1oNa0^O2O1O1O1N2O1O002M102N001O1O1O2N0O2O1O1N2O1O1O1O1N2O1O1O0000O10O1000O10O0100O10O1000O10000O100O0100000O01000O10O01000000O10000O010O1000O10O100O010O1000000O10O10O1000O0100000O0100O10000O10O1000O1O10O10O1000O1000O100O100O0100000O010O100000O010000O100O0100000O2O000O2O0O2O1O0O10001O1N101N10001N101O0O101O0O2O001E:mNT1]Ob0]Oc0nNS1^Oa0\\Oe0mNin8",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 33228,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    136.0,
+    280.0,
+    163.0,
+    249.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 31,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "RPk28Re0b0_Oa0^Ob0R\\O_N0Enb0m2]Oa0_Oc0^O?@R1nNb0_O1N1O1O101N101N100O2N100O2N1O2O0O1O1010O0001O00010O000010O0000010O0001O00001O010O00000010O000010O00001O010O00001O000001O01O0010O01O00010O000001O01O00001O0010O000001O010O0000010O001O01O0001O010O000000001O00010O001O010O000001O01O00010O00001O001O01O0O1N201N1N2O1O2N1N2N2O2N1O1N2O1O2M2O1O1O1L4B>oNR1@?A?]Od0POf]O[N0Ejb0_1P1C=_OTYS?",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1987,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    316.0,
+    335.0,
+    69.0,
+    51.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "distractor__tin_can_peas",
+   "host_instance_id": "s_val_0004_o1",
+   "id": 32,
+   "image_id": 4,
+   "instance_id": "s_val_0004_l0",
+   "iscrowd": 0,
+   "label_angle": -18.83,
+   "name": "select save",
+   "segmentation": {
+    "counts": "PTc62We02M3M4L3M4L3M3M4L3M310O00010O00010O00010O00010O00010O00010O00010O0010O0010O00010O00010O00010O00010O00010O00010O00010OM3M4L3M3M4L3M4L3M3NdkY=",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 79212,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    408.0,
+    606.0,
+    258.0,
+    376.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 33,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "mch<j0Uo0i0XO1Mn0TOh0XO0On0ROl0TO2Ok0SOk0VO10n0QOj0WO1Mc0_O1O1L301O0O1O1O2O1N100N201O0M30000O1O2N2N1O1O100O2O0001O01O1O00000010O1O00000002N000000010O000000001000O000001O0001O000002N00001O01O1O000002N0000001O01O000002N01O1O000001O0000010O1O000000001O0001O1O02N0000010O0000000000000020N0001O000001O01O1O00000010O1O00000001O1O0000010O0000001O1O02N0001O000000010O1O000000000011N000001O1O0001O0001O0000001O1O01O1O01O00000000011N00000010O1O000002N000001O0001OM300O1M4N2M2N200M3O1O1N2N201L3O1O1N2M4N2N1M300O1M3O1N2N201B=TOl0O1VOj0VOk0O1TOk0VOj0O1WOi0TOl0O1YOh0VOj0VOVQO;ln0C^\\n3",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 79212,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    408.0,
+    606.0,
+    258.0,
+    376.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_01",
+   "id": 34,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "mch<j0Uo0i0XO1Mn0TOh0XO0On0ROl0TO2Ok0SOk0VO10n0QOj0WO1Mc0_O1O1L301O0O1O1O2O1N100N201O0M30000O1O2N2N1O1O100O2O0001O01O1O00000010O1O00000002N000000010O000000001000O000001O0001O000002N00001O01O1O000002N0000001O01O000002N01O1O000001O0000010O1O000000001O0001O1O02N0000010O0000000000000020N0001O000001O01O1O00000010O1O00000001O1O0000010O0000001O1O02N0001O000000010O1O000000000011N000001O1O0001O0001O0000001O1O01O1O01O00000000011N00000010O1O000002N000001O0001OM300O1M4N2M2N200M3O1O1N2N201L3O1O1N2M4N2N1M300O1M3O1N2N201B=TOl0O1VOj0VOk0O1TOk0VOj0O1WOi0TOl0O1YOh0VOj0VOVQO;ln0C^\\n3",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 57985,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    156.0,
+    389.0,
+    225.0,
+    315.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 35,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "W]l4h0Xo0c0\\Of0[O00001O0O10000000001N100000001dXOkMj`0V2U_OmMi`0S2V_OoMi`0Q2U_OQNk`0P2S_OSNk`0m1d^OiMdJ>gf0j1T^OUOka0k0c]OG]b0:S]O5mb0Kc\\Oe0]c0[Oa[OgMkMa3cf0iNQ[OV2Pe0kM_ZOe2ae0[MQZOS3oe0mL`YOd3`f0n200O100000O010000000000O1000000000000000000O1000000O100000000O10000000O10O10001O00O0100000001N100000000O100000000O10000000000O100000000O100000000O100000000O100000000O100000000O101OO1000O010000O10000O01000O01000O100O10O10O10000O0100000O01000O100O10O10O10000O01000O10000O01000O1000O010000O10O10O10001N101O0O101O0O2O001N100O2O001O0O2O0O2O0O101O0O2O001N10001O0O2O1O0O2B=ZOf0XOi0XOg0WOj0ZOe0WOj0YOf0VOk0XOg0YOnck<",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.9152
+  },
+  {
+   "area": 34690,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    21.0,
+    464.0,
+    167.0,
+    254.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 36,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o3",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "S_e08go0b0_Oa0^Ob0^Ob0oQOQNnl0Q3@b0]Oa0_Ob0_Ob0WUOgJfi0k5N101N1O100O101N101M200O2O0O1O2O0O2N1001O0001O010O00000010O01O00010O0000001O00010O00001O010O0000010O0000010O000010O0001O00001O0010O000010O00001O01O01O00010O000010O00000001O0000100O000010O000001O01O0001O01O01O00010O001O00001O0001O00010O01O00001O01O01O01O0N2O1O2M2O1O1O1N2O1N3N1O1N2O1O2N1O1O1N3N1_OZVOdJji0k4n0^Oc0@?@`0nNfSOkMml0d1Q1_O`0B>_OTalb0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 34690,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    21.0,
+    464.0,
+    167.0,
+    254.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_03",
+   "id": 37,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o3",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "S_e08go0b0_Oa0^Ob0^Ob0oQOQNnl0Q3@b0]Oa0_Ob0_Ob0WUOgJfi0k5N101N1O100O101N101M200O2O0O1O2O0O2N1001O0001O010O00000010O01O00010O0000001O00010O00001O010O0000010O0000010O000010O0001O00001O0010O000010O00001O01O01O00010O000010O00000001O0000100O000010O000001O01O0001O01O01O00010O001O00001O0001O00010O01O00001O01O01O01O0N2O1O2M2O1O1O1N2O1N3N1O1N2O1O2N1O1O1N3N1_OZVOdJji0k4n0^Oc0@?@`0nNfSOkMml0d1Q1_O`0B>_OTalb0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 6514,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    248.0,
+    454.0,
+    114.0,
+    92.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0005_o1",
+   "id": 38,
+   "image_id": 5,
+   "instance_id": "s_val_0005_l2",
+   "iscrowd": 0,
+   "label_angle": -16.91,
+   "name": "edition number grade",
+   "segmentation": {
+    "counts": "T`h71lo04L3L4M3M4K4M3M4L3L4M4L3L4M4L3M3L4M4L30010O00010O0000010O00010O00010O00010O0000010O00010O00010O0000010O00010O00010O00010O00010O0000010O00010O00010O0000010O00010O00010O00010O0000010O00010O00M4L3L4M3M4L3L4M4L3L4M4L3M3L5L3M3L4M4LPa^=",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 43610,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    225.0,
+    697.0,
+    202.0,
+    278.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 39,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "dkQ79fo0e0\\O`0A?A1N000001O01L3O1N2M300O1M3O2M2O1O1N2O2L300N2N2N2O2N1N2N2O1D<YO_LoTOa3Pk0i0YOf0[Oe0YOg0ZOdIhWO\\6Xh0g0YOf0J600000000010O000000000001O0000000010O0000000001O0001O00000001O000000001O0001O00000001O000001O01O000000000010O0000000001O0000000001O01O00000000000010O0000000001O0001O0001O0000000000001O000001O0001O0000000001O01O000000000010O00000001O0000000000001O01O0001O00000000010O0000O1M3N2L4M3M4L3N2M3M3M3M3K6B=[Oe0@`0\\Od0_Oa0XO\\TO`LXl0Q3c0_Oa0]Oc0^OQROeN]n0h0h0^OWZ`:",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.8577
+  },
+  {
+   "area": 43610,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    225.0,
+    697.0,
+    202.0,
+    278.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 40,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "dkQ79fo0e0\\O`0A?A1N000001O01L3O1N2M300O1M3O2M2O1O1N2O2L300N2N2N2O2N1N2N2O1D<YO_LoTOa3Pk0i0YOf0[Oe0YOg0ZOdIhWO\\6Xh0g0YOf0J600000000010O000000000001O0000000010O0000000001O0001O00000001O000000001O0001O00000001O000001O01O000000000010O0000000001O0000000001O01O00000000000010O0000000001O0001O0001O0000000000001O000001O0001O0000000001O01O000000000010O00000001O0000000000001O01O0001O00000000010O0000O1M3N2L4M3M4L3N2M3M3M3M3K6B=[Oe0@`0\\Od0_Oa0XO\\TO`LXl0Q3c0_Oa0]Oc0^OQROeN]n0h0h0^OWZ`:",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.8577
+  },
+  {
+   "area": 34516,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    302.0,
+    443.0,
+    166.0,
+    249.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 41,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o2",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "d^^9b0^o0n0ROa0_Oa0_OR1mNa0@P1POc0]O`0_O2O1O1O0O3N1O1O1O1O1O0O2O1O2N001N2O1O1N2O1O1O1O1O1O1N1000O1000O10O100O100O10O1000O10O10O1000O010000O100O10O1000O10O10O100000O0100O10000O01000O10O010000O100000O010000O0100000O100O01000O10000O010O1000O01000000O100O0100000O010O10000O0100000O100O0100000O2O000O2O0O2O1O0O101O0O2O000O2O001N101N10001O001N1F:_Ob0mNR1^Oc0mNUTO_M\\l0P2R1\\Od0oNhbW9",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 34516,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    302.0,
+    443.0,
+    166.0,
+    249.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 42,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o2",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "d^^9b0^o0n0ROa0_Oa0_OR1mNa0@P1POc0]O`0_O2O1O1O0O3N1O1O1O1O1O0O2O1O2N001N2O1O1N2O1O1O1O1O1O1N1000O1000O10O100O100O10O1000O10O10O1000O010000O100O10O1000O10O10O100000O0100O10000O01000O10O010000O100000O010000O0100000O100O01000O10000O010O1000O01000000O100O0100000O010O10000O0100000O100O0100000O2O000O2O0O2O1O0O101O0O2O000O2O001N101N10001O001N1F:_Ob0mNR1^Oc0mNUTO_M\\l0P2R1\\Od0oNhbW9",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 55525,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    56.0,
+    571.0,
+    216.0,
+    315.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 43,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o3",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "ebh1e0Zo0g0YO1_QOXOjm0`1Od0[Oh0WOj0XO1\\TOXLnj0^4Mg0[Oi0VOf0ZO2ZWORIWh0]7O1M201N2N002O1N1O10001L30000O1O2N1N20001N2O01N11O1O000010O000000010OO11O10O1O00000010O000001O01O000001O001O10N11O001O01OO1011N000001O01O0001O1O00O20O1O0000001O0001O010OO11O10O1OO11O000010O0001O0001O0001O0000100OO11O00010N11O10O0000001O01O01O1OO11O00010O0000000010O00010OO11O1O01O1OO11O1O0001O01O000000010O00001O10N100100N11O1O01O00M3O1N3L300O1M3O1N2O1O2M2O1M300N3M2N2O1O2M1O2O2C=XOYWOUJgh0j5h0ZOf0[Of0XOg0ZO^TOnLbk0R3f0ZOf0YOg0\\Oe0ZOfQOA0@[n0n0g0YOd][?",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 55525,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    56.0,
+    571.0,
+    216.0,
+    315.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_01",
+   "id": 44,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o3",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "ebh1e0Zo0g0YO1_QOXOjm0`1Od0[Oh0WOj0XO1\\TOXLnj0^4Mg0[Oi0VOf0ZO2ZWORIWh0]7O1M201N2N002O1N1O10001L30000O1O2N1N20001N2O01N11O1O000010O000000010OO11O10O1O00000010O000001O01O000001O001O10N11O001O01OO1011N000001O01O0001O1O00O20O1O0000001O0001O010OO11O10O1OO11O000010O0001O0001O0001O0000100OO11O00010N11O10O0000001O01O01O1OO11O00010O0000000010O00010OO11O1O01O1OO11O1O0001O01O000000010O00001O10N100100N11O1O01O00M3O1N3L300O1M3O1N2O1O2M2O1M300N3M2N2O1O2M1O2O2C=XOYWOUJgh0j5h0ZOf0[Of0XOg0ZO^TOnLbk0R3f0ZOf0YOg0\\Oe0ZOfQOA0@[n0n0g0YOd][?",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 54034,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    514.0,
+    433.0,
+    208.0,
+    316.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 45,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "X^R`0:eo0g0ZOe0ZOe0[Of0[Og0XOd0\\Oh0YOc0\\O1iUOjJ0_Oai0^6RWObIXh0T7Ne0[O2O0O2N100O2N1O101N100O2N100O2N100O2N100O2O0O1010O0001O0000100O00000010O0001O00010O000010O000001O01O01O00001O01O01O0000010O00001O01O01O000010O000010N11O10O00001O01O01O00010O00001O01O0001O00010O00001O0001O01O000010O0001O0010O000001O01O0001O00010O1O000010O000001O00010O001O00010O00000010O0001O01O01O00001O01O01O0001O0O1N2O1O2N1N2O1O1O2N1N2O1N2O2N1O1N2O1O2N1N2O1O1N3N1L4^Ob0\\Od0YObVOiJ0^O`i0g5g0^Ob0]Oc0XOi0\\Oc0[Oe0[Oe0@`0ZORbY1",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 54034,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    514.0,
+    433.0,
+    208.0,
+    316.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_03",
+   "id": 46,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "X^R`0:eo0g0ZOe0ZOe0[Of0[Og0XOd0\\Oh0YOc0\\O1iUOjJ0_Oai0^6RWObIXh0T7Ne0[O2O0O2N100O2N1O101N100O2N100O2N100O2N100O2O0O1010O0001O0000100O00000010O0001O00010O000010O000001O01O01O00001O01O01O0000010O00001O01O01O000010O000010N11O10O00001O01O01O00010O00001O01O0001O00010O00001O0001O01O000010O0001O0010O000001O01O0001O00010O1O000010O000001O00010O001O00010O00000010O0001O01O01O00001O01O01O0001O0O1N2O1O2N1N2O1O1O2N1N2O1N2O2N1O1N2O1O2N1N2O1O1N3N1L4^Ob0\\Od0YObVOiJ0^O`i0g5g0^Ob0]Oc0XOi0\\Oc0[Oe0[Oe0@`0ZORbY1",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 5256,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    292.0,
+    880.0,
+    114.0,
+    80.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0006_o0",
+   "id": 47,
+   "image_id": 6,
+   "instance_id": "s_val_0006_l1",
+   "iscrowd": 0,
+   "label_angle": -18.48,
+   "name": "dated save",
+   "segmentation": {
+    "counts": "olT91lo03M4L3M3M4L3M3M4L3M3M4L3M3M4L3N201O00010O00010O00010O00010O00010O00010O00010O00010O00010O00010O00010O00010O01O01O01O01O010O00010O00010O00010O00010O00010O00010O00010O00010O00010O00010O00010O0001O0N2M4L3M3M4L3M3M4L3M3M4L3M3M4L3McSU;",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 29390,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    0.0,
+    771.0,
+    157.0,
+    225.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 48,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o0",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "ah0m0Ro0a0@`0_QOSN;0Wm0n2^O`0_OP1QO>BP1PO1O1O1O1N2O1O1O1N2O1O001O1O2N0O2O1O1N2O1O1O1O1O1O1N10000000O010O1000O010000O100O10O1000O010O1000000O10O0100000O0100O1000000O010O10000O101O0O101O000O2O000O2O0O101O000O2O0O101O000O2O0O101O0O101O0O10001N10001N10001O1N011N2O00001N100O2O000O2O000O2O000O101O0O101O0O101O0O101N100000001N100O2WOh0_Ob0nNQ1A?POXROjN:0Qn0b0Q1@bWRc0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.951
+  },
+  {
+   "area": 32415,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    417.0,
+    645.0,
+    184.0,
+    250.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 49,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o1",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "egQ=2mo0b0^Oa0_Oa0WQOgNjm0Z2]O3M1N2O1O1M3XOXMUTOk2Tk0\\1\\Od0E;_Oa0L40000000000000000000000000000001O0000000000001O000000000000001O00000000000001O0001O000000000000001O0000000000000000001O000000001O00000000001O1O0000001O000000001O1O00O11O1O00000000001O001O1O00000000001O0000002N0000001O00000000001O1O0000001O000000001O1O01O1O01O0000001O1O000000cVOnJlg0R5[WOeJ60^O:Qi0Q5ZWOiKeh0i51O00002N00000M3N2M4L3M3M3L5L4L3N2K5E;]Od0oNhTOjLfk0g2Q1[OZSO^MXm0T2b0_Oa0_O?A`0_OX[V5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.7947
+  },
+  {
+   "area": 51567,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    62.0,
+    511.0,
+    202.0,
+    309.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 50,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "e`n1:eo0g0ZOd0[Oe0[Oe0\\Og0XOd0\\Og0ZOb0]Og0YOf0[Od0[O2N101N1O101N1O101N100O2N100O2O0O101N1O101N1O101O01O01O000010O000001O01O01O0000100OO11O10O0001O00010O00001O00010O0000010O00001O01O01O000010O000000010O0001O0010O0001O01O01O000010O000001O01O01O000010O000001O00010O00001O010O00001O01O0001O00010O00001O01O0001O00010O001O00010O00000010O0001O01O01O00001O01O01O0001O0O1N2O2N1N2O1O1O2N1O1N2O1N3N1O100M3O2N1O1N2O1O2M2O1L4_Oa0\\Oe0YOf0]Oc0^Ob0YOh0\\Oi0UO\\1eNP1TOV^g?",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9981
+  },
+  {
+   "area": 76693,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    449.0,
+    329.0,
+    254.0,
+    370.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 51,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o4",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "X[Q>i0Vo0i0WO2Nm0TOg0XO1Om0SOm0TO00j0SOl0WO1Om0ROj0VO1Ob0_O2M1N201N1O1O101O1N1O1O101L30000O1O2N2N1O1O10000O2O01O0002N00000010O1O00000001O1O0000010O000000001O11N0O11O1O0001O000001O001O1O01O1O000001O0000002N01O0001O0001O1O0001O1O0000010O000000001O1O01O1O01O000000100O00000000000010O1O02N000001O0001O000000100O000000001O000002OO1OO1001O1O0001O01O0000000011OO000000000010O000001O1O0001O1O01O0000001O1O0001O01O00000000020N0000001O01O0001O1O000001O10O00M3O100M4L300N2N2O1O1M300O2L4N1O1M300M4N1O1N2O1O1M3N2O1O2B>SOl000VOj0WOi0O2UOj0VOj0O1XOh0TOl0O1YOh0VOj0O1VOTeP2",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 76693,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    449.0,
+    329.0,
+    254.0,
+    370.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_01",
+   "id": 52,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o4",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "X[Q>i0Vo0i0WO2Nm0TOg0XO1Om0SOm0TO00j0SOl0WO1Om0ROj0VO1Ob0_O2M1N201N1O1O101O1N1O1O101L30000O1O2N2N1O1O10000O2O01O0002N00000010O1O00000001O1O0000010O000000001O11N0O11O1O0001O000001O001O1O01O1O000001O0000002N01O0001O0001O1O0001O1O0000010O000000001O1O01O1O01O000000100O00000000000010O1O02N000001O0001O000000100O000000001O000002OO1OO1001O1O0001O01O0000000011OO000000000010O000001O1O0001O1O01O0000001O1O0001O01O00000000020N0000001O01O0001O1O000001O10O00M3O100M4L300N2N2O1O1M300O2L4N1O1M300M4N1O1N2O1O1M3N2O1O2B>SOl000VOj0WOi0O2UOj0VOj0O1XOh0TOl0O1YOh0VOj0O1VOTeP2",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2756,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    78.0,
+    672.0,
+    78.0,
+    52.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0007_o2",
+   "id": 53,
+   "image_id": 7,
+   "instance_id": "s_val_0007_l1",
+   "iscrowd": 0,
+   "label_angle": -11.1,
+   "name": "special sale",
+   "segmentation": {
+    "counts": "Uf^21jo05K6J5K5K5K5J7N11O000001O01O000001O0001O000001O01O000001O01O000001O01O000001O01O000001O01O000001O01O000001O01O000001O0001O000001O01O000001OO2I6K5K5K5K6J5KgZSc0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 15257,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    203.0,
+    352.0,
+    113.0,
+    164.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 54,
+   "image_id": 8,
+   "instance_id": "s_val_0008_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "gTb3f0Wa0>Bh0YO=Bg0YO?Ac0^O1N1O2N1O101N1O1O2N011O001O0001O0001O010O0000001O01O01O0001O01O001O0001O01O00001O0001O01O01O01O00000010O0001O01O0001O001O0001O01O00010OO11O001O01O0001O01O01O00000010O01O0001O0O1N2N2O1N3N1N2N3N1N2O1N2J6XOh0E<WOh0E;YOh0D``\\<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 15595,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    772.0,
+    238.0,
+    118.0,
+    180.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 55,
+   "image_id": 8,
+   "instance_id": "s_val_0008_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "co`=6ha0=b^O^Oe`0Z1Cc0^O0O1O100O2N100O1O101N100O1O2O0O1O110O000010O\\BUNU;l1\\DbNd;_1aC\\O^<e0TCHl<e210O001O00010O0000001O01O01O00010O00000010O01O000010O0001O01O0001O0010O000001O00010O001O01O0001O0001O01O001O00010O00000010O0001O010O00O1O2N1N2O1O1O1N3N1O1N3N1O1N2O1D<XOi0C<YOg0YOg0[Of0BnkZ2",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9018
+  },
+  {
+   "area": 15595,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    772.0,
+    238.0,
+    118.0,
+    180.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_03",
+   "id": 56,
+   "image_id": 8,
+   "instance_id": "s_val_0008_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "co`=6ha0=b^O^Oe`0Z1Cc0^O0O1O100O2N100O1O101N100O1O2O0O1O110O000010O\\BUNU;l1\\DbNd;_1aC\\O^<e0TCHl<e210O001O00010O0000001O01O01O00010O00000010O01O000010O0001O01O0001O0010O000001O00010O001O01O0001O0001O01O001O00010O00000010O0001O010O00O1O2N1N2O1O1O1N3N1O1N3N1O1N2O1D<XOi0C<YOg0YOg0[Of0BnkZ2",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9018
+  },
+  {
+   "area": 16446,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    772.0,
+    466.0,
+    113.0,
+    174.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 57,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o0",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "i^S`01kd0]1`NY1jNk0iNhLS_Oi3l`0<O1O1O1N2O1O001O2M101O1O1O1N2O1O1O00O10O10O10000O01000O1000O010000O10O10O10000O10O10O10000O010O10000O0100000O10O10O10000O10O10O10000O01000O1000O010000O1000O010000O10O10O101O0O2O001N10001N101N101O0O101O001H7XOi0VOi0YOh0VOi0YOdXl2",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9813
+  },
+  {
+   "area": 16446,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    772.0,
+    466.0,
+    113.0,
+    174.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 58,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o0",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "i^S`01kd0]1`NY1jNk0iNhLS_Oi3l`0<O1O1O1N2O1O001O2M101O1O1O1N2O1O1O00O10O10O10000O01000O1000O010000O10O10O10000O10O10O10000O010O10000O0100000O10O10O10000O10O10O10000O01000O1000O010000O1000O010000O10O10O101O0O2O001N10001N101N101O0O101O001H7XOi0VOi0YOh0VOi0YOdXl2",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9813
+  },
+  {
+   "area": 21610,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    264.0,
+    262.0,
+    135.0,
+    196.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 59,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o1",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "_[`5=md0>Bl0TO`0@`0A>An0RO>B;E101N1O2O0O1O2N1O1O2N100O10010O000010O0001O0000000010O00010O0001O0010O000000010O01O00001O01O000001O01O01O0010O000000010OO11O01O0010O000001O010OO11O010O0000001O00010O000001O01O001O01O01O00010O0000001O0001O000O1N3M2N2O1O1N3N1N2N2O1N2O1N3H7A?A`0UOj0A?C=A`0UOk0BZcP=",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 22572,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    166.0,
+    481.0,
+    140.0,
+    186.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 60,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o2",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "cV_3d02]O`d0R1Eh0XO>Bi0WO=Ci0WO<D=C1O1O1N3N1O1000000000001O000000001O01O00000000010O00000001O0000000000000010O000001O01O000000000001O000000001O01O00000000010O00000001O0000000000000010O000000000001O000000001O01O000000000010O000000001O0000000000001O01O0001O0001O00000O1N2L4M3M3M3M3M4D;A?YOg0D<WOi0D<XO\\\\OTOYd0?m]n>",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 22572,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    166.0,
+    481.0,
+    140.0,
+    186.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 61,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o2",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "cV_3d02]O`d0R1Eh0XO>Bi0WO=Ci0WO<D=C1O1O1N3N1O1000000000001O000000001O01O00000000010O00000001O0000000000000010O000001O01O000000000001O000000001O01O00000000010O00000001O0000000000000010O000000000001O000000001O01O000000000010O000000001O0000000000001O01O0001O0001O00000O1N2L4M3M3M3M3M4D;A?YOg0D<WOi0D<XO\\\\OTOYd0?m]n>",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 29602,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    622.0,
+    419.0,
+    157.0,
+    226.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 62,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o3",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "`Yo<8Re0a0\\[OXOec0g1@b0^O?Ao0QOa0^Oa0@`0@1O1N10001O00000O2O00001N101O0000001O0O101O000O2O00001N1000001O000O2O001O000O2O0000001O0O101O00001N101O0000000O2O00001N101O0000001O0O2O00000O2O001O00000O101O000O2O001O001O0O1000001O00010O001O01O0001O01O01O00001O00010O0000010O00001O010O0000O1O2N1O1N2O1O2N1N2N2O2N1N2O1O2N1O1O1N2M3B>@a0POd_O]Ln`0T3l0^Ob0A`0POa]ObNob0Q1l0_OYPS5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9484
+  },
+  {
+   "area": 2582,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    688.0,
+    571.0,
+    78.0,
+    50.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0009_o3",
+   "id": 63,
+   "image_id": 9,
+   "instance_id": "s_val_0009_l0",
+   "iscrowd": 0,
+   "label_angle": 11.31,
+   "name": "limited",
+   "segmentation": {
+    "counts": "j^[>1Ye06K5K5K5J6K5K4LO10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O100000O10O14L5K5J6K5K5K5Jj_[5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 960,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    774.0,
+    553.0,
+    49.0,
+    32.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0009_o0",
+   "id": 64,
+   "image_id": 9,
+   "instance_id": "s_val_0009_l1",
+   "iscrowd": 0,
+   "label_angle": 14.1,
+   "name": "edition select",
+   "segmentation": {
+    "counts": "fiT`02Ye04L4K5L4L3M0O0100000O0100000O0100000O010000O0100000O010000O0100000O0100000O0100000O0103M4L4K5L4LW`U4",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 26158,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    159.0,
+    388.0,
+    199.0,
+    279.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 65,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "S]o4d0\\o0a0^Oe0\\Od0\\Od0\\Og0YOc0\\O<E0000O10O101O00O010001O000O10000000000000000O10000O100000000O100000000O100000000O100000001N100000000000000O100000001N1000000O2O0000000O1000000O2O0000001O0O10001O0O10001O00001O001N[NoUO]MQj0b2cVOXLPO`0U2O_e0W3RZOZLJT1Tf0a2Q[OUNnd0k1lZOYLaM;0Y1cg0R2][OmMcd0R2R\\OYMoc0f2f\\OfLZc0Y3f4O2O1O1O001O1O1O1O1N20OO2O1O001O1O100000000000O2O00000O100000000O1000000O2O000000000O10001O0O100000000O10100O01O00001O001O001O001O0010O0001O00001O1O010O00001O001O00001O001O0010ON3\\Oc0XOi0[Od0\\Oncb=",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.5312
+  },
+  {
+   "area": 26158,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    159.0,
+    388.0,
+    199.0,
+    279.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 66,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "S]o4d0\\o0a0^Oe0\\Od0\\Od0\\Og0YOc0\\O<E0000O10O101O00O010001O000O10000000000000000O10000O100000000O100000000O100000000O100000001N100000000000000O100000001N1000000O2O0000000O1000000O2O0000001O0O10001O0O10001O00001O001N[NoUO]MQj0b2cVOXLPO`0U2O_e0W3RZOZLJT1Tf0a2Q[OUNnd0k1lZOYLaM;0Y1cg0R2][OmMcd0R2R\\OYMoc0f2f\\OfLZc0Y3f4O2O1O1O001O1O1O1O1N20OO2O1O001O1O100000000000O2O00000O100000000O1000000O2O000000000O10001O0O100000000O10100O01O00001O001O001O001O0010O0001O00001O1O010O00001O001O00001O001O0010ON3\\Oc0XOi0[Od0\\Oncb=",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.5312
+  },
+  {
+   "area": 51557,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    491.0,
+    669.0,
+    222.0,
+    306.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 67,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o2",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "We[?f0Yo0f0ZO2Ni0XOd0[Oj0WO0Oi0XOg0VOi0ZOi0WO1Nf0ZOa0GJ?@0010O01O01O01O0010O1O0001O00010O00001O01O00010O1O01O00010O001O0001O01O01O01O001O01O10OO110O0001O0010O00010O1O0000010O01O0010O0001O01O000001O02OO000010O000000010O01O0011N0001O01O0001O000010O00010O0000010O10O000010O0001O0001O01O01O10O0000O2M2O1N3N1O1O1N2O2N1O1N2O1O2N2M2O1N2MnGWXOT8[g0?A?1O01O0000001O01O1O02N000000010O00000010O000002N000002N01ON2O1O1N3L3O1O1N2O1N2O1O2L3O1N^XOfGbg0Y83N3N1M300O1M3N2O2N2D;XOh0YOg0O1[Of0XOg0YOg0ZO^TOmLck0S3e0XOh0[Of0ZOf0N2YOS[_2",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.884
+  },
+  {
+   "area": 30458,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    497.0,
+    492.0,
+    156.0,
+    238.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 68,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "m_a?8go0b0_On0QOa0@a0^Oa0_Oo0ROa0^Oa0_Oa0_O101N101N1O101N1O2O0O1O101N100O2N10010O0000010O00001O000010O01O0001O01O00010O001O00010OO11O000010O01O00010O000000010O001O001O01O01O0001O0001O010O000010O00000001O001O010O000010O0000010O0001O00001O01O0001O010O000010O0001O01O0001O00001O01O0O1N3N1N2O1O2N1N2O1O1O2M2O1O1O1N2O1N3LnUOWJSj0\\5?@`0^Oc0TOk0^Ob0A`0_O`0TOl0@Y`[4",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 59317,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    256.0,
+    496.0,
+    228.0,
+    304.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 69,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o5",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "\\`P8=bo0d0aPOPOfn0f1_Og0YO2`ROaM;0dl0P3Ne0[Oe0[Od0[Oe0\\Oc0]Og0YOb0^Ob0^O4L1O1O1N200N3N1O1O1O1O100000001O0001O0001O0000000000001O000001O000001O000000010O0000000000000100O000000000001O000000001O10N11O0000001O0001O0000000001O000000001O0001O00000001O00000001O0001O00000000010O00000000001O000000000001O01O00000000000010O000000000001O0001O0001O0000000000001O00000001O0001O0000000001O01O000000000010O00000001O1O0000000000000010O00000001O00000001O01O0000O1M3N2K5M4L`XOeGag0X8_XOhGdg0W83M3M3M3M3M3J7A>ZOf0_Oa0ZOf0^Ob0VOhTOVLnk0Z3d0]Oc0\\OiROmM?0jl0Q2c0^OWROaNXn0j0j0\\O]`d9",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2532,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    192.0,
+    455.0,
+    79.0,
+    62.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0010_o1",
+   "id": 70,
+   "image_id": 10,
+   "instance_id": "s_val_0010_l0",
+   "iscrowd": 0,
+   "label_angle": 24.68,
+   "name": "regular free save",
+   "segmentation": {
+    "counts": "T_P61oo02M4M2M3N2M3N3L3N2M3N2N2M4M2M2OO010O010O0100O0100O010O010O010O010O0100O0100O010O0100O0100O010O010O010O010O0100O0100O010O010O011N3N3L3N2N2M3N2M4M2M3N2M3N3L3Ni`Y`0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 4710,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    296.0,
+    656.0,
+    104.0,
+    76.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0010_o5",
+   "id": 71,
+   "image_id": 10,
+   "instance_id": "s_val_0010_l2",
+   "iscrowd": 0,
+   "label_angle": -16.87,
+   "name": "small",
+   "segmentation": {
+    "counts": "PfX91lo03L5L3M3L4N3K4M3L5L3M3L5L3M3N210O00010O00010O0000010O00010O00010O000010O000010O00010O000010O000010O00010O00010O000010O000010O00010O000010O000010O00010O00010O0000010O00010O00010ON2M3M4K4M3M4K4M3L5M2L4M3M4K4MhZX<",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 39914,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    10.0,
+    607.0,
+    195.0,
+    307.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 72,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o1",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "ec::eo0f0[Od0[Of0ZOe0\\Of0YOd0\\Og0ZOb0]Of0ZOg0ZOd0[O2N101N1O101N1O101N100O2N100O2N100O2N100O2N100010O0001O00010O00000010O0001O00010O000010O0001O00010O00001O00010O0000010O00001O01O01O0000010O00000010O0001O0010O0001O01O01O000010O000001O01O01?@f0ZOe0\\Of0YO1Od0\\O?B0O0010O000010O10N11O10O00000010O0001O01O01O0001O01O01O10O001O00010O0001O01O000010O00010O0001O000100O001O0O1N2O1O2M2O1O2N1O1N2O2M2O1O1O2M3N1O1O2M2O1O1N2O2K4_Oa0[Of0YOf0^Ob0^OeX^a0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7855
+  },
+  {
+   "area": 39914,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    10.0,
+    607.0,
+    195.0,
+    307.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_03",
+   "id": 73,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o1",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "ec::eo0f0[Od0[Of0ZOe0\\Of0YOd0\\Og0ZOb0]Of0ZOg0ZOd0[O2N101N1O101N1O101N100O2N100O2N100O2N100O2N100010O0001O00010O00000010O0001O00010O000010O0001O00010O00001O00010O0000010O00001O01O01O0000010O00000010O0001O0010O0001O01O01O000010O000001O01O01?@f0ZOe0\\Of0YO1Od0\\O?B0O0010O000010O10N11O10O00000010O0001O01O01O0001O01O01O10O001O00010O0001O01O000010O00010O0001O000100O001O0O1N2O1O2M2O1O2N1O1N2O2M2O1O1O2M3N1O1O2M2O1O1N2O2K4_Oa0[Of0YOf0^Ob0^OeX^a0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7855
+  },
+  {
+   "area": 44196,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    110.0,
+    484.0,
+    195.0,
+    304.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 74,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o2",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "m_^3e0Zo0e0[Oh0YOc0\\O2Nh0XOg0ZOf0XOg0[Og0YO1Ne0[O`0A1L301O0O1O101N2N002O1M200O1O1O2N1O100O2O0001O01O00001O10O00000001O00010O0000000011N0001O0001O0001O1O001O01O000001O000010O000001O01O0001O1O0002OO000000001O01O01O0000010O0000000000100O001O0001O10O00000010O00000001O0000100O00001O01O0001O0000010O000000001000N11O1O000001O01O00001O0001O01O000000100O0001Oa0@h0WO1Ob0_Oe0ZOg0YOe0[Of0ZO0bLQTOl2bl0Mj0WOd0[Oe0\\O5J2N2N2O1N2O1O1N3N1M3NdPO@\\o0`02O1M3O1N2O2M2OfXZ>",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.855
+  },
+  {
+   "area": 35006,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    553.0,
+    557.0,
+    167.0,
+    251.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 75,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o3",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "VbYa0b0^o0n0ROa0_Ob0^OR1mNa0@b0WTOfKhj0[5^Oa0_O1N2O1O002N002M2O1O1O0O2O1O1O1O1N2O1O1O1O1O1O1N2O1O1O0O10O1000O10O100O10000O01000O1000O01000000O100O01000O10O1000O10O010000O10000O01000O10O0100000O0100O10000000O0100O10O10O10000O01000O10000O10O10O100O010000000O1O10O10O1000O10O100O01000O1000000O010O101O0O10001O1N101N10001O0O2O0O101N101O001N10001N101O1E:nNmUOfKdj0h3T1]Ob0nNS1_O`0\\Oe0mNV_[1",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 35006,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    553.0,
+    557.0,
+    167.0,
+    251.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 76,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o3",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "VbYa0b0^o0n0ROa0_Ob0^OR1mNa0@b0WTOfKhj0[5^Oa0_O1N2O1O002N002M2O1O1O0O2O1O1O1O1N2O1O1O1O1O1O1N2O1O1O0O10O1000O10O100O10000O01000O1000O01000000O100O01000O10O1000O10O010000O10000O01000O10O0100000O0100O10000000O0100O10O10O10000O01000O10000O10O10O100O010000000O1O10O10O1000O10O100O01000O1000000O010O101O0O10001O1N101N10001O0O2O0O101N101O001N10001N101O1E:nNmUOfKdj0h3T1]Ob0nNS1_O`0\\Oe0mNV_[1",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 74712,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    271.0,
+    438.0,
+    255.0,
+    340.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 77,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o4",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "e^_8>ao0g0bPOmN`n0l1^Oj0WO1Nc0]Og0XOi0XOf0YOh0YO1mVOfI_h0o6Ni0WOd0\\Od0\\O5K1O1O1O1N200N2O2N1O1O1O10000000001O000001O0001O0000000000001O1O000001O00000001O00000001O01O0000000000000011N00000000000001O00000000001O10O000000000001O0001O0000000001O00000000001O0001O0000000001O00000001O0001O0000001O00O2000O0000000000001O000000000001O01O0000000000000010O000000000001O000001O0001O1O000000000000001O000001O000001O000000000001O10N11O0000000001O01O00000001O1O000000000000001O01O00000001O0000000001O01O0000O100L4N2K5M4K4M]YOiFcf0V94M3L4M3L4MkXO[GUg0d84K6_O`0WOi0]Oc0WO[WOVJfh0j5h0[Oe0TOYUOhK^k0f3g0[Oe0YOg0O1[O_RO[NQn0o0m0XOXb]7",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 74712,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    271.0,
+    438.0,
+    255.0,
+    340.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 78,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o4",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "e^_8>ao0g0bPOmN`n0l1^Oj0WO1Nc0]Og0XOi0XOf0YOh0YO1mVOfI_h0o6Ni0WOd0\\Od0\\O5K1O1O1O1N200N2O2N1O1O1O10000000001O000001O0001O0000000000001O1O000001O00000001O00000001O01O0000000000000011N00000000000001O00000000001O10O000000000001O0001O0000000001O00000000001O0001O0000000001O00000001O0001O0000001O00O2000O0000000000001O000000000001O01O0000000000000010O000000000001O000001O0001O1O000000000000001O000001O000001O000000000001O10N11O0000000001O01O00000001O1O000000000000001O01O00000001O0000000001O01O0000O100L4N2K5M4K4M]YOiFcf0V94M3L4M3L4MkXO[GUg0d84K6_O`0WOi0]Oc0WO[WOVJfh0j5h0[Oe0TOYUOhK^k0f3g0[Oe0YOg0O1[O_RO[NQn0o0m0XOXb]7",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2080,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    595.0,
+    633.0,
+    71.0,
+    56.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0011_o3",
+   "id": 79,
+   "image_id": 11,
+   "instance_id": "s_val_0011_l1",
+   "iscrowd": 0,
+   "label_angle": 23.75,
+   "name": "number daily",
+   "segmentation": {
+    "counts": "cdcb03lo03N3M2M3N3L3N2M3N3M2M3N2M010O010O01000O010O010O010O01000O010O010O0100O0100O010O010O01000O010O010O010O01000O010O010O03N2M3N3M2M3N2M4M2M3N3M2M][Q3",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 24860,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    494.0,
+    642.0,
+    153.0,
+    228.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 80,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o0",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "lf^?8ho0a0_Oa0_O?Ac0^O=B000O1M3N2K5M3MjL[SOW3bl0iL^SOZ3al03M3M3M3M3M3J6B>ZOf0C=00000000000000001O0000001O0000001O00000000001O00001OO11O1O000000001O00001O00001O00001O0000001O00001O00001O1O00001O0001O1O01O00001O00001O000000bUOmJ60Ui0R5dVOeK[i0`501O01O01O01O01O02N0001O01O01O01O01O01O01O000010O00001O00010M200N2N2O2M2N2O2M3N1N2N3N1N3N1N2N3G8_Oa0_Oa0A?_Ob0_O`0@`0_Ob0@X[h3",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.8416
+  },
+  {
+   "area": 37155,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    124.0,
+    643.0,
+    194.0,
+    301.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 81,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "hhl33mo0c0\\Oc0hPO[OQn0m1]Of0ZOc0\\O2O1O1O1O0O3N1O002M2O1O1N101O1N2O1O1N2O1N2O1N2O1N2O1N2O1N2O1N2O1N002N001O001O1O001O001N2N1YOjJbVOZ5gh0[1E:]Od0_O`0K6O100000O10O10O100O01000O1000O0100O10O10O10000000O0100O10000O100O01000O10O10O100O10O1000000O0100O1000O010000QMnXOoLSg0P3oXOeJM0Ae1cg0f3eYOhJhN[1bg0n3aZO\\K`e0d4`ZOeJWf0[5V210000000000000000O1000000O100000000O1000O1O10O100000000O100000000O1000000O11OO02O001O001O001O001O00001O001O001O00001O001O001N1O101O001O001O00009Ga0kNU1mNe0VOg0]Oc0XOiZQ>",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.7418
+  },
+  {
+   "area": 56563,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    301.0,
+    429.0,
+    218.0,
+    304.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 82,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o2",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "Y^]9=bo0d0aPOPOfn0f1_Og0YO2`ROaM;0dl0P3Ne0[Oe0[Od0[Oe0\\Oc0]Og0YOb0^Ob0^O4L1O1O1N200N3N1O1O1O1O100000001O0001O0001O0000000000001O000001O000001O000000010O0000000000000100O000000000001O000000001O10N11O0000001O0001O0000000001O000000001O0001O00000001O00000001O0001O00000000010O00000000001O000000000001O01O00000000000010O000000000001O0001O0001O0000000000001O00000001O0001O0000000001O01O000000000010O00000001O1O0000000000000010O00000001O00000001O01O0000O1M7Ji0TOn0TOh0XOXVOmIbj0W5^UOiJej0V5h0XOj0VOk0UOi0WO4L3J7A>ZOf0_Od\\h7",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9536
+  },
+  {
+   "area": 56563,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    301.0,
+    429.0,
+    218.0,
+    304.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 83,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o2",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "Y^]9=bo0d0aPOPOfn0f1_Og0YO2`ROaM;0dl0P3Ne0[Oe0[Od0[Oe0\\Oc0]Og0YOb0^Ob0^O4L1O1O1N200N3N1O1O1O1O100000001O0001O0001O0000000000001O000001O000001O000000010O0000000000000100O000000000001O000000001O10N11O0000001O0001O0000000001O000000001O0001O00000001O00000001O0001O00000000010O00000000001O000000000001O01O00000000000010O000000000001O0001O0001O0000000000001O00000001O0001O0000000001O01O000000000010O00000001O1O0000000000000010O00000001O00000001O01O0000O1M7Ji0TOn0TOh0XOXVOmIbj0W5^UOiJej0V5h0XOj0VOk0UOi0WO4L3J7A>ZOf0_Od\\h7",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9536
+  },
+  {
+   "area": 63883,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    500.0,
+    347.0,
+    227.0,
+    343.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 84,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o4",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "d[d?180]o0;Nh0YOg0XOg0YOh0YOi0VOf0ZOj0WO0Of0ZOh0XOi0XOf0YO2N101O0O1O2O1N1O101N100O1O2N100O2N100O2N10000O2N100010O0001O1OO1100O0000000010O0001O00010O00001O01O0001O00010O00001O1O00010O000001O10O00001O00010O00000010O000001O00010O00002N01O0001O00010O00001O01O000001O00010O00001O01O1O0001O0000100O00001O010O00001O0001O0001O00010O00001O0001O0001O00010O1O001O00010O0000000100O0001O00010O0000001O01O01O000001O0O1N2O2N1N2O1O1O1O2N1N2O1N2O2N1O1O1N2O1O2N1M3O100O2M3M2L4]Oc0YOg0XOh0\\Oe0N1\\Od0VOj0ZOg0YOf0YOg0^Ob0YO^1XOYcX1",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 5930,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    323.0,
+    522.0,
+    121.0,
+    86.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0012_o2",
+   "id": 85,
+   "image_id": 12,
+   "instance_id": "s_val_0012_l1",
+   "iscrowd": 0,
+   "label_angle": -19.35,
+   "name": "smart",
+   "segmentation": {
+    "counts": "laS:1mo02M4L3M3M4L3N3L3M3M4L3M3N3L3M3M4L3N201O00010O00010O0010O0010O00010O00010O00010O00010O00010O00010O0010O0010O00010O00010O00010O00010O00010O0010O0010O00010O00010O00010O00010O00010O00010O0010O0010O00010O0001O0N2M4L3M3M4M2M3M4L3M3M4M2M4L3M3M4L3Ne^S:",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 23549,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    145.0,
+    230.0,
+    146.0,
+    187.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 86,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "e`a2e0Wa0?B`0X_OdNo?S2B?Ai0WO=Ci0WO<D3M1N200N3N1O100000001O0000000000001O01O000001O0001O0000000001O000000001O0001O00000001O01O000001O0000000001O0001O0000001O000001O00000001O000000010O0000000000000000G9O2N100O1O1O1O100O1O2N1O100O1O1O11O00000010O0000000001O000001O01O00000000001O0000010O00000000M4F9WOi0A?UO]AbM;0d>S2j0WOW@POV`0c0k_OSOk`0`0Sej<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9615
+  },
+  {
+   "area": 23549,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    145.0,
+    230.0,
+    146.0,
+    187.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 87,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "e`a2e0Wa0?B`0X_OdNo?S2B?Ai0WO=Ci0WO<D3M1N200N3N1O100000001O0000000000001O01O000001O0001O0000000001O000000001O0001O00000001O01O000001O0000000001O0001O0000001O000001O00000001O000000010O0000000000000000G9O2N100O1O1O1O100O1O2N1O100O1O1O11O00000010O0000000001O000001O01O00000000001O0000010O00000000M4F9WOi0A?UO]AbM;0d>S2j0WOW@POV`0c0k_OSOk`0`0Sej<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9615
+  },
+  {
+   "area": 18299,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    15.0,
+    337.0,
+    121.0,
+    182.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 88,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "Vh8=`a0g0ZOh0XOi0WOh0XOi0WO<C2O1O0O3O0N102N0O2O1O1O1O1N2O1O1O1O1O1N10O10000O10O10O10000O10O10O10000O01000O1000O010000O1000O0100O1000O01000O10O10000O01000O10000O010O10000O10O1000O100O01000O10000O01000O1000O0101O0O101O0O2O0O2O001O0O101N101O001N101H7WOi0VOk0VOi0WOj0VO]^a?",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 19041,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    312.0,
+    239.0,
+    124.0,
+    189.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 89,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o3",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "]T_56ga0>Ci0VO>Ch0WOj0VO>Ci0VO2N2N100O101N1O101N1O101N1O110O000010O0001O0000010O0010O0001O0000010O00001O01O01O00010O00001O00010O00001O01O0001O01O01O000010O0001O010O0000001O01O01O00001O01O01O01O0001O000010O0001O0010O0O1N3N1O1O1O1N2O2N1N2O1O2M2O1O1M3YOg0B?YOf0WOi0C=ZOg0B`[Y:",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 12238,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    235.0,
+    395.0,
+    102.0,
+    148.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 90,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o4",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "RTT4:ca0;f^O\\Oe`0Y1Fg0XOe0[O=Cb0^O2O0O1O2N1O101N1O1O20O0000010O0001O000010O000001O01O0001O001O01O0001O01O0001O00010O00001O0001O01O01O01O00001O01O01O00000010O0001O01O0001O0000010O00001O01O0O1O1N2O1N3N1N2N3N1N2N2K5ZOf0F;ZOe0[Oe0]Od0D`fP<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1356,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    347.0,
+    334.0,
+    53.0,
+    36.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0013_o3",
+   "id": 91,
+   "image_id": 13,
+   "instance_id": "s_val_0013_l2",
+   "iscrowd": 0,
+   "label_angle": -9.63,
+   "name": "week unit special",
+   "segmentation": {
+    "counts": "ckR61ga06J6J6J6M4O01O000001O0001O000001O0001O000001O0001O000001O0001O000001O0001O000001O0001O000001O01L3J6J6J6J`^m:",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 30994,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    654.0,
+    303.0,
+    165.0,
+    219.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 92,
+   "image_id": 14,
+   "instance_id": "s_val_0014_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "m`d=9Qe0?Q[OZO[d0f1UO=C`0@`0\\]OWMfa0f3A>Ba0_Oi0WO3N0N2O1O2N1O1O1O1000001O01O0001O00000000000010N11O0000001O00000000010O00000000001O000001O00000001O01O000001O0000001O00000000000001O0001O000000010O000000001O000001O0000000000010O00000001O0000001O000000001O0001O00000000001O01O0000000010O000001O000000000000001O000001O01O0000M3N2M3L5L3N2M3L4N2L5UOj0D<_Oa0RO]^OgMPb0m1m0B>A?TOl0Bo]X4",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 18206,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    829.0,
+    497.0,
+    121.0,
+    181.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 93,
+   "image_id": 14,
+   "instance_id": "s_val_0014_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "S^Ya0<nd0g0ZOh0XOj0UOi0XOh0XO<D1O1O0O3N1O002N0O2O2N001O1N2O1O1O1O1O1N10O10000O10O10O10000O01000O10000O01000O1000O010000O10O10O100O01000O1000O10O10000O01000O10000O01000O10000O01000O100O01000O10000O0100000O10O10O2O000O2O001N10001N101N101O0O101O0O2O0I8VOi0WOj0VOi0VOk0WOZl`1",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3146,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    665.0,
+    334.0,
+    83.0,
+    68.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0014_o0",
+   "id": 94,
+   "image_id": 14,
+   "instance_id": "s_val_0014_l0",
+   "iscrowd": 0,
+   "label_angle": 24.17,
+   "name": "save daily lot",
+   "segmentation": {
+    "counts": "mlk=1Ye03N2M3N2M3N3M2M3N2M4M2M3N2N3L3N2M3N2M100O0100O0100O010O010O10O010O10O010O010O010O10O10O010O010O010O10O010O10O010O0100O0100O0100O3N2M3N2M4M2N2M3N3L3N2M3N3M2M3N2M3N2MXgg5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1263,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    885.0,
+    612.0,
+    55.0,
+    41.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0014_o1",
+   "id": 95,
+   "image_id": 14,
+   "instance_id": "s_val_0014_l1",
+   "iscrowd": 0,
+   "label_angle": -19.43,
+   "name": "new net count",
+   "segmentation": {
+    "counts": "Rm^b02We02M3M4L3M3N3L3M4N11O010O00010O00010O00010O00010O010O0000010O010O00010O00010O00010O00010O01OO2L3M4M2M3M4L3M3NZ]g1",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 56379,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    408.0,
+    405.0,
+    236.0,
+    352.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 96,
+   "image_id": 15,
+   "instance_id": "s_val_0015_o0",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "_]h<<bo0f0\\O1O0O1O100O1O100O2N1O100O1O2O0O100O100O2M11002M100XYO[NT?f1R@UOl?l0T@TOl?l0[_OMd`05a^Of0]a0[Oj]OVN]L`2ge0[Ok]O_1Ub0aNS]OW2lb0jMX\\OS3fc0nLZ\\OR3fc0nLc[Oi3]d0XLiZOa4Ve0aKiZO`4Ue0bKQZOW5oe0]2010O000001O00010O0000001O10O000001O00010O00000100O0001O0000100O00001O0000010O000001O01O00001O01O01O0000002OO1OO11O01O00010O00001O01O01O0000011N0000001O01O0001O0000010O00001O01O1O0001O0000100O00001O00010O00001O01O000001O00010O1OO11O1O01O000001O^L_ZOeLae0Y3eZOcL]e0[3_[OjK`d0U4m[O_KSd0`4g\\OhJXc0X5Y]OWJgb0h5i301N10000O100O2O00000O101N1000000000001N10000O2O1O0000001O0O100000001N10000000001O00000000001O0O100000001O00000O101O1O0B>UOk0ZOf0O2XOg0XOh0]Oc0XOkbd4",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.806
+  },
+  {
+   "area": 72932,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    198.0,
+    429.0,
+    250.0,
+    337.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 97,
+   "image_id": 15,
+   "instance_id": "s_val_0015_o2",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "[^V6i0Vo0i0WO2Nl0UOg0YO1Nl0TOl0TO2RUOfKTj0T5Mj0XOm0RO1Oj0VOb0_O1O1L30001M200O101N2N1O101O0M30000O1N3N100N20001N2O0001O01O0000001O11N00000001O000000100O000000000011N000002N0001O000001O001O1O01O000001O0001OO1100O0001O1O0001O000001O0000020N0000000000000001O000000001O1O000000000000001O00000000002N0000000000001O00000000000000001O1O00000000001O00000000000100O000000000001O1O0000000000001O000000000000001O1O0000000000001O000000001O1O0000000000001O0000000000001O1O000000000000001O0000000N3N1O1N2O1O1M4M101O3A=O1UOk0VOj000WOj0UOj0WOUUO]Lkj0b3j0XOh0TOl000YOh0VOj0O1VOQbh:",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.9777
+  },
+  {
+   "area": 4016,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    445.0,
+    545.0,
+    98.0,
+    67.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0015_o0",
+   "id": 98,
+   "image_id": 15,
+   "instance_id": "s_val_0015_l0",
+   "iscrowd": 0,
+   "label_angle": 14.94,
+   "name": "regular",
+   "segmentation": {
+    "counts": "ham=2no04L3L5L4L4L3L5L4L4K4M4L1OO01000O10O1000O10O1000O01000O10O1000O10O1000O10O1000O01000O10O1000O10O1000O10O1000O10O1000O01000O10O1000O10O1000O10O1000O01000O10O1000O10O1000O011O4L3L5L4L4K4M4L4L4K4M4Le]i7",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 30503,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    52.0,
+    523.0,
+    150.0,
+    249.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 99,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o0",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "m`d18go0b0_Oa0^Ob0]QO_N0Ecm0m2]Oa0_Oc0^O?@R1nNb0_O1N1O1O101N101N100O2N100O2N1O2O0O1O1010O0001O00010O000010O0000010O0001O00001O010O00000010O000010O00001O010O00001O000001O01O0010O01O00010O000001O01O00001O0010O000001O010O0000010O001O01O0001O010O000000001O00010O001O010O000001O01O00010O00001O001O01O0O1N201N1N2O`0@1Oh0jIeUOW5Vk0[Om0TO2WLZTOU3Zl0Nj0UOj0WOi0WO1NYYaa0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.918
+  },
+  {
+   "area": 47198,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    443.0,
+    452.0,
+    201.0,
+    302.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 100,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o2",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "T_k=d0[o0b0^O?B0000000O100000000O20OO1000000]WOeNab0[1_]OeNab0[1`\\O\\N[KU1Rh0`0o[O:Pd0FY[OR1fd0nNbZOXNSNl2Zg0lNbZOl1^e0TNkYOZNWNU4lg0bMTYO]3kf0dL]XOjNGd4kg0bL]XOV4bg0U2O1N2O1O1O1N2O1O1O1O1N2O1O1O1OO02OO100O10O11N010O10000O10O10O100O10O10O11OO10O010000O01000O1000O0100O10O10O10000O11N0100O10000O100O01000O10O010000O10O1000000O0100O1000O010000O1000O0100O10O10O100O11OO100O0100000O01000O100O010O10000O01000O11OO010O10000O01000O10O11N011N101O0O2O001O001N100O2O001N101O0O101N101N101O0O101O001O1O0O2C;]Oe0ZOe0fN[1\\Oc0YOh0\\Oc0XOi0[Oe0ZOnag3",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.9391
+  },
+  {
+   "area": 47198,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    443.0,
+    452.0,
+    201.0,
+    302.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 101,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o2",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "T_k=d0[o0b0^O?B0000000O100000000O20OO1000000]WOeNab0[1_]OeNab0[1`\\O\\N[KU1Rh0`0o[O:Pd0FY[OR1fd0nNbZOXNSNl2Zg0lNbZOl1^e0TNkYOZNWNU4lg0bMTYO]3kf0dL]XOjNGd4kg0bL]XOV4bg0U2O1N2O1O1O1N2O1O1O1O1N2O1O1O1OO02OO100O10O11N010O10000O10O10O100O10O10O11OO10O010000O01000O1000O0100O10O10O10000O11N0100O10000O100O01000O10O010000O10O1000000O0100O1000O010000O1000O0100O10O10O100O11OO100O0100000O01000O100O010O10000O01000O11OO010O10000O01000O10O11N011N101O0O2O001O001N100O2O001N101O0O101N101N101O0O101O001O1O0O2C;]Oe0ZOe0fN[1\\Oc0YOh0\\Oc0XOi0[Oe0ZOnag3",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.9391
+  },
+  {
+   "area": 35912,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    506.0,
+    743.0,
+    174.0,
+    253.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 102,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o3",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "lgj?a0^o0b0^Od0]O`0_Od0\\Od0]Oc0[Oc0_Od0[Ob0^O=D1M201N1O101N1O101M200O1O2N1O100O2O01O01O000010O000001O00010O00000010O0001O01O0001O001O01O0001O000010O0001O01O0001O00010O0000001O01O01O0001O01O000000010O001O01O0001O000010O000001O00010O00001O01O01O0000010O00000010O0001O0001O01O00001O01O01O0000010O000010O0001O0001O01ON2O1N3M2O1N2O1N2O2M2O1N2N3N1N2O1N2N2O2F9]Oc0^Ob0_Ob0]Ob0]Oc0_Oa0]Oc0@a0^Ob0^O\\Xc2",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 35912,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    506.0,
+    743.0,
+    174.0,
+    253.0
+   ],
+   "category_id": 2,
+   "condition": "typical",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_01",
+   "id": 103,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o3",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "lgj?a0^o0b0^Od0]O`0_Od0\\Od0]Oc0[Oc0_Od0[Ob0^O=D1M201N1O101N1O101M200O1O2N1O100O2O01O01O000010O000001O00010O00000010O0001O01O0001O001O01O0001O000010O0001O01O0001O00010O0000001O01O01O0001O01O000000010O001O01O0001O000010O000001O00010O00001O01O01O0000010O00000010O0001O0001O01O00001O01O01O0000010O000010O0001O0001O01ON2O1N3M2O1N2O1N2O2M2O1N2N3N1N2O1N2N2O2F9]Oc0^Ob0_Ob0]Ob0]Oc0_Oa0]Oc0@a0^Ob0^O\\Xc2",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 89248,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    191.0,
+    511.0,
+    280.0,
+    372.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 104,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o4",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "Qao5`0`o00Oh0ePOjN[n0R2\\Ol0TO2RSO_MZl0U3Nj0VOi0WOi0WO1Ni0XOh0XOj0VO2Nf0ZOe0[O5K1O1O1O1M30000M4O1N1O1O1N2000000000001O0001O1O0001O000000000000001O00000001O01OO11O1O0000000000010O000000000000000010O00000000000001O1O000000000010O1O000000000001O000001O0000000001O1O00000000001O000001O0000000001O00000001O1O0002N000000000000010O000000000000001O000000000001O0001O000000000000001O10O1O000000000001O000001O0001O00000000000000001O1O00000001O0001O00000000000001O01O000000000000001000O0000000001O00000000000000001O01O00000001O000000000001O02N000000O1L4O1N2K5L5O1K4L4L400L4L4M3LfYOaF[f0^94J7^Oa0UOk0O1\\Od0TOl0ZOf000QOiUO[KQk0Q4i0YOg0XO\\SOSNel0l1h0YOeROWNmm0P1o0XOfQOG[n08n_T9",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2120,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    524.0,
+    520.0,
+    69.0,
+    48.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0016_o2",
+   "id": 105,
+   "image_id": 16,
+   "instance_id": "s_val_0016_l0",
+   "iscrowd": 0,
+   "label_angle": -13.29,
+   "name": "store special local",
+   "segmentation": {
+    "counts": "Xa\\`01ko05K4L4K5L5K4L4M310O0000010O000001O01O0001O01O0000010O0000010O00000010O00000010O0000010O000001O01O0001O01O0000010O0000010OM3L4L5K4K5L4L5K]_Z5",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3310,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    548.0,
+    829.0,
+    80.0,
+    56.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0016_o3",
+   "id": 106,
+   "image_id": 16,
+   "instance_id": "s_val_0016_l2",
+   "iscrowd": 0,
+   "label_angle": -8.71,
+   "name": "unit week select",
+   "segmentation": {
+    "counts": "VkTa04fo06I7J6J6I7J7L31O0000000001O01O00000000010O0000000001O01O00000000010O0000000001O01O00000000010O0000000001O01O00000000010O0000000001O01O0000000001OM4I6I7J6J6I7JnUW4",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 76345,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    453.0,
+    619.0,
+    247.0,
+    374.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 107,
+   "image_id": 17,
+   "instance_id": "s_val_0017_o1",
+   "iscrowd": 0,
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "RdU>2S6d0Qc0^OZ\\OV1fc0jNf[Oh2[c0YMm[OX4Yc0iKR\\Ol4mc0VK\\[OR6Rd0nIY[Oh6fd0XIhZO8bNa6cf0ZIkZOW7Ue0jHSZOn7le0T1N1O1O101N1O1O101O1L30000O1O2N1O1O1O100O2O1O01O0001O0000001000O00000001O0000010O1O0000000010O1O000001O0001O0001O1O00001O01O1O0001O1O0000001O01O0001O1O01O1O0001O000000100O00000000001O0002N01O1O0000010O0000000000001000O01O00000001O02N0000000011N00000001O1O0000010O0000001O1O01O1O01O00000000011N000000000010O1O0001O1O000001O01O0000001O1O01O1O01O00000000010O1O00000010O1O0001O1O000001O01O00M3O1M302K3O1O1M3O100M3O1O2L3O100M3M302L2N2O1O1M300M3O1O2B=TOl000UOk0WOi002SOk0VOi002VOi0TOl000XOi0VOj0O1VOQ\\S2",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9731
+  },
+  {
+   "area": 59215,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    245.0,
+    609.0,
+    218.0,
+    332.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 108,
+   "image_id": 17,
+   "instance_id": "s_val_0017_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "ice7;eo0g0XO1gQOnNdm0h1Ng0YOf0[Oh0WOf0ZOi0XOc0\\Oh0XOh0YOe0ZO2N2N101N1O101N1O101N100O2N10000O2N100O2N100N3N100010O0001O000002OO0000001O01O01O1O00010O000010O0001O0000010O00001O00010O0000010O0000001O01O01O000010O000001O1OO20O1O001O01O01O0001O01O000010O1O0001O000010O000001O01O0001O00010O00001O00100O00001O01O0001O0001O01O00001O01O0001O00010O00001O00010O00000010O0001O01O10N11O01O1O01O01O000001N1O1N2O2N1N2O1O1O2N1N2O1O1N2O2N1O1N2O1O2N1N2O1O1M4O0O1K5^Ob0ZOf0YOh0[Od0\\Od0XOh0[Of0YOf0[Oe0^OaRObN`m0^1b0XO`\\`9",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2863,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    528.0,
+    810.0,
+    87.0,
+    63.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0017_o1",
+   "id": 109,
+   "image_id": 17,
+   "instance_id": "s_val_0017_l0",
+   "iscrowd": 0,
+   "label_angle": -21.18,
+   "name": "family sale family",
+   "segmentation": {
+    "counts": "[j``01mo03L3M3N3L3M4M2M3N3L3N2M4M210O01O01O010O01O01O01O01O010O01O01O010O01O01O010O00010O010O00010O010O00010O01O01O010O01O01O010O01O01O01O01O010O01O01O010ON3L3N2M4M2M3N3L3M4M2M3M4MkUh4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 4243,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    313.0,
+    687.0,
+    93.0,
+    79.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0017_o2",
+   "id": 110,
+   "image_id": 17,
+   "instance_id": "s_val_0017_l1",
+   "iscrowd": 0,
+   "label_angle": 21.02,
+   "name": "total",
+   "segmentation": {
+    "counts": "[fi91oo02M4M3M2M4M2M4M3M2M4M3M2M4M2M4M3M2M4M2M2OO10O01000O010O01000O010O10O10O01000O010O01000O010O10O10O01000O010O01000O010O10O10O01000O010O01000O010O11N3N3L3N3M3L3N3L3N3M3L3N3M3L3N3L3N3M3L3NoXY;",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 18352,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    818.0,
+    227.0,
+    123.0,
+    187.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 111,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o0",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "]hZ>6ga0>Ch0WO>`_OaNf?Y2Ch0WO>Be0\\O0O1O100O1O101N100O1O100O1O110O000001O000000001O0001O000001O01O0001O00000003jB_Kj<k4O000010O000001O010O00001O0001O01O010O0000001O01O0001O1O0001O01O01O0001O000010O01O00001O01O00010O0001O000010N1O1O2M2O1O1N2O1O2N1N2O1O1O2M2M3ZOf0B?YOf0WOi@]Ne?V1h0[Of0A_Y^1",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9813
+  },
+  {
+   "area": 11836,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    35.0,
+    256.0,
+    97.0,
+    145.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 112,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "Xlc0c0[a0m0SOd0\\Od0\\Ol0SO2O1O1O1O1N2O1O1O1O1N2O1O1O1O1O0O1000O1000O010000O1000O010000O01000O1000O010000O100O0100000O10O10O10000O10O10O10000O01000O1000O010000O1000O010000O101O0O101N101O001N100O2O001O0O2VOi0[Oe0\\Oe0QOnhc?",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 11836,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    35.0,
+    256.0,
+    97.0,
+    145.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_05",
+   "id": 113,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "Xlc0c0[a0m0SOd0\\Od0\\Ol0SO2O1O1O1O1N2O1O1O1O1N2O1O1O1O1O0O1000O1000O010000O1000O010000O01000O1000O010000O100O0100000O10O10O10000O10O10O10000O01000O1000O010000O1000O010000O101O0O101N101O001N100O2O001O0O2VOi0[Oe0\\Oe0QOnhc?",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 20873,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    728.0,
+    371.0,
+    136.0,
+    179.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 114,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o3",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "i^h<1fa0c0\\^O]OTa0]1YO;Eh0WO>Cg0YOg0YO<D3M1N200N2O1000001O0000001O0000000001O0001O00001O00000001O00000001O000001O0001O000000001O00000001O000001O0001O01O0000000000001O000001O01O0000000000000010O000000000001O0001O01O0000000000000010O000001O00000001O0001O0000000000N2N2L5L3N2L4N2K6F9YOg0YOg0@`0[Oe0D<YOj0AZZi2",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 845,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    892.0,
+    259.0,
+    45.0,
+    31.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0018_o0",
+   "id": 115,
+   "image_id": 18,
+   "instance_id": "s_val_0018_l1",
+   "iscrowd": 0,
+   "label_angle": 15.37,
+   "name": "week unit",
+   "segmentation": {
+    "counts": "fXd?1la04M4L3M4K4M2NO0100000O010000O010000O0100000O0100000O010000O010000O0100000O012N3L5L3M4L3Lm_`1",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 33274,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    580.0,
+    447.0,
+    181.0,
+    235.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 116,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "hZS<;Pe0b0^O=C`0@o0RO?A=Ba0_O>B?A1O000000001O01O0000000001O000001O1O000001O0000000000010O0000001O00000000001O0001O1O0001O00000000000001O01O00000000001O00000100O0000O1LkJQ@V5n?5K4LaJ[@`5d?4L4LXJd@i5[?5K4LnIn@S6Q?4J6LdIXA^6f>4L4IZIeA00g6Z>7000000000010O00000000000010O00000001O0001O01O00000000001O00000000001OO11O01O0000000000010O000001O00000000001O01O000001O000001O01O00O1M3N2M3M4K4M3M3N2M3Jn@PJU?e5?]Ob0B>^Ob0A?POe^O\\Moa0T2l0@`0A\\\\OkNPd0e0d0_Odo^5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.8774
+  },
+  {
+   "area": 33274,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    580.0,
+    447.0,
+    181.0,
+    235.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_04",
+   "id": 117,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o0",
+   "iscrowd": 0,
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "hZS<;Pe0b0^O=C`0@o0RO?A=Ba0_O>B?A1O000000001O01O0000000001O000001O1O000001O0000000000010O0000001O00000000001O0001O1O0001O00000000000001O01O00000000001O00000100O0000O1LkJQ@V5n?5K4LaJ[@`5d?4L4LXJd@i5[?5K4LnIn@S6Q?4J6LdIXA^6f>4L4IZIeA00g6Z>7000000000010O00000000000010O00000001O0001O01O00000000001O00000000001OO11O01O0000000000010O000001O00000000001O01O000001O000001O01O00O1M3N2M3M4K4M3M3N2M3Jn@PJU?e5?]Ob0B>^Ob0A?POe^O\\Moa0T2l0@`0A\\\\OkNPd0e0d0_Odo^5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.8774
+  },
+  {
+   "area": 9120,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    248.0,
+    309.0,
+    116.0,
+    130.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 118,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o1",
+   "iscrowd": 0,
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "_gU5<8E]d0R1Cg0YOh0XOg0YO8H0O10000000O0100000O10O100000000O10O10000000O1000O1000O1000O1000O100000000O1000O100000O10000000O0100000000O010000000O100000O1000O100000000OjLm^OV2Sa0iMo^OCM0Am1da0`Nd_OFhNc1da0gN_@d0a?\\O_@DbNO[O5ca09\\AGd>9W30000000O100000000O100001O001O001O00001N1O2O001O00001O001O001O001O00mlg=",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.5442
+  },
+  {
+   "area": 23806,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    755.0,
+    293.0,
+    137.0,
+    210.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 119,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o2",
+   "iscrowd": 0,
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "Ulg?e0ed0?Aj0k[OSNZc0_2_O>Bm0TO>Am0SO2O1N1O100O2N100O2O0O2N1O100O2O001O0000010O00010O0000010O001O0000010O001O01O01O00000010O01O0001O0001O001O01O01O0010O00000001O010O000010O0000010OO110O000010O0001O01O01O00001O01O01O00010O0000001O01O01O0010O0000000N3N1O1N201M2O1N2O1O1N3N1O1O1O2M2M3WOi0@a0WOh0@`0UOX]OcN0GVc0X1k0Ekgg2",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1442,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    804.0,
+    408.0,
+    58.0,
+    41.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0019_o2",
+   "id": 120,
+   "image_id": 19,
+   "instance_id": "s_val_0019_l0",
+   "iscrowd": 0,
+   "label_angle": 15.83,
+   "name": "deal unit",
+   "segmentation": {
+    "counts": "beh`01Ze04L4K4M3M4K4M4L1OO010000O010000O010000O010000O0100000O01000O0100000O010000O010000O010000O010000O011O4L3L5L3M3L5L4LTd[3",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 7906,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    329.0,
+    483.0,
+    137.0,
+    80.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "distractor__medicine_box",
+   "host_instance_id": "s_val_0019_o3",
+   "id": 121,
+   "image_id": 19,
+   "instance_id": "s_val_0019_l1",
+   "iscrowd": 0,
+   "label_angle": 8.34,
+   "name": "deal select",
+   "segmentation": {
+    "counts": "imk62Ye06J7I7H8I7I7I7I7I4LO0100000000000O0100000000000O010000000000O0100000000000O0100000000000O01000000000O0100000000000O0100000000000O0100000000000O0100000000000O0100000000000O01000000000O0100000000000O0100000000000O010000000000O0100000000000O0100000000000O014L7I7I7I7I7H8I7I6Jldc;",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2119,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    669.0,
+    569.0,
+    75.0,
+    53.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0019_o0",
+   "id": 122,
+   "image_id": 19,
+   "instance_id": "s_val_0019_l2",
+   "iscrowd": 0,
+   "label_angle": -20.25,
+   "name": "large",
+   "segmentation": {
+    "counts": "din=1We04M2M4L3N2M4L3M3N3L3O110O010O00010O00010O010O00010O00010O0010O0010O00010O00010O00010O0010O0010O00010O00010O010O00010O00010O010OO1M4M2M3M4L3N2M4L3N3LjUj5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  }
+ ],
+ "categories": [
+  {
+   "id": 1,
+   "name": "cereal_box"
+  },
+  {
+   "id": 2,
+   "name": "damaged_cereal_box"
+  },
+  {
+   "id": 3,
+   "name": "misaligned_label"
+  }
+ ],
+ "images": [
+  {
+   "background_id": "a_2afe6e0b17",
+   "condition": "hard",
+   "file_name": "images/s_val_0000.png",
+   "height": 1024,
+   "id": 0,
+   "name": "s_val_0000",
+   "width": 793
+  },
+  {
+   "background_id": "a_fc21bc3ee7",
+   "condition": "hard",
+   "file_name": "images/s_val_0001.png",
+   "height": 1024,
+   "id": 1,
+   "name": "s_val_0001",
+   "width": 764
+  },
+  {
+   "background_id": "a_aee968900b",
+   "condition": "typical",
+   "file_name": "images/s_val_0002.png",
+   "height": 1024,
+   "id": 2,
+   "name": "s_val_0002",
+   "width": 768
+  },
+  {
+   "background_id": "a_aa1aca16a1",
+   "condition": "clean",
+   "file_name": "images/s_val_0003.png",
+   "height": 574,
+   "id": 3,
+   "name": "s_val_0003",
+   "width": 1024
+  },
+  {
+   "background_id": "a_81765bf26f",
+   "condition": "clean",
+   "file_name": "images/s_val_0004.png",
+   "height": 683,
+   "id": 4,
+   "name": "s_val_0004",
+   "width": 1024
+  },
+  {
+   "background_id": "a_2afe6e0b17",
+   "condition": "typical",
+   "file_name": "images/s_val_0005.png",
+   "height": 1024,
+   "id": 5,
+   "name": "s_val_0005",
+   "width": 793
+  },
+  {
+   "background_id": "a_fc21bc3ee7",
+   "condition": "clean",
+   "file_name": "images/s_val_0006.png",
+   "height": 1024,
+   "id": 6,
+   "name": "s_val_0006",
+   "width": 764
+  },
+  {
+   "background_id": "a_aee968900b",
+   "condition": "clean",
+   "file_name": "images/s_val_0007.png",
+   "height": 1024,
+   "id": 7,
+   "name": "s_val_0007",
+   "width": 768
+  },
+  {
+   "background_id": "a_aa1aca16a1",
+   "condition": "typical",
+   "file_name": "images/s_val_0008.png",
+   "height": 574,
+   "id": 8,
+   "name": "s_val_0008",
+   "width": 1024
+  },
+  {
+   "background_id": "a_81765bf26f",
+   "condition": "clean",
+   "file_name": "images/s_val_0009.png",
+   "height": 683,
+   "id": 9,
+   "name": "s_val_0009",
+   "width": 1024
+  },
+  {
+   "background_id": "a_2afe6e0b17",
+   "condition": "hard",
+   "file_name": "images/s_val_0010.png",
+   "height": 1024,
+   "id": 10,
+   "name": "s_val_0010",
+   "width": 793
+  },
+  {
+   "background_id": "a_fc21bc3ee7",
+   "condition": "hard",
+   "file_name": "images/s_val_0011.png",
+   "height": 1024,
+   "id": 11,
+   "name": "s_val_0011",
+   "width": 764
+  },
+  {
+   "background_id": "a_aee968900b",
+   "condition": "typical",
+   "file_name": "images/s_val_0012.png",
+   "height": 1024,
+   "id": 12,
+   "name": "s_val_0012",
+   "width": 768
+  },
+  {
+   "background_id": "a_aa1aca16a1",
+   "condition": "typical",
+   "file_name": "images/s_val_0013.png",
+   "height": 574,
+   "id": 13,
+   "name": "s_val_0013",
+   "width": 1024
+  },
+  {
+   "background_id": "a_81765bf26f",
+   "condition": "typical",
+   "file_name": "images/s_val_0014.png",
+   "height": 683,
+   "id": 14,
+   "name": "s_val_0014",
+   "width": 1024
+  },
+  {
+   "background_id": "a_2afe6e0b17",
+   "condition": "clean",
+   "file_name": "images/s_val_0015.png",
+   "height": 1024,
+   "id": 15,
+   "name": "s_val_0015",
+   "width": 793
+  },
+  {
+   "background_id": "a_fc21bc3ee7",
+   "condition": "typical",
+   "file_name": "images/s_val_0016.png",
+   "height": 1024,
+   "id": 16,
+   "name": "s_val_0016",
+   "width": 764
+  },
+  {
+   "background_id": "a_aee968900b",
+   "condition": "clean",
+   "file_name": "images/s_val_0017.png",
+   "height": 1024,
+   "id": 17,
+   "name": "s_val_0017",
+   "width": 768
+  },
+  {
+   "background_id": "a_aa1aca16a1",
+   "condition": "hard",
+   "file_name": "images/s_val_0018.png",
+   "height": 574,
+   "id": 18,
+   "name": "s_val_0018",
+   "width": 1024
+  },
+  {
+   "background_id": "a_81765bf26f",
+   "condition": "hard",
+   "file_name": "images/s_val_0019.png",
+   "height": 683,
+   "id": 19,
+   "name": "s_val_0019",
+   "width": 1024
+  }
+ ],
+ "info": {
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "seed": 42,
+  "split": "val"
+ },
+ "negatives": [
+  {
+   "area": 27586,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    57.0,
+    555.0,
+    168.0,
+    238.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tin_can_peas",
+   "id": 0,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "jai15jo06I`0Be0ZOg0ZO?XRO[M70fl0^3Cf0YOk0VO=B]1dN2N2M3N1O001N2OfNaWOTK^h0k4TXOYJSO9gh0\\5`1O001O1O001N2O1O1O1O1O001O1N200N2O1O1O0010000000000001N100000000000000000001O000000000000001O00000000000O1010O00O100001O000000000001O0000000000001O00000000000000000000001O000000000000001O01O0000000001O0001O000000000000000001O01O00000000000000001O00001O0001O01O0000001O0000001B=E<@?[Of0VOfSO^Mhl0X2f0YOg0lNT1K5LY^ga0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.7276
+  },
+  {
+   "area": 44414,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    381.0,
+    698.0,
+    357.0,
+    180.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tissue_box",
+   "id": 1,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "nem;b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O0<Db0^O001O00001O00001O01O10O001O00001O0001O0001O00001O00001O000010O1O01O00001O00001O0010O0001O000000001O00000100O01O00001O00001O01O0001O001O001O00001O000001O10O0000001O001O01O01O0000001O000010O10O001O00001O00000000010O00001O00001O00001O0010O1O01O0000001O001O00010O00001OO11O000000O1N3N2N1N2O1O100N2O1N2O2N1N2O1O1O1N2O1O1N2O1^Oc0]Oc0F90000000000000001O000000000000000005K1O1O10O11N002N1O1O1O001O1O2N010O1O1O1O1O1O1O1O10000O0000O1000000O100O101N1000000O10000O101O1N10000O100O1000000O2O000O100O1000000O10000O101O1N100O10000O1000000O2O000O100O1000000O100O2O1O000O01L]UOjJcj0V54L4LUUORKkj0n44L4LmTOZKTk0e43M4LeTObK[k0^44J6L\\TOkKek0T44L4ISTOWL00nk0h37WOi0UORSO`NO]OPm0S2j0ROn0WOXQO60^Oin0;lZf1",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.8097
+  },
+  {
+   "area": 40824,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    429.0,
+    497.0,
+    180.0,
+    274.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 2,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "T`]=:a0Gcn0]1]Oc0]Oc0^Od0[Ob0^Oe0\\Oa0^Od0\\Od0]Ob0]O1O2O0O1O2N100O2O0O1O2O0O2N100O2N100O10001O01O01O00001O000010O0001O00010O00010O001O00010O000000010O0000010O001O00010O000010O000001O010O001O00001O01O000001O01O0001O010O00001O01O0001O00010O001O010O00001O01O00000010O00001O01O01O00001O001O01O01O0000010O001O01O01O000010N11O0001O0O1N2O2N1N2O1O2O0N2O1N2O2N1N2O1O1O2M2O1O1N2O1^Ob0^Ob0\\Oe0_O`0_Oa0[Oe0_Ob0]Ob0^Ob0POa`g5",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 48742,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    75.0,
+    723.0,
+    206.0,
+    275.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 3,
+   "image_id": 0,
+   "instance_id": "s_val_0000_o5",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "\\g[2<co0b0`POSOin0a1Af0ZO?Ad0\\Oc0]Ob0]Od0]Oa0VUOkJ0Afi0g6@a0_O4L1O1O1N200N3N1O1O1O100000001O0001O0001O00000000001O0001O000001O000000010O00000000000010O000000000001O0000001O01O00000001O0001O00000001O000000001O0001O00000001O000001O0001O000000010O00000000001O0000000001O01OO11O0000000000000000001O0001O0001O00000000001O000001O0001O0000000001O01O000000000010O00000001O00000000001O01O000001O00000001O01O0000O1M3N2L4N3L3M3M3M3M3M3M4J5POlVOhJ`i0i4`VOoJ0FUj0f4S1@`0YOYTOaL[l0P3b0_Oa0]Oc0_OoQOfN^n0g0h0^O[Yo?",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3577,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    437.0,
+    560.0,
+    73.0,
+    49.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0000_o3",
+   "id": 4,
+   "image_id": 0,
+   "instance_id": "s_val_0000_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 0.11,
+   "name": "number",
+   "segmentation": {
+    "counts": "`ae=a1_n000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`^j8",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 26913,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    32.0,
+    761.0,
+    150.0,
+    235.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tin_can_peas",
+   "id": 5,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "ogP15io07Kg0XO<UQObN60om0S2Fi0VOg0ZOf0YOj0WO>jUOaJZi0R6L1N2O0O0010000O2N100O001O010O1O010O0010O01O1O01O00010O00010O1OO20O1O01O001O01O000010O0001O00010O0000001O000010O0001O1O00001O000000001O00001O00001O0000001O0000001O00001N10002N0000001N10001O00001O0O1000001O0O101O0O101O0O10000O2O00001N2O0O1O2O0O2O0O101O0O1O1O10m1RNT1lN<lMkQOf1Yn0N2N2M3N2N2L4QOkQOKYQVb0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7838
+  },
+  {
+   "area": 63004,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    172.0,
+    732.0,
+    391.0,
+    227.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__medicine_box",
+   "id": 6,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "lg\\5_3`l0T1mN;dTOSKoj0P5O1N2O1O1O1O1O1N2O1O001O1O1O1O001N2O001O1O0O2O001O1O1N101O001O1O001O1O000O2O1O001O1N101O001O00001O001O001N100000000O10000000O1000000O0100000O1000O100000O1000000O10O1000000000O0100000O1000O100000O1000000O10O10000000O10O1000O100000000000O0100000O01000000O10000000O01000000O10O10000000O1000O10O10000000O10O1000000O100000O1000O10O1000O1000O10O1000000000000O1000O10O100000O1000O1000000O10000000O1000O10000O0100000000000O1000O10O1000000O02OO1000000O101Of0ZO`0_O101O001O1O0O101O00000O2O000000001N2O00000O101O0000001O0O101O1O0O1000001O00000O2O00000O101O000O2O1O0000000O2O00001O0O1000002N000O101O000O101O000000001N2O000O2O000000001N1000001N2O0000001N11OO1000001N101O1O0O1000001O00000O2O00000O101O1O00001N1000001O0O10001O1O000O101O000O10001O0000001O0O101OO11N2O000O101O00001O000O100N3[Oe0@?YOSWX6",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.8444
+  },
+  {
+   "area": 44607,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    184.0,
+    437.0,
+    197.0,
+    262.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 7,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "\\^h5<co0b0_POSOkn0S2nN?Ab0^Oc0]Ob0]Ob0_Oa0@b0]O`0@`0@4L0O3M200N200O1O1O1000001O000001O01O00000000001O000001O0001O000000001O000000000010O000000000001O000000010O000000001O0001O00000001O0000001O0001O0000000000001O0001O0000000010O0000000001O00000000010O00000000000010O0000000001O0001O01O0000000000001O000001O01O0000000001O01O000000001O01O000001O0000000000000000001O00000001O01O000000M3N2L4M4L3N2M3KSWOTIPi0i6PWOWISi0f65L5C<\\Od0A?]Oc0@`0ZOSTOgL_l0k2b0_Oa0PO\\ROgN09Un0>R1^OZbn;",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 61631,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    387.0,
+    491.0,
+    228.0,
+    333.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 8,
+   "image_id": 1,
+   "instance_id": "s_val_0001_o5",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "W`S<f0Yo02Of0XOk0WOe0[O1dSORMck0g3Nj0WOh0VOh0YO10k0TOg0YOa0_O101M201N2N1O101O0O1O101N1N200O1O2N2N1O100O1O2O01O1O01O00001O10O00000001O0000010O0000000010O1O01O1O0001O0001O00001O0001O0002N00000010O1O0001O0001O0001O1O00010O000000001O0001O01O1O0001O10O000000000010O01O1O0001O0001O00000011N00000001O1O00010O0000001O0001O01O1O00000100O00000001O01O0001O000010N11O1O0000001O01O10O00000000100O00000010O000001O0001O10O1OM300O1M4M2O1O1N2N2NoXOUGQg0j83O2M2O1O1N2M4N2N1N2O1M300M3O2D;O1WOi0XOh0ZOf0YO_UOnKcj0P4g0YOg0YOg0XOmSObMTl0]2h0[Of0YOg0YOg0N^_d4",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3144,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    498.0,
+    940.0,
+    78.0,
+    43.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0001_o1",
+   "id": 9,
+   "image_id": 1,
+   "instance_id": "s_val_0001_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.45,
+   "name": "promo limited smart",
+   "segmentation": {
+    "counts": "Xnb?=gn0l00000000000000000000000000000000000010O00000000000000000000000000000000000000000000000000000000000000000000000000010O00000000000000000000000000000000000TO^Sk5",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 5446,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    418.0,
+    716.0,
+    93.0,
+    62.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0001_o5",
+   "id": 10,
+   "image_id": 1,
+   "instance_id": "s_val_0001_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 1.32,
+   "name": "small",
+   "segmentation": {
+    "counts": "^fR=f0Zo0U1kN1O0000000000000000O100000000000000000000000000000000000000000000000000000O100000000000000000000000000000O100000000000000000000000000000000000000000000000000000O100000000000000001OU1kN^Xl7",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 37671,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    568.0,
+    546.0,
+    183.0,
+    275.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 11,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "keha07io0a0@d0ZO7I2M2N2O1N2O1N2N3N1N2N2O1O1O1N2N2G9_Oa0@`0@`0@`0@a0@>02O0000000000001N100000000O101O000O100000001N100000000O1eWO\\JZf0d5WYOQJlNg0mg0X5gXOZKZg0g4VXOhKjg0W6000O01000O1000O0100O10O10O100000O010000O100O10O010000000O0100O10O1000O10O010000O10O1000O10000O100O01000O1000O10O100O0100000O010O100O1000000O01000O1000O0100O1000O1000O10O010001N101O0O2O0O2O00001N101O0O2O001N100O2O001O0O101O0O2O001N1SOoVO`J\\i0l4W1[Od0\\Oe0]Ob0jNW1YOg0\\Oc0]OP_`0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.8563
+  },
+  {
+   "area": 59103,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    5.0,
+    773.0,
+    367.0,
+    220.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__medicine_box",
+   "id": 12,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "[i5X3gl0R1aSOgKUk0e4M1N2O1O1O1O1O1N2O1O001O1O1O1O001N101O1O1O0O101O1O1O001O001N2O001O1O001N101O1O001O001O001O0O101O001O0O100000000000000O01000000O10O10000000O100000O1000O1000000O100000O1000O1000O10O10000000000O10O10O100000O100000O10000O1000O1000000O0100000000O100000O010000000O01000000O1000O100000O10000O1000O10000000O0100000O10000000O10O100000O010000000000O100000O1000O1000O10O10000000000O1000O10O100000O1000O10000O10000000O10O100000O010000000000O1000O10000000O1000000O0100000000O010000O1000000000O10O1000000O0100000000000O10O10O100000O1000O10009Gc0]Oc0\\O2O001O00001N101O00001O0O101O000O2O00001O0O101O000O2O00001O00000O101O000O2O00001O000O2O00001N10001O00001N10001O0O110N10001O0O101O0000001O0O101O0O2O001O00001O000O10000O2O00001O00001N10000O2O0N2]Od0UOj0FfU[<",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9036
+  },
+  {
+   "area": 29067,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    442.0,
+    473.0,
+    156.0,
+    227.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 13,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "[_j=`0>Abn0`1_O?@b0^Ob0_Oa0]O9I0cTOWLbj0T5_O<D101N1O101N1O101M200O1O2N100O2O01O01O00000000001O00010O000010O0001O01O0001O0010O0001O000010O0001O01O0001OO20O00001O00010O00010O000000001O1O0001O01O00010O0000001O01O01O0000010O0000010O00000010O01O0001O01O00001O01O01O000010O0001O0001OO11O01OO1O1N3M2O1N2O1N3M2O1N2N3N1O1O1N2N3F9_Oa0@`0@a0_O`0@`0@`0_Oa0A`0QOcQOJY_Z5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.999
+  },
+  {
+   "area": 44208,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    263.0,
+    580.0,
+    187.0,
+    286.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 14,
+   "image_id": 2,
+   "instance_id": "s_val_0002_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "hbW8:eo0e0\\Oc0\\Od0dQOZNXm0l2ZOc0]Of0[Oa0^Oe0[Od0]Oc0\\O2N101N1O101N1O2O0O101N1O101N1O101N1O1O2O000010O0001O01O01O000001O01O000010O0001O00001O00010O00001O01O01O00010O00001O01O01O000010O0000010O0001O0010O01O00010O00000001O01O00010O00001O01O0001O00010O001O0010O0001O01O0001O00010O00001O00001O00010O001O01O01O0000010OO11O01O01O00001O01O01O01O000N2O2N1N2O1O1O2N1N2O1N2O2N1O1N2O2N1N2O1O1N3N1L4@`0^Ob0[Of0^Oa0_Oa0ZOf0lN`SOTN0BSm0f1U1A?]O_]m9",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 8190,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    136.0,
+    851.0,
+    127.0,
+    66.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__medicine_box",
+   "host_instance_id": "s_val_0002_o2",
+   "id": 15,
+   "image_id": 2,
+   "instance_id": "s_val_0002_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.38,
+   "name": "code",
+   "segmentation": {
+    "counts": "kjX4i1om08000000000000000000000000000000000000000000000000000000000000000000000000001O00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001O00000000000000000000000000000000000000000000000000000000000000000000000000HdUh?",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2869,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    642.0,
+    711.0,
+    75.0,
+    41.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0002_o0",
+   "id": 16,
+   "image_id": 2,
+   "instance_id": "s_val_0002_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.17,
+   "name": "plus",
+   "segmentation": {
+    "counts": "SgRd0;in0l0000000000000000000000010O0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010O0000000000000000000000TOcZb1",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 22059,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    448.0,
+    300.0,
+    138.0,
+    184.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 17,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "l]k7d0Xa0?Bh0XOi0WO=Cg0YO?Ae0[O3M1N2O1O2N1O100000001O00000000001O0001O000000010O0000000001O00000000000010O000001O0000000000000010O00000001O01O0000000001O000000001O0001O00000000010O00000001O0000000000001O01O0001O000001O00000001O0000000000000010O0001O000001O00000M3M3L4N2L4N2M3L5YOf0E;XOh0WOm@WNc?]1e0YOh_OSOm`0`0[We7",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 54851,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    635.0,
+    229.0,
+    357.0,
+    182.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tissue_box",
+   "id": 18,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "eUT;b0[a02f^OM0Ad`0X1__OhNZ`0S2[O0Y@bNO[Ol>o20k0UO1PBTL00i=S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LeCdJ\\<[54L4L\\CmJe<R54L4LSCVKn<i44L5KiB`KY=^44J6L^BkKc=T44L4IUBWL00l=h37WOi0UOTA`NO]On>S2j0ROn0WOZ_O60^Og`0;_ga0",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 13549,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    204.0,
+    399.0,
+    104.0,
+    159.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 19,
+   "image_id": 3,
+   "instance_id": "s_val_0003_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "Rhb36ha0e0ZOf0ZOf0[Oe0ZOg0YO<E0O1O2O0O2O0O1O2O0O1O2O01O01O0000010O00001O01O01O000010O0001O00010O00000010O01O000010O0001O0001O01O000010O0001O00010O00001O01O0001O010O00000010O0001O00010O00O1O2M2O1O1O1N3N1O1O1N2O2N1E;ZOf0]Oc0ZOg0[Od0]Ojn`<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1075,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    247.0,
+    503.0,
+    43.0,
+    25.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0003_o4",
+   "id": 20,
+   "image_id": 3,
+   "instance_id": "s_val_0003_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.34,
+   "name": "model",
+   "segmentation": {
+    "counts": "YnZ4i0Ua000000000000000000000000000000000000000000000000000000000000000000000000000000000000]nj<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 20614,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    460.0,
+    391.0,
+    132.0,
+    192.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 21,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "kVc9=md0>Cj0UO`0@`0@k0UO`0@?B9F1O2N101N1O1O2O0O1O1O101N11O01O00010O0000001O0000010O0010O000001O01O01O00001O0001O0001O010O00000010O000001O0000010O1O0001O01O0001O0001O001O00010O00000010O0000010O01O0001O0001O00001O00010O0001O01O00010ON2O1N2O1N2N2O2N1N2N3N1N2O1N2O2ZOe0B>C=UOk0C=A`0WOi0APho8",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 25439,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    313.0,
+    296.0,
+    144.0,
+    218.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can_peas",
+   "id": 22,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "WRa651LRe0e0A;][OVOPd0f1]Of0YOe0\\Od0[Oh0YOh0XO0O10000O1000000O2O0000000O101O0000000O1000000000000O101O0000000000000000000O10001O00000000001O000000000000000000000000001O000000001O000000000000000000001O0001O000000]AWJd=i5oAdJQ>[6000O100000000O10000O101O000O10000O10000O2O0O100O1O10000O2O0O1O1O2O0O1O1O2N1N2O1M4\\Oi@oJZ?^4S1@a0A>A`0YOg0\\Oc0^Oc0POP1K]li;",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9059
+  },
+  {
+   "area": 36319,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    840.0,
+    404.0,
+    170.0,
+    256.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 23,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "Vf`a0b0id0o0POb0_Ob0^OS1mN`0@c0]OQ1oNa0^O2O1O1O1N2O1O002M102N001O1O1O2N0O2O1O1N2O1O1O1O1N2O1O1O0000O10O1000O10O0100O10O1000O10000O100O0100000O01000O10O01000000O10000O010O1000O10O100O010O1000000O10O10O1000O0100000O0100O10000O10O1000O1O10O10O1000O1000O100O100O0100000O010O100000O010000O100O0100000O2O000O2O0O2O1O0O10001O1N101N10001N101O0O101O0O2O001E:mNT1]Ob0]Oc0nNS1^Oa0\\Oe0mNin8",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 33228,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    136.0,
+    280.0,
+    163.0,
+    249.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 24,
+   "image_id": 4,
+   "instance_id": "s_val_0004_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "RPk28Re0b0_Oa0^Ob0R\\O_N0Enb0m2]Oa0_Oc0^O?@R1nNb0_O1N1O1O101N101N100O2N100O2N1O2O0O1O1010O0001O00010O000010O0000010O0001O00001O010O00000010O000010O00001O010O00001O000001O01O0010O01O00010O000001O01O00001O0010O000001O010O0000010O001O01O0001O010O000000001O00010O001O010O000001O01O00010O00001O001O01O0O1N201N1N2O1O2N1N2N2O2N1O1N2O1O2M2O1O1O1L4B>oNR1@?A?]Od0POf]O[N0Ejb0_1P1C=_OTYS?",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1334,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    338.0,
+    482.0,
+    49.0,
+    30.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0004_o2",
+   "id": 25,
+   "image_id": 4,
+   "instance_id": "s_val_0004_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 1.97,
+   "name": "plus brand batch",
+   "segmentation": {
+    "counts": "ZmQ79Re0c0]O000000000000000O010000000000000000000000000000000000000000000000000000000O01000000000000000c0]OZ\\X=",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2888,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    155.0,
+    397.0,
+    76.0,
+    38.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0004_o4",
+   "id": 26,
+   "image_id": 4,
+   "instance_id": "s_val_0004_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.2,
+   "name": "promo pack",
+   "segmentation": {
+    "counts": "fhW3V1Ud000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000Va``0",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 57985,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    156.0,
+    389.0,
+    225.0,
+    315.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 27,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "W]l4h0Xo0c0\\Of0[O00001O0O10000000001N100000001dXOkMj`0V2U_OmMi`0S2V_OoMi`0Q2U_OQNk`0P2S_OSNk`0m1d^OiMdJ>gf0j1T^OUOka0k0c]OG]b0:S]O5mb0Kc\\Oe0]c0[Oa[OgMkMa3cf0iNQ[OV2Pe0kM_ZOe2ae0[MQZOS3oe0mL`YOd3`f0n200O100000O010000000000O1000000000000000000O1000000O100000000O10000000O10O10001O00O0100000001N100000000O100000000O10000000000O100000000O100000000O100000000O100000000O100000000O101OO1000O010000O10000O01000O01000O100O10O10O10000O0100000O01000O100O10O10O10000O01000O10000O01000O1000O010000O10O10O10001N101O0O101O0O2O001N100O2O001O0O2O0O2O0O101O0O2O001N10001O0O2O1O0O2B=ZOf0XOi0XOg0WOj0ZOe0WOj0YOf0VOk0XOg0YOnck<",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.9152
+  },
+  {
+   "area": 57526,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    135.0,
+    701.0,
+    206.0,
+    315.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can_peas",
+   "id": 28,
+   "image_id": 5,
+   "instance_id": "s_val_0005_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "_fW47go08Ib0^Ok0UO?B>Bo0QO`0@k0UO>Bc0nUOmIQi0R7aWOPImf0U8L3N0O2N2O0O00100O1O1M4M2N2M3N2N1O1N3N2O001N101O1O001N101O00001O001O00001N1000001O001O00000O2O001O00001O000000001O000000001O0000000000000000001O0000000O10000001O00O1000000001O000000000000000000000000000000000000000000000O100000000000000O1000000000000O100000001O0O10000O10000O101O000O10000O1000000O100O101N100O100O101N1O10000O1O2O0O1O100O2N1O1O2N1O1O1O1N3N1M3N3UOhXOiH[g0\\6c1C<YOg0G:D;VOk0_O`0VOoSOVMal0^2f0_Ob0cN]1K6KdYS>",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.9978
+  },
+  {
+   "area": 1900,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    81.0,
+    481.0,
+    64.0,
+    33.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0005_o3",
+   "id": 29,
+   "image_id": 5,
+   "instance_id": "s_val_0005_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.84,
+   "name": "stock special",
+   "segmentation": {
+    "counts": "f_a29Ro0f0O0000000001O0000000000000000000000000000000000000001O000000000000000001O0000000000000000000000000000000000000001O0000000001ZOaaWd0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 7841,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    476.0,
+    638.0,
+    123.0,
+    67.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0005_o0",
+   "id": 30,
+   "image_id": 5,
+   "instance_id": "s_val_0005_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.16,
+   "name": "value price",
+   "segmentation": {
+    "counts": "Wel>g0Pn0Y1000001O00000000000000000000000000000001O0000000000000000000000000000000000000000000000000000000000000001O00000000000000000000000000000001O0000000000000000000000000000000000000000000000000000000000000001O00000000000000000000000000000001O00000gNX]Q6",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 51899,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    550.0,
+    679.0,
+    209.0,
+    318.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can_peas",
+   "id": 31,
+   "image_id": 6,
+   "instance_id": "s_val_0006_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "SfVa01oo0a0_O>mPOQOZn0i1A=CP1QO`0@<Cm0SOb0^Oa0cUOYJ0EP10\\g0g7K3M101N2N100O00100O1O2N100O1O10O01O010O1O010O001O10O01O010O00010O00010O000010O000010O1O01O00010O01O01O00001O01O0010O00001O00010O0000001O00001O00010O001O0000001O0000001O00001O1O00001O0000001O00001O001O00001O0000001O00001O000O2O00001O00001O0O1000O1N2O1O1O0O2O1O1O001N2O1N2O1O001N2O001O1N2O001N2O0M4^Oa0A`01O000O100O100O100O1O2O0O10000O1O2O0O1O1O101N1O1O1O2N1O2N1N2O1O1M4M2iN^YOhHjf0i6_1XOmVOSJ0I_i0g5i0F9ZOf0A`0^Ob0TOk0E<dNXSOmNZm0`0]1K5L]Z4",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.867
+  },
+  {
+   "area": 5126,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    122.0,
+    717.0,
+    106.0,
+    51.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0006_o3",
+   "id": 32,
+   "image_id": 6,
+   "instance_id": "s_val_0006_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.94,
+   "name": "new limited",
+   "segmentation": {
+    "counts": "`gj3>_n0S10000000000000000000000000000000000000000010O0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010O00000000000000000000000000000000000000000mNdZg`0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 29390,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    0.0,
+    771.0,
+    157.0,
+    225.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_05",
+   "id": 33,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "ah0m0Ro0a0@`0_QOSN;0Wm0n2^O`0_OP1QO>BP1PO1O1O1O1N2O1O1O1N2O1O001O1O2N0O2O1O1N2O1O1O1O1O1O1N10000000O010O1000O010000O100O10O1000O010O1000000O10O0100000O0100O1000000O010O10000O101O0O101O000O2O000O2O0O101O000O2O0O101O000O2O0O101O0O101O0O10001N10001N10001O1N011N2O00001N100O2O000O2O000O2O000O101O0O101O0O101O0O101N100000001N100O2WOh0_Ob0nNQ1A?POXROjN:0Qn0b0Q1@bWRc0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.951
+  },
+  {
+   "area": 32415,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    417.0,
+    645.0,
+    184.0,
+    250.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "id": 34,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "egQ=2mo0b0^Oa0_Oa0WQOgNjm0Z2]O3M1N2O1O1M3XOXMUTOk2Tk0\\1\\Od0E;_Oa0L40000000000000000000000000000001O0000000000001O000000000000001O00000000000001O0001O000000000000001O0000000000000000001O000000001O00000000001O1O0000001O000000001O1O00O11O1O00000000001O001O1O00000000001O0000002N0000001O00000000001O1O0000001O000000001O1O01O1O01O0000001O1O000000cVOnJlg0R5[WOeJ60^O:Qi0Q5ZWOiKeh0i51O00002N00000M3N2M4L3M3M3L5L4L3N2K5E;]Od0oNhTOjLfk0g2Q1[OZSO^MXm0T2b0_Oa0_O?A`0_OX[V5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.7947
+  },
+  {
+   "area": 51567,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    62.0,
+    511.0,
+    202.0,
+    309.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 35,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "e`n1:eo0g0ZOd0[Oe0[Oe0\\Og0XOd0\\Og0ZOb0]Og0YOf0[Od0[O2N101N1O101N1O101N100O2N100O2O0O101N1O101N1O101O01O01O000010O000001O01O01O0000100OO11O10O0001O00010O00001O00010O0000010O00001O01O01O000010O000000010O0001O0010O0001O01O01O000010O000001O01O01O000010O000001O00010O00001O010O00001O01O0001O00010O00001O01O0001O00010O001O00010O00000010O0001O01O01O00001O01O01O0001O0O1N2O2N1N2O1O1O2N1O1N2O1N3N1O100M3O2N1O1N2O1O2M2O1L4_Oa0\\Oe0YOf0]Oc0^Ob0YOh0\\Oi0UO\\1eNP1TOV^g?",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9981
+  },
+  {
+   "area": 44847,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    258.0,
+    497.0,
+    183.0,
+    277.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can_peas",
+   "id": 36,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "Q`R8120io08Jc0_O=Bh0XO=Dl0SOj0WO=Bm0TO>Aa1`N2N2M3N1O1N101O1O2M2O1O1O1O001N101O1O0O2O1O001O00001O0O2O00001O000O2O00001O0000001O1O000000000O2O001O00000000000000001O0000000000000000000000000000000000000000000000000000000000000000000000000000000000O2O000000000000000O10000O10000000000O100O2O00000O10000O101O0O10000O1O10000O2N100O10000O2N1O100O1O2N1O1O1O2N1N2O2N1M3XOiWOdIZh0e5]1[Od0E<^Oa0E<TOk0YO`SOaMnl0T2e0iNW1@`0K5H[PO0g_W:",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 54851,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    216.0,
+    840.0,
+    357.0,
+    182.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tissue_box",
+   "id": 37,
+   "image_id": 7,
+   "instance_id": "s_val_0007_o5",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "^jh6b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LcUOdJ^j0[54L4LZUOmJgj0R54L4LQUOVKPk0i44L5KgTO`K[k0^44J6L\\TOkKek0T44L4ISTOWL00nk0h37WOi0UORSO`NO]OPm0S2j0ROn0WOXQO60^Oin0;\\VR6",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 6415,
+   "asset_id": "a_125cda5a44",
+   "bbox": [
+    587.0,
+    582.0,
+    97.0,
+    69.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0007_o4",
+   "id": 38,
+   "image_id": 7,
+   "instance_id": "s_val_0007_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.1,
+   "name": "code zone free",
+   "segmentation": {
+    "counts": "ac[b0h0mm0[10000000000000000000000000000000000000000010O0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010O00000000000000000000000000000000000000000eNS_c2",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 15257,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    203.0,
+    352.0,
+    113.0,
+    164.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 39,
+   "image_id": 8,
+   "instance_id": "s_val_0008_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "gTb3f0Wa0>Bh0YO=Bg0YO?Ac0^O1N1O2N1O101N1O1O2N011O001O0001O0001O010O0000001O01O01O0001O01O001O0001O01O00001O0001O01O01O01O00000010O0001O01O0001O001O0001O01O00010OO11O001O01O0001O01O01O00000010O01O0001O0O1N2N2O1N3N1N2N3N1N2O1N2J6XOh0E<WOh0E;YOh0D``\\<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 21920,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    471.0,
+    394.0,
+    214.0,
+    130.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__medicine_box",
+   "id": 40,
+   "image_id": 8,
+   "instance_id": "s_val_0008_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "f]X81f00^O0M0l`0_2aN7I1N2O1O1O1O1O1O001N2O001O1O001O1N101O001O1O001N101O001O0000000O10000000O100000O1000O100000O10O1000000O1000O100000O100000O10O10000000O0100000000O10O100000O100000O0100000000O010000000O100000O10O10000000000O010000000O1000O10O10000000000O010000000O1000O10O1000000000O010000000000O0100000O10000000O10O10000000O0100000000O10O100000O100000O10O100000000O100000000O101O00001O0O10001O0O2O00001O000O2O00001O000O2O001O000O2O00001Mc0lNW1fNfcm5",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9967
+  },
+  {
+   "area": 20547,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    678.0,
+    309.0,
+    123.0,
+    187.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can_peas",
+   "id": 41,
+   "image_id": 8,
+   "instance_id": "s_val_0008_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "c[l;7fa0d0\\Oa0_Od0]Oi0VOb0_Od0\\OQ1nN3N2N1N101O2N1O1N101O001N2O001O001O0O101O00001O00001O001O00000O101O0000000000001O00000000000000000000000000000000000000000000000000000001N1000000000000O100000000O10000O10000O2O000O100O100O2O0O100O1O2O0O1O1O2N1N2O1N3WOdChKb<c3W1C>A>VOk0A?UOk0B`fl3",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 924,
+   "asset_id": "a_b85a7dab8b",
+   "bbox": [
+    806.0,
+    271.0,
+    44.0,
+    21.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "host_instance_id": "s_val_0008_o2",
+   "id": 42,
+   "image_id": 8,
+   "instance_id": "s_val_0008_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 0.31,
+   "name": "promo",
+   "segmentation": {
+    "counts": "SRT>e0Ya00000000000000000000000000000000000000000000000000000000000000000000000000000000000000eXQ3",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1938,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    694.0,
+    360.0,
+    57.0,
+    34.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can_peas",
+   "host_instance_id": "s_val_0008_o3",
+   "id": 43,
+   "image_id": 8,
+   "instance_id": "s_val_0008_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.13,
+   "name": "price quality family",
+   "segmentation": {
+    "counts": "l[U<R1l`0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000feh4",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 21610,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    264.0,
+    262.0,
+    135.0,
+    196.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 44,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "_[`5=md0>Bl0TO`0@`0A>An0RO>B;E101N1O2O0O1O2N1O1O2N100O10010O000010O0001O0000000010O00010O0001O0010O000000010O01O00001O01O000001O01O01O0010O000000010OO11O01O0010O000001O010OO11O010O0000001O00010O000001O01O001O01O01O00010O0000001O0001O000O1N3M2N2O1O1N3N1N2N2O1N2O1N3H7A?A`0UOj0A?C=A`0UOk0BZcP=",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 29602,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    622.0,
+    419.0,
+    157.0,
+    226.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 45,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "`Yo<8Re0a0\\[OXOec0g1@b0^O?Ao0QOa0^Oa0@`0@1O1N10001O00000O2O00001N101O0000001O0O101O000O2O00001N1000001O000O2O001O000O2O0000001O0O101O00001N101O0000000O2O00001N101O0000001O0O2O00000O2O001O00000O101O000O2O001O001O0O1000001O00010O001O01O0001O01O01O00001O00010O0000010O00001O010O0000O1O2N1O1N2O1O2N1N2N2O2N1N2O1O2N1O1O1N2M3B>@a0POd_O]Ln`0T3l0^Ob0A`0POa]ObNob0Q1l0_OYPS5",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.9484
+  },
+  {
+   "area": 73171,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    414.0,
+    229.0,
+    392.0,
+    238.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__medicine_box",
+   "id": 46,
+   "image_id": 9,
+   "instance_id": "s_val_0009_o4",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "m\\d8]3ma0T1lN=D2N1N2O1O1O1O1O1O001O1O1N101O1O1O0O2O1O001O1O001O1O0O2O001O1O001N101O1O001O1O001O1N101O001O001O0O101O00001O0000000O100000000O01000000O10O10000000O1000000O0100000O11N01000000O1000000O10O10000000O0100000O100000000000O010000O10O1000000000O100000O010000000O10O1000000O100000O10O100000O01000000000000O01000O1000O10000000O100000O010000O1000O10000000O10O1000O10000000000O0100000O1000O10000000O1000000O1000O100000O10O1000O10000000000O10O1000O1000O100000O1000000O1000O10000000O0100000O1000000O1000O100000O10O100000O10000000000O010000000O01000000000O100000O0100000O100000O1000O11N01000000000O0100000O01000000000O1000000O0100000000O0100000000O1000000O10000000001N10001O000O101O00001O0O101O000O2O00001O00001N101O000O101O001O000O2O00001N10001O001O000O2O00001N10001O001O000O2N1O2[Od0A`0XOa^OTMna0Y2k0C>VOj0@_Ua4",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1212,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    233.0,
+    578.0,
+    50.0,
+    27.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0009_o2",
+   "id": 47,
+   "image_id": 9,
+   "instance_id": "s_val_0009_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 1.59,
+   "name": "week",
+   "segmentation": {
+    "counts": "Wok46Ue0c0]O000000000O01000000000000000000000000000000000000000000000000000000000000000000000O01000000000c0]ORe]?",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 42628,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    65.0,
+    753.0,
+    356.0,
+    180.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tissue_box",
+   "id": 48,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "egQ2b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000002^LZTOf2el0K2N2O000O001O1O2N1O1O10O01O001O1O001O1O00001O0100O0001O00001O00010O00001O00001O0000001O01O1O0001O000000000000010O00000000000000000001O1O00000000000000001O00000000000000000O1000001O1O000O10000000001O0O1000000O1000001N2O000O10000O10000O100O2O0O100O100O10000O1O1O101N2N1O1O1O1O1N2O1N2N2ROhLnTO_3mj0l000000000000000000001O1O000000000>B3M0001O000001O00000000000001O10O000000001O000001O000001O0000000000001O0001O1O01O000000000000001O01O0000000001O000001O10O1OO11O0000001O000001O00000001O0000000100O000000000001O000001O000001O00000000001O000001O1O01O0000000000000010O000000000001O00000001O1O01O0O1L_TOhKbk0W44L5KUTORLlk0m34L4LlSO[LUl0d34L4LcSOdL_l0Z34J6LXSOoLil0P34L4IoRO[M00Rm0d28VOi0UOmQOEO]OUn0n0j0ROn0OXWc;",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.7772
+  },
+  {
+   "area": 51557,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    491.0,
+    669.0,
+    222.0,
+    306.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 49,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "We[?f0Yo0f0ZO2Ni0XOd0[Oj0WO0Oi0XOg0VOi0ZOi0WO1Nf0ZOa0GJ?@0010O01O01O01O0010O1O0001O00010O00001O01O00010O1O01O00010O001O0001O01O01O01O001O01O10OO110O0001O0010O00010O1O0000010O01O0010O0001O01O000001O02OO000010O000000010O01O0011N0001O01O0001O000010O00010O0000010O10O000010O0001O0001O01O01O10O0000O2M2O1N3N1O1O1N2O2N1O1N2O1O2N2M2O1N2MnGWXOT8[g0?A?1O01O0000001O01O1O02N000000010O00000010O000002N000002N01ON2O1O1N3L3O1O1N2O1N2O1O2L3O1N^XOfGbg0Y83N3N1M300O1M3N2O2N2D;XOh0YOg0O1[Of0XOg0YOg0ZO^TOmLck0S3e0XOh0[Of0ZOf0N2YOS[_2",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.884
+  },
+  {
+   "area": 35508,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    99.0,
+    568.0,
+    161.0,
+    247.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tin_can_peas",
+   "id": 50,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "WbS34jo08I>^PO_Ojn0W1Ee0ZOi0XOg0XO<Ei0VOj0cUO^Jjh0a6J3N2N1O1N101O1O2M2O1O1O001N101O1O001O1O0O101O001N10001O00001O00001O000O2O00001O0000001O000000001O000000000000001O00000O100001O00O100001O00000000000000000000000000000000000O1000000000000O1000000000000O101O000O1000000O10000O10000O2O000O100O2O0O100O100O10000O2N1O100O2N1O1O1O2N1N2O1N3M2ROXWO^Jnh0n4]1\\Oc0BcTORLek0c3a0XOi0ZOe0[OX1gNP^d`0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.9991
+  },
+  {
+   "area": 30458,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    497.0,
+    492.0,
+    156.0,
+    238.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 51,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "m_a?8go0b0_On0QOa0@a0^Oa0_Oo0ROa0^Oa0_Oa0_O101N101N1O101N1O2O0O1O101N100O2N10010O0000010O00001O000010O01O0001O01O00010O001O00010OO11O000010O01O00010O000000010O001O001O01O01O0001O0001O010O000010O00000001O001O010O000010O0000010O0001O00001O01O0001O010O000010O0001O01O0001O00001O01O0O1N3N1N2O1O2N1N2O1O1O2M2O1O1O1N2O1N3LnUOWJSj0\\5?@`0^Oc0TOk0^Ob0A`0_O`0TOl0@Y`[4",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 59317,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    256.0,
+    496.0,
+    228.0,
+    304.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 52,
+   "image_id": 10,
+   "instance_id": "s_val_0010_o5",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "\\`P8=bo0d0aPOPOfn0f1_Og0YO2`ROaM;0dl0P3Ne0[Oe0[Od0[Oe0\\Oc0]Og0YOb0^Ob0^O4L1O1O1N200N3N1O1O1O1O100000001O0001O0001O0000000000001O000001O000001O000000010O0000000000000100O000000000001O000000001O10N11O0000001O0001O0000000001O000000001O0001O00000001O00000001O0001O00000000010O00000000001O000000000001O01O00000000000010O000000000001O0001O0001O0000000000001O00000001O0001O0000000001O01O000000000010O00000001O1O0000000000000010O00000001O00000001O01O0000O1M3N2K5M4L`XOeGag0X8_XOhGdg0W83M3M3M3M3M3J7A>ZOf0_Oa0ZOf0^Ob0VOhTOVLnk0Z3d0]Oc0\\OiROmM?0jl0Q2c0^OWROaNXn0j0j0\\O]`d9",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3554,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    513.0,
+    731.0,
+    86.0,
+    44.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0010_o2",
+   "id": 53,
+   "image_id": 10,
+   "instance_id": "s_val_0010_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 1.15,
+   "name": "value",
+   "segmentation": {
+    "counts": "mfQ`0<do0n0RO0000000000000000000000000000000O10O1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000O10O10000000000000000000000000000000n0ROWXQ6",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 40958,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    6.0,
+    815.0,
+    357.0,
+    180.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tissue_box",
+   "id": 54,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "ci6b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O00000005Kf0ZOd0]O0O001O00001O00001O01O10O00001O00001O01O01O00001O00001O00001O01O1O01O00001O000010O0001O00001O00001O000010O1O01O0000001O00010O00001O0000001O00000010O1O01O001O00001O000010O0001O0000001O00001O01O10O0000001O00001O01O01O001O00001O0000001O000100O0001O0000001O01O01O001O00001O0001O10O00001O00001O00001O01O01O000000O1N2O1O1N2O1O2N2N1N2O1N2O1O1O1N2O1O2N1N2O1O1N2O1L4_Oa0[Oe0ZOf0L5O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LcUOdJ^j0[54L4LZUOmJgj0R54L4LQUOVKPk0i44L5KgTO`K[k0^44J6L\\TOkKek0T44L4ISTOWL00nk0h37WOi0UORSO`NO]OPm0S2j0ROn0WOXQO60^Oin0;WW`<",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.7467
+  },
+  {
+   "area": 44196,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    110.0,
+    484.0,
+    195.0,
+    304.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "id": 55,
+   "image_id": 11,
+   "instance_id": "s_val_0011_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "m_^3e0Zo0e0[Oh0YOc0\\O2Nh0XOg0ZOf0XOg0[Og0YO1Ne0[O`0A1L301O0O1O101N2N002O1M200O1O1O2N1O100O2O0001O01O00001O10O00000001O00010O0000000011N0001O0001O0001O1O001O01O000001O000010O000001O01O0001O1O0002OO000000001O01O01O0000010O0000000000100O001O0001O10O00000010O00000001O0000100O00001O01O0001O0000010O000000001000N11O1O000001O01O00001O0001O01O000000100O0001Oa0@h0WO1Ob0_Oe0ZOg0YOe0[Of0ZO0bLQTOl2bl0Mj0WOd0[Oe0\\O5J2N2N2O1N2O1O1N3N1M3NdPO@\\o0`02O1M3O1N2O2M2OfXZ>",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.855
+  },
+  {
+   "area": 7536,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    201.0,
+    854.0,
+    109.0,
+    72.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tissue_box",
+   "host_instance_id": "s_val_0011_o0",
+   "id": 56,
+   "image_id": 11,
+   "instance_id": "s_val_0011_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.84,
+   "name": "promo",
+   "segmentation": {
+    "counts": "UlY6g0km0^1O10000000000000000000000000000000000010O000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010O00000000000000000000000000000000000O1bNfVU>",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1890,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    159.0,
+    564.0,
+    64.0,
+    31.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0011_o2",
+   "id": 57,
+   "image_id": 11,
+   "instance_id": "s_val_0011_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.71,
+   "name": "net",
+   "segmentation": {
+    "counts": "fao4l0Ro0200000000000000000000000000000000001O0000000000000000000000000000000000000000000000000001O0000000000000000000000000000000000N]^l`0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 24860,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    494.0,
+    642.0,
+    153.0,
+    228.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 58,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "lf^?8ho0a0_Oa0_O?Ac0^O=B000O1M3N2K5M3MjL[SOW3bl0iL^SOZ3al03M3M3M3M3M3J6B>ZOf0C=00000000000000001O0000001O0000001O00000000001O00001OO11O1O000000001O00001O00001O00001O0000001O00001O00001O1O00001O0001O1O01O00001O00001O000000bUOmJ60Ui0R5dVOeK[i0`501O01O01O01O01O02N0001O01O01O01O01O01O01O000010O00001O00010M200N2N2O2M2N2O2M3N1N2N3N1N3N1N2N3G8_Oa0_Oa0A?_Ob0_O`0@`0_Ob0@X[h3",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.8416
+  },
+  {
+   "area": 37155,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    124.0,
+    643.0,
+    194.0,
+    301.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 59,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "hhl33mo0c0\\Oc0hPO[OQn0m1]Of0ZOc0\\O2O1O1O1O0O3N1O002M2O1O1N101O1N2O1O1N2O1N2O1N2O1N2O1N2O1N2O1N2O1N002N001O001O1O001O001N2N1YOjJbVOZ5gh0[1E:]Od0_O`0K6O100000O10O10O100O01000O1000O0100O10O10O10000000O0100O10000O100O01000O10O10O100O10O1000000O0100O1000O010000QMnXOoLSg0P3oXOeJM0Ae1cg0f3eYOhJhN[1bg0n3aZO\\K`e0d4`ZOeJWf0[5V210000000000000000O1000000O100000000O1000O1O10O100000000O100000000O1000000O11OO02O001O001O001O001O00001O001O001O00001O001O001N1O101O001O001O00009Ga0kNU1mNe0VOg0]Oc0XOiZQ>",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.7418
+  },
+  {
+   "area": 43935,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    7.0,
+    518.0,
+    181.0,
+    276.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can_peas",
+   "id": 60,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "g`74jo06Kb0^O=Ci0XOi0WO>Aj0VO>Ck0UOl0WVOjIog0X7L3M1N3N1O1N2O1O1O1N2O1O1O1N2O001O1O0O2O001O001O001O0O2O0000001O0O2O0000001O001O00001O0000000O2O001O00000000000000001O000000001O0000000O11O000000O1001O000000000000000000000000000000000000000O1000000O101O0000000000000O1000000O100000000O1000001N10000O10000O101O0O100O100O100O101N100O100O100O2N1O1O2N1O1O1O2N1O1O2M2N2XOfWOfI^h0c5\\1D;\\Od0_Ob0E;TOk0C>[Od0kNV1_Oa0K6L[_Sb0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 63883,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    500.0,
+    347.0,
+    227.0,
+    343.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 61,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "d[d?180]o0;Nh0YOg0XOg0YOh0YOi0VOf0ZOj0WO0Of0ZOh0XOi0XOf0YO2N101O0O1O2O1N1O101N100O1O2N100O2N100O2N10000O2N100010O0001O1OO1100O0000000010O0001O00010O00001O01O0001O00010O00001O1O00010O000001O10O00001O00010O00000010O000001O00010O00002N01O0001O00010O00001O01O000001O00010O00001O01O1O0001O0000100O00001O010O00001O0001O0001O00010O00001O0001O0001O00010O1O001O00010O0000000100O0001O00010O0000001O01O01O000001O0O1N2O2N1N2O1O1O1O2N1N2O1N2O2N1O1O1N2O1O2N1M3O100O2M3M2L4]Oc0YOg0XOh0\\Oe0N1\\Od0VOj0ZOg0YOf0YOg0^Ob0YO^1XOYcX1",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 54851,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    234.0,
+    819.0,
+    357.0,
+    182.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tissue_box",
+   "id": 62,
+   "image_id": 12,
+   "instance_id": "s_val_0012_o5",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "iiZ7b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LcUOdJ^j0[54L4LZUOmJgj0R54L4LQUOVKPk0i44L5KgTO`K[k0^44J6L\\TOkKek0T44L4ISTOWL00nk0h37WOi0UORSO`NO]OPm0S2j0ROn0WOXQO60^Oin0;QW`5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 5444,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    196.0,
+    749.0,
+    100.0,
+    56.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0012_o1",
+   "id": 63,
+   "image_id": 12,
+   "instance_id": "s_val_0012_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.46,
+   "name": "week",
+   "segmentation": {
+    "counts": "dgT6`1Yn070000000000000000000000000000000000000000000000000000001O000000000000000000000000000000000000000000000000000000000000000000000000000000000001O000000000000000000000000000000000000000000000000000000IiXg>",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 13673,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    398.0,
+    874.0,
+    161.0,
+    85.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tissue_box",
+   "host_instance_id": "s_val_0012_o5",
+   "id": 64,
+   "image_id": 12,
+   "instance_id": "s_val_0012_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 0.13,
+   "name": "weight smart count",
+   "segmentation": {
+    "counts": "[k^<d2\\m0000000000O1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000O1000000000fT`6",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 18299,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    15.0,
+    337.0,
+    121.0,
+    182.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 65,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "Vh8=`a0g0ZOh0XOi0WOh0XOi0WO<C2O1O0O3O0N102N0O2O1O1O1O1N2O1O1O1O1O1N10O10000O10O10O10000O10O10O10000O01000O1000O010000O1000O0100O1000O01000O10O10000O01000O10000O010O10000O10O1000O100O01000O10000O01000O1000O0101O0O101O0O2O0O2O001O0O101N101O001N101H7WOi0VOk0VOi0WOj0VO]^a?",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 52135,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    378.0,
+    365.0,
+    355.0,
+    182.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tissue_box",
+   "id": 66,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "]Yd61ma0e0[O0j^O1O[O\\`0_10k0UO1`@dM00Z?b2O01O0000001O01O01O00001O00001O0001O10O00001O00001O010O00O1N2O1O1O1O1N2O1O1N3N2N1N2O1O1M3YOg0B>N3O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LeCdJ\\<[54L4L\\CmJe<R54L4LSCVKn<i44L5KiB`KY=^44J6L^BkKc=T44L4IUBWL00l=h37WOi0UOTA`NO]On>S2j0ROn0WOZ_O60^Og`0;QiR5",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9505
+  },
+  {
+   "area": 19041,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    312.0,
+    239.0,
+    124.0,
+    189.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 67,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "]T_56ga0>Ci0VO>Ch0WOj0VO>Ci0VO2N2N100O101N1O101N1O101N1O110O000010O0001O0000010O0010O0001O0000010O00001O01O01O00010O00001O00010O00001O01O0001O01O01O000010O0001O010O0000001O01O01O00001O01O01O01O0001O000010O0001O0010O0O1N3N1O1O1O1N2O2N1N2O1O2M2O1O1M3YOg0B?YOf0WOi0C=ZOg0B`[Y:",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 12238,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    235.0,
+    395.0,
+    102.0,
+    148.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "id": 68,
+   "image_id": 13,
+   "instance_id": "s_val_0013_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "RTT4:ca0;f^O\\Oe`0Y1Fg0XOe0[O=Cb0^O2O0O1O2N1O101N1O1O20O0000010O0001O000010O000001O01O0001O001O01O0001O01O0001O00010O00001O0001O01O01O01O00001O01O01O00000010O0001O01O0001O0000010O00001O01O0O1O1N2O1N3N1N2N3N1N2N2K5ZOf0F;ZOe0[Oe0]Od0D`fP<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 706,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    289.0,
+    421.0,
+    38.0,
+    19.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_01",
+   "host_instance_id": "s_val_0013_o4",
+   "id": 69,
+   "image_id": 13,
+   "instance_id": "s_val_0013_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 0.88,
+   "name": "best save special",
+   "segmentation": {
+    "counts": "T]R5b0\\a00000000000000O10000000000000000000000000000000000000000000O10000000000000YYV<",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3058,
+   "asset_id": "a_db37b89195",
+   "bbox": [
+    198.0,
+    289.0,
+    70.0,
+    46.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "host_instance_id": "s_val_0013_o0",
+   "id": 70,
+   "image_id": 13,
+   "instance_id": "s_val_0013_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.87,
+   "name": "zone save",
+   "segmentation": {
+    "counts": "gY_3:b`0S1O00000000000000000000000000000000000000000001O00000000000000000000000000000000000000000001O00000000000000000000000000000000000000000001mNg`W=",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 30994,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    654.0,
+    303.0,
+    165.0,
+    219.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 71,
+   "image_id": 14,
+   "instance_id": "s_val_0014_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "m`d=9Qe0?Q[OZO[d0f1UO=C`0@`0\\]OWMfa0f3A>Ba0_Oi0WO3N0N2O1O2N1O1O1O1000001O01O0001O00000000000010N11O0000001O00000000010O00000000001O000001O00000001O01O000001O0000001O00000000000001O0001O000000010O000000001O000001O0000000000010O00000001O0000001O000000001O0001O00000000001O01O0000000010O000001O000000000000001O000001O01O0000M3N2M3L5L3N2M3L4N2L5UOj0D<_Oa0RO]^OgMPb0m1m0B>A?TOl0Bo]X4",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 18206,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    829.0,
+    497.0,
+    121.0,
+    181.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_05",
+   "id": 72,
+   "image_id": 14,
+   "instance_id": "s_val_0014_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "S^Ya0<nd0g0ZOh0XOj0UOi0XOh0XO<D1O1O0O3N1O002N0O2O2N001O1N2O1O1O1O1O1N10O10000O10O10O10000O01000O10000O01000O1000O010000O10O10O100O01000O1000O10O10000O01000O10000O01000O10000O01000O100O01000O10000O0100000O10O10O2O000O2O001N10001N101N101O0O101O0O2O0I8VOi0WOj0VOi0VOk0WOZl`1",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 54851,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    245.0,
+    344.0,
+    357.0,
+    182.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tissue_box",
+   "id": 73,
+   "image_id": 14,
+   "instance_id": "s_val_0014_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "UhS5b0hd02Y[OM0AQd0X1R\\OhNgc0S2[O0l\\ObNO[OYb0o20k0UO1c^OTL00Va0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LX@dJi?[54L4Lo_OmJR`0R54L4Lf_OVK[`0i44L5K\\_O`Kf`0^44J6LQ_OkKPa0T44L4Ih^OWL00Ya0h37WOi0UOg]O`NO]O[b0S2j0ROn0WOm[O60^OTd0;nTi8",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 35679,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    24.0,
+    410.0,
+    163.0,
+    248.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can_peas",
+   "id": 74,
+   "image_id": 14,
+   "instance_id": "s_val_0014_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "a]`04Ue08I>S[O_OUd0W1Ee0ZOj0WOf0YO=Di0WOi0X@^JT>b6K2M3N1O1N101O1O2M2O1O1O001N101O1O001O001N101O001N10001O00001O00001O000O2O00001O0000001O000000001O000000000000001O00000O100001O00O100001O00000000000000000000000000000000000O1000000000000O1000000000000O101O000O10000O1000000O10000O2O000O100O2O0O100O100O100O101N1O100O2N1O1O1O2N1N2O2M2N2ROnA\\JZ>n4\\1^Ob0A`0E:XOi0[Od0ZOg0mNV\\OMad0Nb0L`k]a0",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2561,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    75.0,
+    581.0,
+    67.0,
+    41.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can_peas",
+   "host_instance_id": "s_val_0014_o3",
+   "id": 75,
+   "image_id": 14,
+   "instance_id": "s_val_0014_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 1.3,
+   "name": "local best local",
+   "segmentation": {
+    "counts": "Pcb1<od0k0UO00000000000000000O10O100000000000000000000000000000000000000000000000000000000000000000000000000000000000O10O100000000000000000k0UOVf[b0",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 56379,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    408.0,
+    405.0,
+    236.0,
+    352.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 76,
+   "image_id": 15,
+   "instance_id": "s_val_0015_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "_]h<<bo0f0\\O1O0O1O100O1O100O2N1O100O1O2O0O100O100O2M11002M100XYO[NT?f1R@UOl?l0T@TOl?l0[_OMd`05a^Of0]a0[Oj]OVN]L`2ge0[Ok]O_1Ub0aNS]OW2lb0jMX\\OS3fc0nLZ\\OR3fc0nLc[Oi3]d0XLiZOa4Ve0aKiZO`4Ue0bKQZOW5oe0]2010O000001O00010O0000001O10O000001O00010O00000100O0001O0000100O00001O0000010O000001O01O00001O01O01O0000002OO1OO11O01O00010O00001O01O01O0000011N0000001O01O0001O0000010O00001O01O1O0001O0000100O00001O00010O00001O01O000001O00010O1OO11O1O01O000001O^L_ZOeLae0Y3eZOcL]e0[3_[OjK`d0U4m[O_KSd0`4g\\OhJXc0X5Y]OWJgb0h5i301N10000O100O2O00000O101N1000000000001N10000O2O1O0000001O0O100000001N10000000001O00000000001O0O100000001O00000O101O1O0B>UOk0ZOf0O2XOg0XOh0]Oc0XOkbd4",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.806
+  },
+  {
+   "area": 50610,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    570.0,
+    625.0,
+    193.0,
+    294.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can_peas",
+   "id": 77,
+   "image_id": 15,
+   "instance_id": "s_val_0015_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can peas",
+   "segmentation": {
+    "counts": "Qdja09eo06Ll0SO=Cj0WOa0^Om0TO<Ck0VOb0^Om0fVO\\I]g0i7K3L2O2N1O1N2O0O2O1O2N1O1O1O1N101O0O2O1O001O1O000O2O1O00001N10001O00001O00001O00001O0O101O00001O00000O2O00000000001O00000000001O00000000000000000000000000000000000000000000000000000000000000000000000000000000000000O2O00000O10000000000000000O101O000O1000000O100O100000000O100O2O00000O1O2O000O1O100O100O10001N1O1O2N100O1O1O2N1O1O2N1N2O1O1M4VOWXOXIlg0o5`1D;ZOf0H9[Od0A`0SOm0C<WOj0UOk0]Oc0MQ\\m0",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 72932,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    198.0,
+    429.0,
+    250.0,
+    337.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 78,
+   "image_id": 15,
+   "instance_id": "s_val_0015_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "[^V6i0Vo0i0WO2Nl0UOg0YO1Nl0TOl0TO2RUOfKTj0T5Mj0XOm0RO1Oj0VOb0_O1O1L30001M200O101N2N1O101O0M30000O1N3N100N20001N2O0001O01O0000001O11N00000001O000000100O000000000011N000002N0001O000001O001O1O01O000001O0001OO1100O0001O1O0001O000001O0000020N0000000000000001O000000001O1O000000000000001O00000000002N0000000000001O00000000000000001O1O00000000001O00000000000100O000000000001O1O0000000000001O000000000000001O1O0000000000001O000000001O1O0000000000001O0000000000001O1O000000000000001O0000000N3N1O1N2O1O1M4M101O3A=O1UOk0VOj000WOj0UOj0WOUUO]Lkj0b3j0XOh0TOl000YOh0VOj0O1VOQbh:",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 0.9777
+  },
+  {
+   "area": 54851,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    186.0,
+    764.0,
+    357.0,
+    182.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tissue_box",
+   "id": 79,
+   "image_id": 15,
+   "instance_id": "s_val_0015_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "Rhj5b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LcUOdJ^j0[54L4LZUOmJgj0R54L4LQUOVKPk0i44L5KgTO`K[k0^44J6L\\TOkKek0T44L4ISTOWL00nk0h37WOi0UORSO`NO]OPm0S2j0ROn0WOXQO60^Oin0;hXi7",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1922,
+   "asset_id": "a_cbeb3caf02",
+   "bbox": [
+    637.0,
+    853.0,
+    62.0,
+    31.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can_peas",
+   "host_instance_id": "s_val_0015_o1",
+   "id": 80,
+   "image_id": 15,
+   "instance_id": "s_val_0015_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.09,
+   "name": "value special stock",
+   "segmentation": {
+    "counts": "ejmc0o0Qo00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000[Um2",
+    "size": [
+     1024,
+     793
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 30503,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    52.0,
+    523.0,
+    150.0,
+    249.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_03",
+   "id": 81,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "m`d18go0b0_Oa0^Ob0]QO_N0Ecm0m2]Oa0_Oc0^O?@R1nNb0_O1N1O1O101N101N100O2N100O2N1O2O0O1O1010O0001O00010O000010O0000010O0001O00001O010O00000010O000010O00001O010O00001O000001O01O0010O01O00010O000001O01O00001O0010O000001O010O0000010O001O01O0001O010O000000001O00010O001O010O000001O01O00010O00001O001O01O0O1N201N1N2O`0@1Oh0jIeUOW5Vk0[Om0TO2WLZTOU3Zl0Nj0UOj0WOi0WO1NYYaa0",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.918
+  },
+  {
+   "area": 44674,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    181.0,
+    835.0,
+    350.0,
+    179.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tissue_box",
+   "id": 82,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "Vje5b0]o02dPOM0Afn0X1]QOhN\\n0S2[O0WRObNO[Onl0o20k0UO1nSOTL00kk0S4O0000000000001O00000000000000000014L3L000000000000010O1O00000000000000000010O1O00000001O000001O00000001O00000000001OO2000O00000000000010O0000000000000001O000001O1O000001O1O00000000010O000000000000001O0001O1O0000000001O1O0001O000001O000000000000000010O1O000000000002N01O000000000001O0001O1O00000001O000000000001O0001O000000000000001O10O1O000000000001O000001O0001O0000000000000001000O0000000000001O01O00000000000001O000001O1O000001O1O00000001O01O00000000000000001O0001O1O0001O000000000000002OO00000O1L4O1N2K5L5O1K4L4L400L4L4M3LPKWUOQ5hj04M301O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O0000000000000000000a0@b0^Ob0]Oa0_Od0[Ob0[OVROQNWn0b15K4L`QOgNbn0W14L4LVQOQOln0m04L4LlPO[OVo0c04J6LaPOF`o095K4LWPO0iQY7",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 0.8145
+  },
+  {
+   "area": 89248,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    191.0,
+    511.0,
+    280.0,
+    372.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_04",
+   "id": 83,
+   "image_id": 16,
+   "instance_id": "s_val_0016_o4",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "Qao5`0`o00Oh0ePOjN[n0R2\\Ol0TO2RSO_MZl0U3Nj0VOi0WOi0WO1Ni0XOh0XOj0VO2Nf0ZOe0[O5K1O1O1O1M30000M4O1N1O1O1N2000000000001O0001O1O0001O000000000000001O00000001O01OO11O1O0000000000010O000000000000000010O00000000000001O1O000000000010O1O000000000001O000001O0000000001O1O00000000001O000001O0000000001O00000001O1O0002N000000000000010O000000000000001O000000000001O0001O000000000000001O10O1O000000000001O000001O0001O00000000000000001O1O00000001O0001O00000000000001O01O000000000000001000O0000000001O00000000000000001O01O00000001O000000000001O02N000000O1L4O1N2K5L5O1K4L4L400L4L4M3LfYOaF[f0^94J7^Oa0UOk0O1\\Od0TOl0ZOf000QOiUO[KQk0Q4i0YOg0XO\\SOSNel0l1h0YOeROWNmm0P1o0XOfQOG[n08n_T9",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 7874,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    290.0,
+    905.0,
+    127.0,
+    62.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tissue_box",
+   "host_instance_id": "s_val_0016_o1",
+   "id": 84,
+   "image_id": 16,
+   "instance_id": "s_val_0016_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.05,
+   "name": "price",
+   "segmentation": {
+    "counts": "YlR9n1Rn000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000gSj:",
+    "size": [
+     1024,
+     764
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 182414,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    81.0,
+    308.0,
+    632.0,
+    385.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__medicine_box",
+   "id": 85,
+   "image_id": 17,
+   "instance_id": "s_val_0017_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "P\\a2Z2:oMgl0T2PSOiM050U2^j0R3Nh1YN`0_O6K1O1O1N2O1O1O1O1O1O1O1O1N2O1O1O001O1N2N10001O1O1O001O2N0O101O1O001O1O0O2O001O1O001O1O1N101O1O001O001N2O00001O1O001O001N2O1O001O001O1O0O2O001O001O001O00000O2O001O00001O1N1000001O0000000O0100000000000O00010000000000O10O100000O10000000O010000000000O010000000O10000000O10O100000000O10O100000O10000000O10O100000000O1O01000bN\\ZO`Hde0`7S[OiGmd0V8T[OiGmd0W8^1O00100O1O100O1O100O001O100O1O100O1OO20O100O1O10000O00100O1O100N10100001O0000000O102N00000000001N100000001O000O101O000000000O2O000000000O2O0000001O00000O10001O000000001N10000000001O0O1000001O00000N3O000000001O1O0O100000001O0000000O2O000000001O000O1000001O0000000O2O000000001O00000O10001O000000001N10000000001O00000O101O0000001O1OO02O0000001O0000000O2O0000001O000O1O101O000000000O10O10000000000O10O100000O10000000O10O100000000N11000O1O1O100O1O1O01000M30000O1O1O001O1O100O1000O2O0000000000001N2O000000000000001O0O10000000001O1N1O100000001O000O0100000000O1O01000000000O10O10000000O100000O1000O100000000O010000000O01000000000O10O10000000O100000O10O100000000O10O100000O1O1000O1O1000O100000O1000O10000000000O100000000O2O001OO11N2O0000001O000O101O00000O2O00001O000O2O00001O0O1000001O000N3O001O00001O1N10001O000O2O0000001O0O101O001O0O101O00001O000O2O00001O000O2O1O00001O0O2O00001O0O101O0000001O0O2O00001N101N1O2N1N3oNQ1XOg0ZOg0@`0QOn0^Oc0YOf0\\Of0VOi0SOoPO40=Vo0Bbef1",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9625
+  },
+  {
+   "area": 76345,
+   "asset_id": "a_cba4c21d1d",
+   "bbox": [
+    453.0,
+    619.0,
+    247.0,
+    374.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_01",
+   "id": 86,
+   "image_id": 17,
+   "instance_id": "s_val_0017_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "sunny oat crunch",
+   "segmentation": {
+    "counts": "RdU>2S6d0Qc0^OZ\\OV1fc0jNf[Oh2[c0YMm[OX4Yc0iKR\\Ol4mc0VK\\[OR6Rd0nIY[Oh6fd0XIhZO8bNa6cf0ZIkZOW7Ue0jHSZOn7le0T1N1O1O101N1O1O101O1L30000O1O2N1O1O1O100O2O1O01O0001O0000001000O00000001O0000010O1O0000000010O1O000001O0001O0001O1O00001O01O1O0001O1O0000001O01O0001O1O01O1O0001O000000100O00000000001O0002N01O1O0000010O0000000000001000O01O00000001O02N0000000011N00000001O1O0000010O0000001O1O01O1O01O00000000011N000000000010O1O0001O1O000001O01O0000001O1O01O1O01O00000000010O1O00000010O1O0001O1O000001O01O00M3O1M302K3O1O1M3O100M3O1O2L3O100M3M302L2N2O1O1M300M3O1O2B=TOl000UOk0WOi002SOk0VOi002VOi0TOl000XOi0VOj0O1VOQ\\S2",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9731
+  },
+  {
+   "area": 59215,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    245.0,
+    609.0,
+    218.0,
+    332.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_03",
+   "id": 87,
+   "image_id": 17,
+   "instance_id": "s_val_0017_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "ice7;eo0g0XO1gQOnNdm0h1Ng0YOf0[Oh0WOf0ZOi0XOc0\\Oh0XOh0YOe0ZO2N2N101N1O101N1O101N100O2N10000O2N100O2N100N3N100010O0001O000002OO0000001O01O01O1O00010O000010O0001O0000010O00001O00010O0000010O0000001O01O01O000010O000001O1OO20O1O001O01O01O0001O01O000010O1O0001O000010O000001O01O0001O00010O00001O00100O00001O01O0001O0001O01O00001O01O0001O00010O00001O00010O00000010O0001O01O10N11O01O1O01O01O000001N1O1N2O2N1N2O1O1O2N1N2O1O1N2O2N1O1N2O1O2N1N2O1O1M4O0O1K5^Ob0ZOf0YOh0[Od0\\Od0XOh0[Of0YOf0[Oe0^OaRObN`m0^1b0XO`\\`9",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 18352,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    818.0,
+    227.0,
+    123.0,
+    187.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 88,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "]hZ>6ga0>Ch0WO>`_OaNf?Y2Ch0WO>Be0\\O0O1O100O1O101N100O1O100O1O110O000001O000000001O0001O000001O01O0001O00000003jB_Kj<k4O000010O000001O010O00001O0001O01O010O0000001O01O0001O1O0001O01O01O0001O000010O01O00001O01O00010O0001O000010N1O1O2M2O1O1N2O1O2N1N2O1O1O2M2M3ZOf0B?YOf0WOi@]Ne?V1h0[Of0A_Y^1",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.9813
+  },
+  {
+   "area": 25375,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    176.0,
+    344.0,
+    246.0,
+    149.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__medicine_box",
+   "id": 89,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "dPS3V2h?m0RO2O1O1O1O1O1O0O2O1O1O001O1O0O2O1O001O001N20OO2O1O001O001O001N10001O00000O100000O100000O11OO0100000000O0100000O100000O1000O100000000O10O1000O100000O100000O1000O10O1000000O1000O100000O1000O10O10000000O010000000000O10O1000O10000000O010000000000O010000000O1000000O10O10000000O10O100000O100000O01000000000000O10O1000O100000O1000O10000000O10O1000000O1000O100000O1000O1000O1000O1000O10000hMWB;i=DiBgNPOo0W>:^CUOc<k0W210000000000000000001O0000001O00001N1000001O001O00001O00001O000O2O001O00001O00001O00001O001O001O001_OeSa:",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 0.8814
+  },
+  {
+   "area": 20873,
+   "asset_id": "a_6c79bcc487",
+   "bbox": [
+    728.0,
+    371.0,
+    136.0,
+    179.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_04",
+   "id": 90,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "berry bran flakes",
+   "segmentation": {
+    "counts": "i^h<1fa0c0\\^O]OTa0]1YO;Eh0WO>Cg0YOg0YO<D3M1N200N2O1000001O0000001O0000000001O0001O00001O00000001O00000001O000001O0001O000000001O00000001O000001O0001O01O0000000000001O000001O01O0000000000000010O000000000001O0001O01O0000000000000010O000001O00000001O0001O0000000000N2N2L5L3N2L4N2K6F9YOg0YOg0@`0[Oe0D<YOj0AZZi2",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 33941,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    368.0,
+    387.0,
+    281.0,
+    142.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tissue_box",
+   "id": 91,
+   "image_id": 18,
+   "instance_id": "s_val_0018_o4",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "We^6?^a0b0f^OPOd`0e1@g0YOe0[O006J00000000001O000000000000001N1000000000001O0000000000000O101O1O0000000000001O00000000000000001N1000000000001O00000000000000001O000000000000001O1O0000000000000000001O00000000001O000000000000000000001O0000000000001O0000000000001O00000000000000001O1O0000000001O000001O000000000000001O0000000000000000001O0000000000001O00000000000000001O1OO11O000000001O0000000000000000001O00000000000000000010O000000000001O00000000000000001O0000000000001O1O000000000000001O0000000000000000001O00000000000000001O00000000000000001O00O1M^BjKb=U44M3L4M3M3L401K4L4L4M3J6\\OSAVNn>i1d0[Oe0YOg0\\OPka6",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1599,
+   "asset_id": "a_7d2f372086",
+   "bbox": [
+    73.0,
+    303.0,
+    49.0,
+    35.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "host_instance_id": "s_val_0018_o1",
+   "id": 92,
+   "image_id": 18,
+   "instance_id": "s_val_0018_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.28,
+   "name": "value",
+   "segmentation": {
+    "counts": "fWY18m`0j0O000000000000000000000000000001O000000000000000000000000000001O000000000000000000000000000001VOlZi?",
+    "size": [
+     574,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 9120,
+   "asset_id": "a_b4b1beb2ec",
+   "bbox": [
+    248.0,
+    309.0,
+    116.0,
+    130.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_05",
+   "id": 93,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o1",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "maple morning clusters",
+   "segmentation": {
+    "counts": "_gU5<8E]d0R1Cg0YOh0XOg0YO8H0O10000000O0100000O10O100000000O10O10000000O1000O1000O1000O1000O100000000O1000O100000O10000000O0100000000O010000000O100000O1000O100000000OjLm^OV2Sa0iMo^OCM0Am1da0`Nd_OFhNc1da0gN_@d0a?\\O_@DbNO[O5ca09\\AGd>9W30000000O100000000O100001O001O001O00001N1O2O001O00001O001O001O001O00mlg=",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.5442
+  },
+  {
+   "area": 23806,
+   "asset_id": "a_a80b00836a",
+   "bbox": [
+    755.0,
+    293.0,
+    137.0,
+    210.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_03",
+   "id": 94,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "choco comets",
+   "segmentation": {
+    "counts": "Ulg?e0ed0?Aj0k[OSNZc0_2_O>Bm0TO>Am0SO2O1N1O100O2N100O2O0O2N1O100O2O001O0000010O00010O0000010O001O0000010O001O01O01O00000010O01O0001O0001O001O01O01O0010O00000001O010O000010O0000010OO110O000010O0001O01O01O00001O01O01O00010O0000001O01O01O0010O0000000N3N1O1N201M2O1N2O1O1N3N1O1O1O2M2M3WOi0@a0WOh0@`0UOX]OcN0GVc0X1k0Ekgg2",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 50180,
+   "asset_id": "a_b3057bc1ff",
+   "bbox": [
+    133.0,
+    429.0,
+    343.0,
+    198.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__medicine_box",
+   "id": 95,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "medicine box",
+   "segmentation": {
+    "counts": "QUi2X16mN`c0m2cNW1hN4M1O1O1O1O1O1N2O1O001O1O1O001N2O001O1O0O2O1O001O001O1O0O2O1O001O001O1O001N101O001O001N10001O00001O000O01000000O100000O1000O1000O100000O10000O10O10000000O10000000O10O10000O01000000000O100000O1000O10000O1000O1000000O0100000000O1000O0100000000O1000O100000O0100000O10000000O010000000000O0100000O10O100000O100000000000O010000O10000000O10O10000000O10O10000O100000O1000O10000000000O01000O1000e0[O1^KY_O00[4n`0O0O10000000001N1000000O10000000001N2O0000000O1000001O0O100000000O10000000001O1N10000O100000001O0O10000000000O1000000O2O1O00000O100000001O0O1000000O10000000000O2O1O0000000O10000O10001O0000000O100000000O101O1O0O10000000000O101O0000000O1000000O100000001O1O0O100000000O101O000O1000000O1N2ROo0[Oe0^OnQ];",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 0.8849
+  },
+  {
+   "area": 54851,
+   "asset_id": "a_f7773fa2bc",
+   "bbox": [
+    323.0,
+    321.0,
+    357.0,
+    182.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tissue_box",
+   "id": 96,
+   "image_id": 19,
+   "instance_id": "s_val_0019_o4",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tissue box",
+   "segmentation": {
+    "counts": "Xhg6b0hd02Y[OM0AQd0X1R\\OhNgc0S2[O0l\\ObNO[OYb0o20k0UO1c^OTL00Va0S4O0000000000001O0000000000000000001N2N100000000000001O0000000000000000000O101O1O000000000000001O00000000000000000000001N2N100000000000001O00000000000000000000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000001O00000000000000001O1O000000000000000000001O00000000000001O1O000001O1O0000000000000000001O000000000000000000001O1O00000000000000001O000000000000000000001O1O00000000000000001O0000000000000000000000001O1O000000000000000000001O01O00000000000001O1O000000000000000000001O00000000000000001O1O0000000000000000001O0000000000000000000000001O1O0000000000000000001O000000000000000000001O1O0000O1LX@dJi?[54L4Lo_OmJR`0R54L4Lf_OVK[`0i44L5K\\_O`Kf`0^44J6LQ_OkKPa0T44L4Ih^OWL00Ya0h37WOi0UOg]O`NO]O[b0S2j0ROn0WOm[O60^OTd0;kTU7",
+    "size": [
+     683,
+     1024
+    ]
+   },
+   "visible_frac": 1.0
+  }
+ ]
+}

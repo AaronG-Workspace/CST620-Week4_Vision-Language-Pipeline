@@ -1,0 +1,1390 @@
+{
+ "annotations": [
+  {
+   "area": 26746,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    210.0,
+    803.0,
+    144.0,
+    202.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_10",
+   "id": 0,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_o2",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "Yib6g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0_Xm<",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 75721,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    383.0,
+    351.0,
+    259.0,
+    361.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_08",
+   "id": 1,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_o3",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "\\\\o;`0_o0j0WOb0^O1Og0YOg0WOh0ZOf0ZO1Oe0[Oe0[Od0\\Oh0WO2Ob0^O`0@3M2N1N2O1O2N1O1O2N1N3N2N1O002L3O1O1O003M1N3N1O1O1O2M2O1O1O3M1O1O000O1000O10O1O10O10000O001000000O10O1000O10000O10O10O1O1000O1O10O10000O10O1000O1000O01O1000000O01000O100000N20O100O1O10O1000O10000000O010000O1000O10N20000O10N20O10000000O01000000N110000000O10O01000000O10O1O10N200000O010000O100000O0100000000O0010000O100O01O100000O10O1000O1O1000O01000000O10O1000O100000O00010000O1000O10O10000000O0100O2N2O0O102N1N10001O0O2O1O1O1N101N20OO1O3N00001N2O001N101O1O1@?XOh001[Oe0XOi0YOe0WOi0O2YOg0ZOe0XOi0YOf0YOgQOF[n08j0VOidm3",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 8691,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    435.0,
+    560.0,
+    135.0,
+    103.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_08",
+   "host_instance_id": "s_showcase_0000_o3",
+   "id": 2,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_l1",
+   "iscrowd": 0,
+   "label_angle": -15.88,
+   "name": "smart smart smart",
+   "segmentation": {
+    "counts": "ecc=1lo04L3L4M4K4L4M3L5L3L4M4K4M3L4M4K4M3L5L3M30010O00010O0000010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0001O01O00010O0000010O00010O00M3M4K4M3L5L3L4M3L5L3L4M4K4M3L4L5L3L4M4Lb]U6",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 52840,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    438.0,
+    667.0,
+    218.0,
+    304.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_08",
+   "id": 3,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_o1",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "Qff==bo0f0[O3M001N1000001O1mSOLXh06kUOeNo01[Nf1Yj0F[VOj2Pi0c2@=C2N2M2O1O3M1O2N1N2O2N1O1N2O1O1O2N1N2O2N1O1N3N1O1O2N1O1O0N2000O1000O010000O01000O1000O10O100O1000O10N2000O1000O1000O010000O10O10O10000O01000O1000O10O100O10O10O100000O01000000O10O10O100O10O10O100000O010000O0100000O10O010000O1000O10O1000OO2000000O10O10O100000O010000O10O00100000O01000O1000O010000O1000O10O100000O010000O10O10O100000O0100O2O1N101O1N101O0O2O1O1N2O001O1O0O2O001N2O001N1O2O1C<\\Oe0^Ob0\\Od0]Ob0[ObTOUL`00Pk0i3e0]Od0^Oa0\\Oe0\\Oc0\\Og0YOoZg0",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.9882
+  },
+  {
+   "area": 52840,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    438.0,
+    667.0,
+    218.0,
+    304.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_08",
+   "id": 4,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_o1",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "Qff==bo0f0[O3M001N1000001O1mSOLXh06kUOeNo01[Nf1Yj0F[VOj2Pi0c2@=C2N2M2O1O3M1O2N1N2O2N1O1N2O1O1O2N1N2O2N1O1N3N1O1O2N1O1O0N2000O1000O010000O01000O1000O10O100O1000O10N2000O1000O1000O010000O10O10O10000O01000O1000O10O100O10O10O100000O01000000O10O10O100O10O10O100000O010000O0100000O10O010000O1000O10O1000OO2000000O10O10O100000O010000O10O00100000O01000O1000O010000O1000O10O100000O010000O10O10O100000O0100O2O1N101O1N101O0O2O1O1N2O001O1O0O2O001N2O001N1O2O1C<\\Oe0^Ob0\\Od0]Ob0[ObTOUL`00Pk0i3e0]Od0^Oa0\\Oe0\\Oc0\\Og0YOoZg0",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.9882
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    306.0,
+    739.0,
+    144.0,
+    202.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_10",
+   "id": 5,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_o2",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "Ygb9g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0_ZU7",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 6578,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    212.0,
+    647.0,
+    124.0,
+    73.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "distractor__tin_can",
+   "host_instance_id": "s_showcase_0001_o0",
+   "id": 6,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_l0",
+   "iscrowd": 0,
+   "label_angle": 8.21,
+   "name": "series clearance",
+   "segmentation": {
+    "counts": "hdd62no07I7I7H8I7I7I6J6J00O010000000000O0100000000000O0100000000000O0100000000000O010000000000O0100000000000O0100000000000O0100000000000O0100000000000O0100000000000O010000000000O0100000000000O0100000000000O0100000000000O010000000000O01006J6J7I7I7H8I7I7ISZg:",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 25148,
+   "asset_id": "a_88b3edec69",
+   "bbox": [
+    477.0,
+    650.0,
+    144.0,
+    192.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_10",
+   "id": 7,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_o0",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "`dm>g1Yn01iQONO[N]l0b3O`1_N1O100000001O00000000000000001O1O0000000000001O00000000000000002M1000000000001O000000000000002N0000000000001O000000000000000O2N20OO10000000001O1O1O1O1iUOXJTj0j502N1O001O0000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0X]b4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9403
+  },
+  {
+   "area": 25148,
+   "asset_id": "a_88b3edec69",
+   "bbox": [
+    477.0,
+    650.0,
+    144.0,
+    192.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_10",
+   "id": 8,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_o0",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "`dm>g1Yn01iQONO[N]l0b3O`1_N1O100000001O00000000000000001O1O0000000000001O00000000000000002M1000000000001O000000000000002N0000000000001O000000000000000O2N20OO10000000001O1O1O1O1iUOXJTj0j502N1O001O0000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0X]b4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9403
+  },
+  {
+   "area": 38951,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    262.0,
+    443.0,
+    185.0,
+    258.0
+   ],
+   "category_id": 1,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_08",
+   "id": 9,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_o1",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "j^V8n0Ro0=Ca0_Oa0^Oa0@`0@?A?@`0mTOUKSj0i5C<D2N2M2O1O2N1O2M2O1O1O1N2O1O1O2N2M2O1O2N1O1O2N1O0O1000000O01000O010000O10O1000O100O010O1000O10O10000O010000O010000O10000O10O1000O100O010O100000O010000O01000O1000O0100000O010000O01000O100O01000O10O10O10000O100000O01000000O01000O10O010000O01000O1000O010000O01000O11OO01000O10O10O10000O100O101N101O1N2O001N2O1O0O2O001O001N2O001N101O1D;QOZVOSKXj0[4P1@`0]Ob0@a0@?_Ob0^Ob0nNVQO;l`Q:",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 38951,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    262.0,
+    443.0,
+    185.0,
+    258.0
+   ],
+   "category_id": 2,
+   "condition": "clean",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_08",
+   "id": 10,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_o1",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "j^V8n0Ro0=Ca0_Oa0^Oa0@`0@?A?@`0mTOUKSj0i5C<D2N2M2O1O2N1O2M2O1O1O1N2O1O1O2N2M2O1O2N1O1O2N1O0O1000000O01000O010000O10O1000O100O010O1000O10O10000O010000O010000O10000O10O1000O100O010O100000O010000O01000O1000O0100000O010000O01000O100O01000O10O10O10000O100000O01000000O01000O10O010000O01000O1000O010000O01000O11OO01000O10O10O10000O100O101N101O1N2O001N2O1O0O2O001O001N2O001N101O1D;QOZVOSKXj0[4P1@`0]Ob0@a0@?_Ob0^Ob0nNVQO;l`Q:",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1196,
+   "asset_id": "a_88b3edec69",
+   "bbox": [
+    487.0,
+    673.0,
+    54.0,
+    35.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_10",
+   "host_instance_id": "s_showcase_0002_o0",
+   "id": 11,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_l0",
+   "iscrowd": 0,
+   "label_angle": 13.07,
+   "name": "total model unit",
+   "segmentation": {
+    "counts": "\\eW?2no04L4L4K5L5K1OO01000000O0100000O01000000O01000000O0100000O01000000O01000000O0100000O01000000O011O5K4K5L4L4LYZR7",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 4196,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    65.0,
+    609.0,
+    100.0,
+    69.0
+   ],
+   "category_id": 3,
+   "condition": "clean",
+   "group_id": "distractor__tin_can",
+   "host_instance_id": "s_showcase_0002_o3",
+   "id": 12,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_l1",
+   "iscrowd": 0,
+   "label_angle": 15.36,
+   "name": "new small number",
+   "segmentation": {
+    "counts": "icQ22no03M4K5L3M4L3L5L4L3L5L4L3M0O010000O010000O0100000O01000O0100000O010000O010000O0100000O01000O0100000O0100000O01000O0100000O010000O010000O0100000O01000O0100000O010000O010000O0103M4L4K4M4L4K4M4L3M4K5L3Md[jb0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 42573,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    132.0,
+    691.0,
+    194.0,
+    278.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_08",
+   "id": 13,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_o1",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "WiT4b0]o0b0_O`0UQOiN0Dkm0b2Ac0]O?A<D2N2N1N2O2N1O2N1O1O2N1O1O1N2N2N3lNVKjVO0UOl4oi0T1^Na1O2M2O1O2N1O1O0O1000O10O10O1000O010000O10O1000O100O01000O10O1000O1000O10O1000O010000O10O10O1000O10O100O10O10O100000O010000O10O10O100O10O10O10000O01000O0100000O10O010000O10O10O1000O010000O10000O100000O0100O100O010000O1000O1000O010000O10O1000O1000O010000O10O10O100000O0100O2O1N101N2O001N101O1N2O001O0O2O001N2O001N101O1C=]Oc0@`0mNXUOWL0E[k0a3S1]Oc0_O`0^Oc0]Ob0^Oe0[OWZQ;",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.949
+  },
+  {
+   "area": 42573,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    132.0,
+    691.0,
+    194.0,
+    278.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "subtle",
+   "group_id": "cereal_box__cereal_08",
+   "id": 14,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_o1",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "WiT4b0]o0b0_O`0UQOiN0Dkm0b2Ac0]O?A<D2N2N1N2O2N1O2N1O1O2N1O1O1N2N2N3lNVKjVO0UOl4oi0T1^Na1O2M2O1O2N1O1O0O1000O10O10O1000O010000O10O1000O100O01000O10O1000O1000O10O1000O010000O10O10O1000O10O100O10O10O100000O010000O10O10O100O10O10O10000O01000O0100000O10O010000O10O10O1000O010000O10000O100000O0100O100O010000O1000O1000O010000O10O1000O1000O010000O10O10O100000O0100O2O1N101N2O001N101O1N2O001O0O2O001N2O001N101O1C=]Oc0@`0mNXUOWL0E[k0a3S1]Oc0_O`0^Oc0]Ob0^Oe0[OWZQ;",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.949
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    16.0,
+    619.0,
+    144.0,
+    202.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_10",
+   "id": 15,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_o2",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "ac`0g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0W^W`0",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 5960,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    457.0,
+    813.0,
+    123.0,
+    92.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "distractor__tin_can",
+   "host_instance_id": "s_showcase_0003_o0",
+   "id": 16,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_l0",
+   "iscrowd": 0,
+   "label_angle": 22.44,
+   "name": "code batch",
+   "segmentation": {
+    "counts": "gjY>1no03N3M2M3N3L3N3M2M4M2M3N3M2M4M2M4M2M3N3M2M2OO010O10O10O010O10O10O010O010O10O10O010O10O10O010O10O10O010O010O10O10O010O10O10O010O10O10O010O10O10O010O010O10O10O010O10O10O010O10O10O010O010O10O10O010O10O10O011N3N3M2M3N3L3N3L3N3M2M3N3L3N3M2M4M2M3N3M2MSUS3",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1042,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    33.0,
+    673.0,
+    50.0,
+    40.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_10",
+   "host_instance_id": "s_showcase_0003_o2",
+   "id": 17,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_l1",
+   "iscrowd": 0,
+   "label_angle": 24.62,
+   "name": "large model",
+   "segmentation": {
+    "counts": "ceQ11no03N2N2M3N2M4M2M3N2M3NO010O10O010O10O010O010O010O10O10O010O010O010O10O010O10O012M3N2M3N3L3N2M3N2N2M[Zdb0",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 24931,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    428.0,
+    777.0,
+    143.0,
+    199.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_10",
+   "id": 18,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_o0",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "\\h\\=g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000001N2N1000001O0000001O1O0O10001O00002N0000000O2N101O1O0000001O00000O2O1O0000001O0000001N2N10001O0000002N00001O000O101O1O0000001O0000001N2N1000001O0000001O1N10001O001O1O0000001N1O1O1nNdTO\\M0UO^k0]3S1UNj1LfQOaNoTU6",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9321
+  },
+  {
+   "area": 73073,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    16.0,
+    609.0,
+    254.0,
+    355.0
+   ],
+   "category_id": 1,
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_08",
+   "id": 19,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_o2",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "]d`0`0_o0i0XOc0]O00g0YOf0YOg0ZOf0ZOe0[O00e0[Oc0[Ok0WOb0^O1O?A3M2M2O1O1O2N1O3M1O0O2O3M1O1N2O1O1O1O2N1N2N3N1O1O3M0O2O1O3M1O1O000O1000O1000O10O1000O01O10000O10O1O1000O100O1000O10O100000O10N2000000O01000O1000N20O10000O1O0100000O1000O10O10000O10O10O10000000O0002OO10O1000O10O100O1000O01O10000000O010000O010000000O10O0001000000O10O10O100000O010000O100000OO200000000O01O1000O100O010000000N1100000O1000O01000000O10O100000O1000O00010000O1000O10O10000000O0100O2N2O0O102N1N10001O0O2O1O1N2O001O1O0O1O2O001N3N00001N101O1A>O2XOh0[Oe0XOh0ZOe000XOi0YOh0YOe0YOg0ZOg0N1YOk0UOg\\a?",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2334,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    505.0,
+    480.0,
+    76.0,
+    52.0
+   ],
+   "category_id": 3,
+   "condition": "typical",
+   "group_id": "distractor__tin_can",
+   "host_instance_id": "s_showcase_0004_o3",
+   "id": 20,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_l0",
+   "iscrowd": 0,
+   "label_angle": 17.68,
+   "name": "sale",
+   "segmentation": {
+    "counts": "d_i?2no03M3L4M3M3L4M3M4K4M2N0O1000O01000O01000O0100000O01000O01000O01000O01000O01000O01000O01000O01000O01000O0100000O01000O01000O01000O102N3L5L3M3L4M3M3L4M3MR`j5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_88b3edec69",
+   "bbox": [
+    51.0,
+    788.0,
+    144.0,
+    202.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_10",
+   "id": 21,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_o1",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "jhc1g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0nXT?",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_88b3edec69",
+   "bbox": [
+    51.0,
+    788.0,
+    144.0,
+    202.0
+   ],
+   "category_id": 2,
+   "condition": "hard",
+   "dent_severity": "clear",
+   "group_id": "cereal_box__cereal_10",
+   "id": 22,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_o1",
+   "iscrowd": 0,
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "jhc1g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0nXT?",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 35429,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    350.0,
+    689.0,
+    178.0,
+    248.0
+   ],
+   "category_id": 1,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_08",
+   "id": 23,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_o3",
+   "iscrowd": 0,
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "`fn:;do0b0_O=C`0@`0_O`0iROWMYl0f3B?A>Ba0_O=C<D2M2O1O2N1O2M2O1O1O1N2O1O2N1N3N1O1O2M2O2N1O1O0O10O10000O10O010000O01000O100O10O10000O10O100O10O10O10O10O100O10000000O10O100O010O100000O0100O10O10O100000O010000O011OO01000000O0010000O01000000O0100O1000O010000O10O10O100O1000O1000O1000O010000O01000O1000O010000O010000000O011N2O0O2O1N101O0O2O1O001O1N101O0O2O1O0O2O1E:@a0A?_Oa0@?POSTO\\M_l0U2m0_Ob0@?_Od0]OYZg4",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2696,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    375.0,
+    800.0,
+    73.0,
+    52.0
+   ],
+   "category_id": 3,
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_08",
+   "host_instance_id": "s_showcase_0005_o3",
+   "id": 24,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_l0",
+   "iscrowd": 0,
+   "label_angle": 9.86,
+   "name": "special unit deal",
+   "segmentation": {
+    "counts": "\\ig;1no06K6J6J5K6J6I5L1OO100000O10O100000O1000O100000O1000O100000O1000O100000O10O100000O1000O100000O1000O100000O1000O100000O10O100000O11O4K7J6J5K6J6J5JjUW7",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  }
+ ],
+ "categories": [
+  {
+   "id": 1,
+   "name": "cereal_box"
+  },
+  {
+   "id": 2,
+   "name": "damaged_cereal_box"
+  },
+  {
+   "id": 3,
+   "name": "misaligned_label"
+  }
+ ],
+ "images": [
+  {
+   "background_id": "a_f063352347",
+   "condition": "typical",
+   "file_name": "images/s_showcase_0000.png",
+   "height": 1024,
+   "id": 0,
+   "name": "s_showcase_0000",
+   "width": 768
+  },
+  {
+   "background_id": "a_628a69d075",
+   "condition": "clean",
+   "file_name": "images/s_showcase_0001.png",
+   "height": 1024,
+   "id": 1,
+   "name": "s_showcase_0001",
+   "width": 680
+  },
+  {
+   "background_id": "a_f063352347",
+   "condition": "clean",
+   "file_name": "images/s_showcase_0002.png",
+   "height": 1024,
+   "id": 2,
+   "name": "s_showcase_0002",
+   "width": 768
+  },
+  {
+   "background_id": "a_628a69d075",
+   "condition": "hard",
+   "file_name": "images/s_showcase_0003.png",
+   "height": 1024,
+   "id": 3,
+   "name": "s_showcase_0003",
+   "width": 680
+  },
+  {
+   "background_id": "a_f063352347",
+   "condition": "typical",
+   "file_name": "images/s_showcase_0004.png",
+   "height": 1024,
+   "id": 4,
+   "name": "s_showcase_0004",
+   "width": 768
+  },
+  {
+   "background_id": "a_628a69d075",
+   "condition": "hard",
+   "file_name": "images/s_showcase_0005.png",
+   "height": 1024,
+   "id": 5,
+   "name": "s_showcase_0005",
+   "width": 680
+  }
+ ],
+ "info": {
+  "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+  "seed": 42,
+  "split": "showcase"
+ },
+ "negatives": [
+  {
+   "area": 32420,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    476.0,
+    651.0,
+    171.0,
+    222.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can",
+   "id": 0,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can",
+   "segmentation": {
+    "counts": "jel>W2l0kM41QO4_k0\\4L3N2N1N2O1O1O1O1N2O1N1O2O001O0O2O001O001N101O0O101O000N3O000O2O000O2O0000001N1000001M200000001N100O10001O0O1000000N2000001N10000O1000000O100000000O1O10001N100O100000000O1000000O1O1000O01000000O1000000O1000000O0010000O1000000O010000000O010O1O100O01000O1000O10O1000O10O10O011OO001000O10O010000O100O2O0O2O0O2O0O2N101N1O2N1O2N2N1N3M3SOTVObKPj0[2XXO[Mlg0>bUOc0Wn0VO_1IW[h3",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.885
+  },
+  {
+   "area": 26473,
+   "asset_id": "a_30f5a7ed9a",
+   "bbox": [
+    57.0,
+    587.0,
+    367.0,
+    160.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__foil_box",
+   "id": 1,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "foil box",
+   "segmentation": {
+    "counts": "dbi11no02TPONgo07O4L1_POE[o0`003M1hPO\\OQo0j005K1RQOPOjn0S100O2N2O00000O2O00002N00000O2N100000002N0O10001O000000011N0000001O000001O11N00001O0000010O1O001O000001O11N0000001O00010O1O0000001O000001000O0000001O00011N0000001O000001O11N00001O0000010O1O0000001O01O11N0000001O0001O0002N00001O000001000O00001O000000010O1O00000010O1O0001O1O000010O01O1O0000001O01O1O01O1O00000010O000001O1O0001O10O00002N0000000010O01O1O0000001O01O1O01O1O0000001O0001O01O1O000100O000002N00001O0001O01O1O00000010O1O0001O1O00000010O000001O1O000011N01O1O00000010O000001O1O000002OO00001O1O000000010O00001O1O001O0002N000001O1O0010O000001O1O00001O01O1O01O1O00000010O01O1O0000001O0002N01O1O00001O01O0001O1O00000011N000001O1O0010O000000000O1MYSOlLhl0T3201N2N1M;Ga0_O4K4M2N2N2N3M2N2LaQOdNbn0Y14N3M3M2N1O3N1L4N2N1O4JbPOC`o0<4N1L[POJgo053MTZg:",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9617
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    210.0,
+    803.0,
+    144.0,
+    202.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_10",
+   "id": 2,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "Yib6g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0_Xm<",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 75721,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    383.0,
+    351.0,
+    259.0,
+    361.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_08",
+   "id": 3,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "\\\\o;`0_o0j0WOb0^O1Og0YOg0WOh0ZOf0ZO1Oe0[Oe0[Od0\\Oh0WO2Ob0^O`0@3M2N1N2O1O2N1O1O2N1N3N2N1O002L3O1O1O003M1N3N1O1O1O2M2O1O1O3M1O1O000O1000O10O1O10O10000O001000000O10O1000O10000O10O10O1O1000O1O10O10000O10O1000O1000O01O1000000O01000O100000N20O100O1O10O1000O10000000O010000O1000O10N20000O10N20O10000000O01000000N110000000O10O01000000O10O1O10N200000O010000O100000O0100000000O0010000O100O01O100000O10O1000O1O1000O01000000O10O1000O100000O00010000O1000O10O10000000O0100O2N2O0O102N1N10001O0O2O1O1O1N101N20OO1O3N00001N2O001N101O1O1@?XOh001[Oe0XOi0YOe0WOi0O2YOg0ZOe0XOi0YOf0YOgQOF[n08j0VOidm3",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1497,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    289.0,
+    887.0,
+    53.0,
+    31.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_10",
+   "host_instance_id": "s_showcase_0000_o2",
+   "id": 4,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_l0",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 1.59,
+   "name": "lot",
+   "segmentation": {
+    "counts": "ikQ98ho0e0[O00000000000O10O10000000000000000000000000000000000000000000000000000000000000000000O10O100000000000e0[OdSY=",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1679,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    551.0,
+    804.0,
+    61.0,
+    29.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can",
+   "host_instance_id": "s_showcase_0000_o0",
+   "id": 5,
+   "image_id": 0,
+   "instance_id": "s_showcase_0000_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.01,
+   "name": "stock size clearance",
+   "segmentation": {
+    "counts": "YiWa0g0To05000000000000000000000000000000000000001O00000000000000000000000000000000000001O00000000000000000000000000000000000000KPWk4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 88127,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    133.0,
+    428.0,
+    273.0,
+    366.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can",
+   "id": 6,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can",
+   "segmentation": {
+    "counts": "h^U41ko0:H5K9XXO^Oc?P5SZOmJ5?be0]8L3M3M3M3M2N3M2N2N2N2O1O1N2N101N2O1N101N100O2O1O0O2O0O200N10001N101O0O2OO11N101O0O2O000O2O00001O0O101O0O101O00001O0O1000000O2O000O101O0000000O2O0000001O0O100000001N10000000001O000O1000000000001N100000000000000000001O00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000O100000001O0000000O100aN`1O00000O1O10001O00000000001O000000001O000000001O000000001O0000001O00000O100000001O0000001O000000001O00001O0000001O00001O00001O00000O2N110N10001O001O001O001O1O001O00001O1O001O1O1O001O1O1oNZYOfHhf0i5mZOQJTe0U4k\\OeKVc0j2j5oMQ2G9K^aa8",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.9613
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    306.0,
+    739.0,
+    144.0,
+    202.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_10",
+   "id": 7,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "Ygb9g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0_ZU7",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 3039,
+   "asset_id": "a_a5604dccec",
+   "bbox": [
+    510.0,
+    837.0,
+    71.0,
+    45.0
+   ],
+   "condition": "clean",
+   "group_id": "cereal_box__cereal_08",
+   "host_instance_id": "s_showcase_0001_o1",
+   "id": 8,
+   "image_id": 1,
+   "instance_id": "s_showcase_0001_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": 0.93,
+   "name": "net series regular",
+   "segmentation": {
+    "counts": "Wjn?;do0Q1PO000000000000000000000000000000000000000000000000O100000000000000000000000000000000000O1000000000000000000000000000000000000000000000000P1oNlTR3",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 27528,
+   "asset_id": "a_30f5a7ed9a",
+   "bbox": [
+    206.0,
+    774.0,
+    381.0,
+    160.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__foil_box",
+   "id": 9,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "foil box",
+   "segmentation": {
+    "counts": "_h^61no02TPONgo07O4L1_POE[o0`003M1hPO\\OQo0j005K1RQOPOjn0S100O2N2O00000O2O00002N00000O2N100000002N0O10001O000000011N0000001O000001O11N00001O0000010O1O001O000001O11N0000001O00010O1O0000001O000001000O0000001O00011N0000001O000001O11N00001O0000010O1O0000001O01O11N0000001O0001O0002N00001O000001000O00001O000000010O1O00000010O1O0001O1O000010O01O1O0000001O01O1O01O1O00000010O000001O1O0001O10O00002N0000000010O01O1O0000001O01O1O01O1O0000001O0001O01O1O000100O000002N00001O0001O01O1O00000010O1O0001O1O00000010O000001O1O000011N01O1O00000010O000001O1O000002OO00001O1O000000010O00001O1O001O0002N000001O1O0010O000001O1O00001O01O1O01O1O00000010O01O1O0000001O0002N01O1O00001O01O0001O1O00000011N000001O1O0010O000000000O1MYSOlLhl0T3201N2N1M3O1O1N2O1O2N2N2N2N2aM`ROY20gMcm0X25M2N1O3M2N103J3O1O4L2LbQOcN`n0\\13O1L\\QOiNgn0U14L2O2O2L2N3N3M1\\OfPOa0^o0N2N2L^POGdo083M3N3NfTd5",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 76018,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    2.0,
+    375.0,
+    249.0,
+    334.0
+   ],
+   "condition": "clean",
+   "group_id": "distractor__tin_can",
+   "id": 10,
+   "image_id": 2,
+   "instance_id": "s_showcase_0002_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can",
+   "segmentation": {
+    "counts": "P]21jo0:J4KX4jQO\\K4=af0f7K2N3M3M3M2N3M2N2N2O1N2O1N1O2O1N101O0O2O0O2O1O0O2O001N10001N101O0O101N110N101O0O1000001O0O2O0O10001O0O2O0000001O0O10000O101O00000O2O0000001O0O1000001O0000000000000O10000000001N10000000000000000O2O00000000000000000000000000001O0000000000000000000000000000000000000000O10001O000000000000000O1000001O0000000O10001O00000000000000000O2O000000001N1000000O2O00000O101O000000001N10000O10001N10000O2O0O11OO2O000O101N100O101N10001O0O1O2O0O2O0O10001N1O2O1N1O2O0O1O2O0O2N2N2N1O2N2M2O2M3M3gNjXOdIZg0o4WZOhJme0c3l[OULXd0_2\\5oMQ2K7HTcT`0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 69167,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    377.0,
+    633.0,
+    237.0,
+    319.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tin_can",
+   "id": 11,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can",
+   "segmentation": {
+    "counts": "Pei;1jo0:I:TWO@ga0\\4hXOcK4=nf0Z7L3M3M3M2N3M2N2N2O1N2O1N1O2O1N101O0O2O1N101O0O2O0O2O001O0O101O001N101N1000001N10001O001N10000O101O000O2O000O101O00001O000O100000001O0O1000001O0O100000001O00000000000O10000000000000000O2O000000000000000000000000001O0000000000000000000000000000000000000000O101O000000000000000O1000001O00000000000000000O10001O00000O101O0000001N1000000000000O2O00000O2O000O2O000O10001O000O100O10001N10001O0O101N100O10001N101N100O2O0O101N101N2O0O2N1O1O2O0O2N2N1O2N2N2M2O2M3M3iN]XOmIgg0X3\\[OYLjd0\\2T5WNi1F<HT[Q2",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 26746,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    16.0,
+    619.0,
+    144.0,
+    202.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_10",
+   "id": 12,
+   "image_id": 3,
+   "instance_id": "s_showcase_0003_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "ac`0g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000000O1O1000000000000000000O10000000O1O11OO1000O1O1000000000000000000O1000000000000000000O1O10000000O10000000000000O100000000000000000000O1O10000000000000000O2O001OO11O1O0000001N1O1O1nNdUO\\L0UO^j0]4S1UNl1SNcROo01[N^m0d0W^W`0",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 24931,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    428.0,
+    777.0,
+    143.0,
+    199.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_10",
+   "id": 13,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_o0",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "golden corn crisps",
+   "segmentation": {
+    "counts": "\\h\\=g1Yn01iQONO[N]l0b3Oj1UN2`UOdJYj0c5O2N1O1O1O1lUOUJQj0n5O1O2N1O1O2N00O1000000000000O11O00O1O100000000000O10000000O1000000000000000001N2N1000001O0000001O1O0O10001O00002N0000000O2N101O1O0000001O00000O2O1O0000001O0000001N2N10001O0000002N00001O000O101O1O0000001O0000001N2N1000001O0000001O1N10001O001O1O0000001N1O1O1nNdTO\\M0UO^k0]3S1UNj1LfQOaNoTU6",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 0.9321
+  },
+  {
+   "area": 27528,
+   "asset_id": "a_30f5a7ed9a",
+   "bbox": [
+    318.0,
+    680.0,
+    381.0,
+    160.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__foil_box",
+   "id": 14,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_o1",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "foil box",
+   "segmentation": {
+    "counts": "aen91no02TPONgo07O4L1_POE[o0`003M1hPO\\OQo0j005K1RQOPOjn0S100O2N2O00000O2O00002N00000O2N100000002N0O10001O000000011N0000001O000001O11N00001O0000010O1O001O000001O11N0000001O00010O1O0000001O000001000O0000001O00011N0000001O000001O11N00001O0000010O1O0000001O01O11N0000001O0001O0002N00001O000001000O00001O000000010O1O00000010O1O0001O1O000010O01O1O0000001O01O1O01O1O00000010O000001O1O0001O10O00002N0000000010O01O1O0000001O01O1O01O1O0000001O0001O01O1O000100O000002N00001O0001O01O1O00000010O1O0001O1O00000010O000001O1O000011N01O1O00000010O000001O1O000002OO00001O1O000000010O00001O1O001O0002N000001O1O0010O000001O1O00001O01O1O01O1O00000010O01O1O0000001O0002N01O1O00001O01O0001O1O00000011N000001O1O0010O000000000O1MYSOlLhl0T3201N2N1M3O1O1N2O1O2N2N2N2N2aM`ROY20gMcm0X25M2N1O3M2N103J3O1O4L2LbQOcN`n0\\13O1L\\QOiNgn0U14L2O2O2L2N3N3M1\\OfPOa0^o0N2N2L^POGdo083M3N3NdWT2",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 73073,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    16.0,
+    609.0,
+    254.0,
+    355.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_08",
+   "id": 15,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_o2",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "]d`0`0_o0i0XOc0]O00g0YOf0YOg0ZOf0ZOe0[O00e0[Oc0[Ok0WOb0^O1O?A3M2M2O1O1O2N1O3M1O0O2O3M1O1N2O1O1O1O2N1N2N3N1O1O3M0O2O1O3M1O1O000O1000O1000O10O1000O01O10000O10O1O1000O100O1000O10O100000O10N2000000O01000O1000N20O10000O1O0100000O1000O10O10000O10O10O10000000O0002OO10O1000O10O100O1000O01O10000000O010000O010000000O10O0001000000O10O10O100000O010000O100000OO200000000O01O1000O100O010000000N1100000O1000O01000000O10O100000O1000O00010000O1000O10O10000000O0100O2N2O0O102N1N10001O0O2O1O1N2O001O1O0O1O2O001N3N00001N101O1A>O2XOh0[Oe0XOh0ZOe000XOi0YOh0YOe0YOg0ZOg0N1YOk0UOg\\a?",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 41304,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    453.0,
+    456.0,
+    184.0,
+    247.0
+   ],
+   "condition": "typical",
+   "group_id": "distractor__tin_can",
+   "id": 16,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_o3",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can",
+   "segmentation": {
+    "counts": "V_U>1lo07J8`UOEmd0l5K3M3M3M2N2N2N2O1N2O1N2O0O2O0O2O001N101O0O2O001N10001O0O2O0000001N100O101O001O0O1000001N1000000O2O00001O0000000O1000001O000000000O1000000000001N10000000000000000000001O0000000000000000000000000000O101O0000000000000O10001O0000000000000O101O00000000000O2O00000O2O0000000O2O0000000O101N10001N1000000O2O000O101N10001N100O2N101O0O101N2N1O2O0O1O2N2N2N1N3N2M3RNcWOTLbh0d2hXOUM\\g0?Z5H9Jm`R4",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 1215,
+   "asset_id": "a_ff974ea8b8",
+   "bbox": [
+    496.0,
+    841.0,
+    45.0,
+    27.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_10",
+   "host_instance_id": "s_showcase_0004_o0",
+   "id": 17,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.38,
+   "name": "bonus regular",
+   "segmentation": {
+    "counts": "Yj`?k0Uo0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000gUR7",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 7930,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    43.0,
+    833.0,
+    123.0,
+    66.0
+   ],
+   "condition": "typical",
+   "group_id": "cereal_box__cereal_08",
+   "host_instance_id": "s_showcase_0004_o2",
+   "id": 18,
+   "image_id": 4,
+   "instance_id": "s_showcase_0004_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -0.44,
+   "name": "smart",
+   "segmentation": {
+    "counts": "\\j[1f1om0;00000000000000000000000000000000000000000000000000000000000000000000000000001O00000000000000000000000000000000000000000000000000000000000000000000000000000000000001O0000000000000000000000000000000000000000000000000000000000000000000000000000EYVib0",
+    "size": [
+     1024,
+     768
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 79140,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    253.0,
+    401.0,
+    266.0,
+    356.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tin_can",
+   "id": 19,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_o0",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "tin can",
+   "segmentation": {
+    "counts": "m]m71jo0:J5J8RXO_OP`0l4jYORK5=le0W8K4L3L3O1N2N3M2N2N2O1N2O1N2N1O2O1N101O1O0O2O1O0O2N101O0O10001O1N101N10001O001N10001O0O10001O0O101O0O101O0O101O000O101O0O101O0000001O000O10000000001N100000001O0O100000001O000O1000000000lN\\[OlFdd0S9n[O]FPd0d9V10000O1000000000O1000O100000000O1000000O1000000O1000000O100000000O10000000000O1000000O10000000000O2O000O100000000O10000O10001O000000000O101O000O100000001N1000000O2O0000000O101O000O11OO1000001O0O10001O0O10001O0O1000001O0O10001O000O10001O00001N100000000O2O001O0O101O00001N101O001N10001O001N1100O010O10O10O010000O01000O100VOlXOcH_ONgg0X4o3aN`1PNo1H9L6GXbP5",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.9132
+  },
+  {
+   "area": 23808,
+   "asset_id": "a_30f5a7ed9a",
+   "bbox": [
+    199.0,
+    856.0,
+    381.0,
+    160.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__foil_box",
+   "id": 20,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_o2",
+   "iscrowd": 0,
+   "kind": "distractor",
+   "name": "foil box",
+   "segmentation": {
+    "counts": "QkW61no02TPONgo07O4L1_POE[o0`003M1hPO\\OQo0j005K1RQOPOjn0S100O2N2O00000O2O00002N00000O2N100000002N0O10001O000000011N0000001O000001O11N00001O0000010O1O001O000001O11N0000001O00010O1O0000001O000001000O0000001O00011N0000001O000001O11N00001O0000010O1O0000001O01O11N0000001O0001O0002N00001O000001000O00001O000000010O1O00000010O1O0001O1O000010O01O1O0000001O01O1O3N<D;D2N1O101N1O2N10000O1O1O101N1O20OO1O2N1O2O0O10O1O0O10001N100O101O1N10000O2O0O10001O1O000O2O0O10002M10001N100O101O1O00000O2O0O100O2O1O000O101N10000O2O1O000O2O001N2O000O101O000O1O2O1O0O10001O000O2O1N10000O101O0O101O1N101N100000000O2O1O0O2O000O101O1N10001N1001O01O1O00000010O01O1O0000001O0002N01O1O00001O01O0001O1O00000011N000001O1O0010O000000000O1MYSOlLhl0T3201N2N1M3O1O1N2O1O2N2N2N2N2aM`ROY20gMcm0X25M2N1O3M2N103J3O1O4L2LbQOcN`n0\\13O1L\\QOiNgn0U14L2O2O2L2N3N3M1\\OfPOa0^o0N2N2L^POGdo083M3N3NTRS3",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 0.8649
+  },
+  {
+   "area": 35429,
+   "asset_id": "a_6980409224",
+   "bbox": [
+    350.0,
+    689.0,
+    178.0,
+    248.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_08",
+   "id": 21,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_o3",
+   "iscrowd": 0,
+   "kind": "intact_cereal_box",
+   "name": "frosty wheat pillows",
+   "segmentation": {
+    "counts": "`fn:;do0b0_O=C`0@`0_O`0iROWMYl0f3B?A>Ba0_O=C<D2M2O1O2N1O2M2O1O1O1N2O1O2N1N3N1O1O2M2O2N1O1O0O10O10000O10O010000O01000O100O10O10000O10O100O10O10O10O10O100O10000000O10O100O010O100000O0100O10O10O100000O010000O011OO01000000O0010000O01000000O0100O1000O010000O10O10O100O1000O1000O1000O010000O01000O1000O010000O010000000O011N2O0O2O1N101O0O2O1O001O1N101O0O2O1O0O2O1E:@a0A?_Oa0@?POSTO\\M_l0U2m0_Ob0@?_Od0]OYZg4",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 9390,
+   "asset_id": "a_1dacf363a3",
+   "bbox": [
+    314.0,
+    448.0,
+    120.0,
+    84.0
+   ],
+   "condition": "hard",
+   "group_id": "distractor__tin_can",
+   "host_instance_id": "s_showcase_0005_o0",
+   "id": 22,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_l1",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.75,
+   "name": "total",
+   "segmentation": {
+    "counts": "T`j9<dn0P1oNQ1M3000000000000010O00000000000000000000000000000000000000000000000000000000000000010O00000000000000000000000000000000000000000000000000000000000000010O00000000000000000000000000000000000000000000000000000000000000010O0000000000000M3oNQ1POlbe7",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  },
+  {
+   "area": 2716,
+   "asset_id": "a_88b3edec69",
+   "bbox": [
+    76.0,
+    843.0,
+    66.0,
+    44.0
+   ],
+   "condition": "hard",
+   "group_id": "cereal_box__cereal_10",
+   "host_instance_id": "s_showcase_0005_o1",
+   "id": 23,
+   "image_id": 5,
+   "instance_id": "s_showcase_0005_l2",
+   "iscrowd": 0,
+   "kind": "straight_label",
+   "label_angle": -1.22,
+   "name": "special special choice",
+   "segmentation": {
+    "counts": "Xk\\2=fn0m000000000000000010O000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010O000000000000000SO`Vi`0",
+    "size": [
+     1024,
+     680
+    ]
+   },
+   "visible_frac": 1.0
+  }
+ ]
+}

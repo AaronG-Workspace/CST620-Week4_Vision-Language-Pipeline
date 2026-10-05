@@ -1,0 +1,38 @@
+{
+ "annotations_sha256": "879e225f0806bff010101eacdb75a3b2f6d2826263b7899a48e40b7181d8db82",
+ "capped_draws": {
+  "cereal_boxes": 3,
+  "distractors": 0,
+  "labels": 0
+ },
+ "condition_balance": {
+  "clean": 2,
+  "hard": 2,
+  "typical": 2
+ },
+ "damaged_by_dent_severity": {
+  "clear": 2,
+  "subtle": 3
+ },
+ "distinct_groups_used": {
+  "background": 2,
+  "cereal_box": 2,
+  "distractor": 2
+ },
+ "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+ "images": 6,
+ "instances": {
+  "cereal_box": 12,
+  "damaged_cereal_box": 5,
+  "misaligned_label": 8
+ },
+ "layout_retries": 15,
+ "negatives": {
+  "distractor": 10,
+  "intact_cereal_box": 7,
+  "straight_label": 7
+ },
+ "placements_capped_by_max_upscale": 10,
+ "smallest_visible_frac": 0.8649,
+ "split": "showcase"
+}
