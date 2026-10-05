@@ -1,0 +1,5 @@
+category,negative_kind,verifier,negatives_hit,negatives,rate,rate_lo,rate_hi,boxes
+damaged_cereal_box,intact_cereal_box,off,40,41,0.9756,0.874,0.9957,40
+damaged_cereal_box,intact_cereal_box,on,3,41,0.0732,0.0252,0.1943,3
+misaligned_label,straight_label,off,0,26,0.0,0.0,0.1287,0
+misaligned_label,straight_label,on,0,26,0.0,0.0,0.1287,0

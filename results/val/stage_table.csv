@@ -1,0 +1,4 @@
+category,miss_DINO,miss_SAM,miss_CLIP,miss_other,fp_DINO,fp_SAM,verifier_also_failed,fp_caught_by_verifier,oracle_box_sam_miou,oracle_n,pipeline_miou
+cereal_box,1,0,1,0,2,0,2,20,0.9378,69,0.9328157578938392
+damaged_cereal_box,4,0,21,0,3,0,3,49,0.9401,28,0.9556812100061074
+misaligned_label,25,0,1,0,25,0,25,13,0.9563,26,nan

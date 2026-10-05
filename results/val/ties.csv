@@ -1,0 +1,7 @@
+step,exact_ties_at_best,exact_ties_anywhere
+dino_threshold,0,0
+headline_cereal_box,0,0
+headline_damaged_cereal_box,0,2
+headline_misaligned_label,0,2
+clip_temperature,0,0
+clip_margin,0,7
