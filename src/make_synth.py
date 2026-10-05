@@ -394,7 +394,8 @@ def build_image(split: str, index: int, plan: Plan, pool: dict, env: Env, previe
         else:
             annotations.append(_truth(obj["visible"], category_id=CATEGORIES["cereal_box"], **common))
             if obj["dented"]:  # a dented box is both a cereal box and a damaged cereal box: one instance_id
-                annotations.append(_truth(obj["visible"], category_id=CATEGORIES["damaged_cereal_box"], **common))
+                annotations.append(_truth(obj["visible"], category_id=CATEGORIES["damaged_cereal_box"],
+                                          dent_severity=asset.get("dent_severity") or "unrated", **common))
             else:
                 negatives.append(_truth(obj["visible"], kind="intact_cereal_box", **common))
         outlines.append((obj["visible"], "damaged_cereal_box" if obj["dented"] else obj["kind"]))
@@ -445,7 +446,7 @@ def build_split(split: str, env: Env, write: bool, preview: bool) -> dict:
               "negatives": {"intact_cereal_box": 0, "straight_label": 0, "distractor": 0},
               "distinct_groups_used": {}, "condition_balance": dict.fromkeys(env.cfg["conditions"], 0),
               "smallest_visible_frac": 1.0, "capped_draws": plan.capped, "layout_retries": 0,
-              "placements_capped_by_max_upscale": 0}
+              "placements_capped_by_max_upscale": 0, "damaged_by_dent_severity": {}}
     groups, by_id = set(), {v: k for k, v in CATEGORIES.items()}
     for index in range(int(env.cfg["images_per_split"][split])):
         made = build_image(split, index, plan, pool, env, preview)
@@ -458,6 +459,9 @@ def build_split(split: str, env: Env, write: bool, preview: bool) -> dict:
         for record in made["annotations"]:
             annotations.append({"id": len(annotations), "image_id": index, **record})
             counts["instances"][by_id[record["category_id"]]] += 1
+            if "dent_severity" in record:
+                tally = counts["damaged_by_dent_severity"]
+                tally[record["dent_severity"]] = tally.get(record["dent_severity"], 0) + 1
         for record in made["negatives"]:
             negatives.append({"id": len(negatives), "image_id": index, **record})
             counts["negatives"][record["kind"]] += 1

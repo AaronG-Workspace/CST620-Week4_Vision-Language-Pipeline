@@ -37,12 +37,14 @@ RENDERED_SET = "data/raw/synthetic/synthetic_retail_set"
 SET_CATEGORIES = {"cereal_intact": ("cereal_box", "no"), "cereal_dented": ("cereal_box", "yes"),
                   "distractor": ("distractor", ""), "background": ("background", "")}
 
-ASSET_FIELDS = ["asset_id", "group_id", "kind", "name", "damaged", "source", "source_path", "capture_date", "bg_clean",
-                "shelf_lines", "md5", "phash", "status", "reason"]
+ASSET_FIELDS = ["asset_id", "group_id", "kind", "name", "damaged", "dent_severity", "source", "source_path",
+                "capture_date", "bg_clean", "shelf_lines", "md5", "phash", "status", "reason"]
+DENT_SEVERITY = {"subtle": "subtle", "moderate": "clear", "severe": "clear"}  # the set's three levels, as two
 PROVENANCE_FIELDS = ["path", "source", "capture_date", "license", "annotation_method", "lighting", "angle",
                      "occlusion", "md5", "phash", "group_id",
                      "parent_asset_ids",                           # composites only
-                     "openimages_id", "generator_sha256", "seed"]  # the rendered set only
+                     "openimages_id", "generator_sha256", "seed",  # the rendered set only
+                     "dent_severity"]                              # dented boxes only: subtle or clear
 POOL_FIELDS = ["asset_id", "group_id", "kind", "split"]
 LOAD_COLUMNS = ["row_type", "split", "path", "asset_id", "kind", "group_id", "md5", "phash", "parent_asset_ids",
                 "condition", "name", "damaged"]
@@ -124,7 +126,7 @@ def read_own(errors: list[str]) -> list[dict]:
     for r in rows:
         r.update(source="own", source_path="data/raw/own/" + r["filename"], license="own photo",
                  annotation_method="intake.csv by hand", openimages_id="", generator_sha256="", seed="",
-                 mask_path="", box="")
+                 mask_path="", box="", dent_severity="")
     return [r for r in rows if r.get("kind") in KINDS]
 
 
@@ -172,6 +174,8 @@ def read_rendered_set(errors: list[str]) -> list[dict]:
             errors.append(f"{where}: a cereal box needs a pair_id, which is its group")
         if m["openimages_id"] not in credits:
             errors.append(f"{where}: no licence row in ATTRIBUTION.csv for Open Images id {m['openimages_id']!r}")
+        if damaged == "yes" and m.get("damage_severity") not in DENT_SEVERITY:
+            errors.append(f"{where}: damage_severity is {m.get('damage_severity')!r}, expected subtle, moderate or severe")
         boxed = kind == "distractor" and not rendered
         rows.append({
             "filename": m["file"], "source": "rendered" if rendered else "openimages_asset",
@@ -188,6 +192,8 @@ def read_rendered_set(errors: list[str]) -> list[dict]:
             "seed": _render_seeds(stem) if rendered else "",
             "mask_path": f"{RENDERED_SET}/{m['mask_file']}" if rendered else "",
             "box": ",".join(m[k] for k in ("gt_x1", "gt_y1", "gt_x2", "gt_y2")) if boxed else "",
+            # The set measures each dent (share of box pixels changed). Subtle dents are kept, and tagged.
+            "dent_severity": DENT_SEVERITY.get(m.get("damage_severity", ""), "") if damaged == "yes" else "",
         })
     for path in sorted((base / "images").glob("*")):
         if path.suffix.lower() in IMAGE_EXTS and f"images/{path.name}".lower() not in listed:
