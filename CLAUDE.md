@@ -21,8 +21,8 @@ When summarizing results in this session, say what it means for Priya first, the
 ## File roles
 | File | Job | Test access |
 |---|---|---|
-| src/data.py | inventory, EXIF dates, MD5 and pHash, grouping, splits asset pools once, optional Open Images pull, provides load_split() | writes test pool rows, its main() never reads them back |
-| src/cutouts.py | makes RGBA product cutouts once (backdrop threshold, rembg fallback, never SAM) | none |
+| src/data.py | reads both sources, inventory, EXIF dates for own photos, MD5 and pHash, grouping, splits asset pools once, optional Open Images pull, provides load_split() | writes test pool rows, its main() never reads them back |
+| src/cutouts.py | makes RGBA product cutouts once (the mask a rendered file ships with, or backdrop threshold with rembg fallback, never SAM) | none |
 | src/make_synth.py | builds composites for each split from that split's pools only, writes exact masks as COCO | writes test images and GT, never reads them back |
 | src/check_splits.py | verifies pools, splits, provenance and test access | test lists: path, asset_id, md5, phash, group_id, parent_asset_ids only |
 | src/models.py | loads the three models once, sets threads | none |
@@ -37,13 +37,15 @@ When summarizing results in this session, say what it means for Priya first, the
 
 ## Data and splits
 - data/raw is read-only. Never modify, move or re-save files there.
-- Hand-entered files live in data/raw/own (intake.csv, cutout_review.csv, label_words.txt). Code reads them and never writes them. Every script's spec is in docs/, and the build order with its gates is in docs/build_stages.md.
-- Own assets are shelf backgrounds and product cutouts (including boxes photographed before and after denting). Rows with source "own" need an EXIF capture_date after 2024-01-01. check_splits.py asserts this.
-- The same physical product photographed twice is one group. A box photographed intact and then dented is one group.
+- Hand-entered files live in data/raw/own (intake.csv, cutout_review.csv, background_review.csv, label_words.txt). Code reads them and never writes them. Every script's spec is in docs/, and the build order with its gates is in docs/build_stages.md.
+- Two sources feed the asset pools, and data.py reads both:
+  - Own photos, listed in data/raw/own/intake.csv (source "own"): shelf backgrounds and products on a plain sheet, including boxes photographed before and after denting. They need an EXIF capture_date after 2024-01-01. check_splits.py asserts this.
+  - The rendered set in data/raw/synthetic/synthetic_retail_set, listed in its own manifest.csv. Boxes and look-alikes drawn by its generator are source "rendered" and carry the generator's sha256 and seeds. Its Open Images photos (backgrounds and real distractors) are source "openimages_asset" and carry their licence and image id. No file in the set has camera EXIF, so the date rule does not apply to it.
+- The same physical product photographed twice is one group. A box photographed intact and then dented is one group. In the rendered set, an intact box and its dented twin share a pair_id, and that pair is one group.
 - data.py splits pools by group, once, seed 42, into val, test and showcase. Every background, cutout and Open Images file belongs to exactly one split. Rebuilding needs --force and must be byte-identical.
 - make_synth.py builds each split only from that split's pools, following docs/make_synth_spec.md. Its parameters (scale, rotation, feather radius, objects per image) are fixed in config.yaml before any results and never changed because of test results.
 - Ground truth for composites is the paste mask make_synth.py writes. Open Images ground truth is its own masks. Never create, refine or "clean up" ground truth with SAM, Grounding DINO, CLIP or model-assisted labeling.
-- Cutout masks come from a plain-backdrop threshold or rembg, never SAM. SAM-shaped edges would flatter SAM's mask IoU.
+- Cutout masks come from the mask a rendered file ships with (its renderer's own output), a plain-backdrop threshold, or rembg, never SAM. SAM-shaped edges would flatter SAM's mask IoU.
 - No dataset-level statistic feeds a model, threshold or metric (no dataset mean or std, no fitted normalization). Processors keep their fixed normalization. Per-image processing inside cutouts.py and make_synth.py (one photo's backdrop color, resizing) is fine as long as nothing is pooled across images.
 
 ## Test-set rules

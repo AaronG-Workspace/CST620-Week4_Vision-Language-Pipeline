@@ -1,4 +1,4 @@
-"""Inventory raw photos, group near duplicates, split asset groups once, and gate split access.
+"""Inventory raw images, group near duplicates, split asset groups once, and gate split access.
 
 Spec: docs/data_spec.md. Order: cutouts.py, then data.py, then make_synth.py.
 
@@ -14,6 +14,7 @@ import hashlib
 import io
 import itertools
 import math
+import re
 import sys
 from datetime import date, datetime
 from fractions import Fraction
@@ -31,11 +32,16 @@ KINDS = ("cereal_box", "distractor", "background")
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".heic", ".heif", ".tif", ".tiff", ".webp", ".bmp"}
 MIN_CAPTURE_DATE = date(2024, 1, 1)
 STRATA = ("background", "damaged-box", "intact-only box", "distractor")
+RENDERED_SET = "data/raw/synthetic/synthetic_retail_set"
+SET_CATEGORIES = {"cereal_intact": ("cereal_box", "no"), "cereal_dented": ("cereal_box", "yes"),
+                  "distractor": ("distractor", ""), "background": ("background", "")}
 
-ASSET_FIELDS = ["asset_id", "group_id", "kind", "name", "damaged", "source_path", "capture_date", "bg_clean",
+ASSET_FIELDS = ["asset_id", "group_id", "kind", "name", "damaged", "source", "source_path", "capture_date", "bg_clean",
                 "shelf_lines", "md5", "phash", "status", "reason"]
 PROVENANCE_FIELDS = ["path", "source", "capture_date", "license", "annotation_method", "lighting", "angle",
-                     "occlusion", "md5", "phash", "group_id", "parent_asset_ids"]  # last one: synthetic rows only
+                     "occlusion", "md5", "phash", "group_id",
+                     "parent_asset_ids",                           # composites only
+                     "openimages_id", "generator_sha256", "seed"]  # the rendered set only
 POOL_FIELDS = ["asset_id", "group_id", "kind", "split"]
 LOAD_COLUMNS = ["row_type", "split", "path", "asset_id", "kind", "group_id", "md5", "phash", "parent_asset_ids",
                 "condition", "name", "damaged"]
@@ -66,13 +72,13 @@ def _fail(title: str, items: list[str]) -> None:
     sys.exit(f"{title}:\n  " + "\n  ".join(items))
 
 
-# ---------------------------------------------------------------- step 1: intake
+# ---------------------------------------------------------------- step 1: the two sources
 
 def validate_intake(rows: list[dict], own: Path) -> list[str]:
     errors, listed = [], {}
     for line_no, r in enumerate(rows, start=2):
         r["filename"] = r.get("filename", "").replace("\\", "/")
-        where = f"line {line_no} ({r['filename'] or 'no filename'})"
+        where = f"intake.csv line {line_no} ({r['filename'] or 'no filename'})"
         kind = r.get("kind", "")
         if kind not in KINDS:
             errors.append(f"{where}: kind is {kind!r}, expected cereal_box, distractor or background")
@@ -107,6 +113,98 @@ def validate_intake(rows: list[dict], own: Path) -> list[str]:
     return errors
 
 
+def read_own(errors: list[str]) -> list[dict]:
+    """Own photos, listed by hand in data/raw/own/intake.csv. They need an EXIF capture date."""
+    own = _p("data", "raw", "own")
+    if not (own / "intake.csv").exists():
+        return []
+    rows = _read_csv(own / "intake.csv")
+    errors += validate_intake(rows, own)
+    for r in rows:
+        r.update(source="own", source_path="data/raw/own/" + r["filename"], license="own photo",
+                 annotation_method="intake.csv by hand", openimages_id="", generator_sha256="", seed="",
+                 mask_path="", box="")
+    return [r for r in rows if r.get("kind") in KINDS]
+
+
+def _render_seeds(stem: str) -> str:
+    """The seeds the set's gen_all.py used for this file. Read off its code; the manifest does not list them."""
+    box, lookalike = re.match(r"cereal_(\d+)_", stem), re.match(r"distractor_syn_(\d+)_", stem)
+    if box:
+        k = int(box.group(1))
+        return f"texture {1000 + k}, damage {2000 + k}, composite {k}"
+    if lookalike:
+        j = int(lookalike.group(1))
+        return f"texture {3000 + j}, composite {100 + j}"
+    return ""
+
+
+def read_rendered_set(errors: list[str]) -> list[dict]:
+    """The rendered retail set: boxes and look-alikes drawn in Python, plus Open Images photos.
+
+    No file here has camera EXIF, so the capture-date rule does not apply. Rendered rows carry the
+    generator's sha256 and seeds, and every row carries its Open Images id and licence.
+    """
+    base = _p(RENDERED_SET)
+    if not (base / "manifest.csv").exists():
+        return []
+    credits = {r["openimages_id"] for r in _read_csv(base / "ATTRIBUTION.csv")}
+    generator = hashlib.sha256()
+    for script in sorted((base / "generator").glob("*.py")):
+        generator.update(script.name.encode() + b"\0" + script.read_bytes())
+
+    rows, listed = [], set()
+    for line_no, m in enumerate(_read_csv(base / "manifest.csv"), start=2):
+        where = f"rendered set manifest line {line_no} ({m.get('file') or 'no file'})"
+        if m.get("category") not in SET_CATEGORIES:
+            errors.append(f"{where}: category {m.get('category')!r} is not one the pipeline knows")
+            continue
+        kind, damaged = SET_CATEGORIES[m["category"]]
+        rendered = bool(m["mask_file"])  # only the boxes and look-alikes drawn by the generator ship a mask
+        stem = Path(m["file"]).stem
+        listed.add(m["file"].lower())
+        if not (base / m["file"]).is_file():
+            errors.append(f"{where}: file not found")
+        if rendered and not (base / m["mask_file"]).is_file():
+            errors.append(f"{where}: mask {m['mask_file']} not found")
+        if kind == "cereal_box" and not m["pair_id"]:
+            errors.append(f"{where}: a cereal box needs a pair_id, which is its group")
+        if m["openimages_id"] not in credits:
+            errors.append(f"{where}: no licence row in ATTRIBUTION.csv for Open Images id {m['openimages_id']!r}")
+        boxed = kind == "distractor" and not rendered
+        rows.append({
+            "filename": m["file"], "source": "rendered" if rendered else "openimages_asset",
+            "source_path": f"{RENDERED_SET}/{m['file']}", "kind": kind,
+            # An intact box and its dented twin share a pair_id, so they are one group and stay in one split.
+            "group_name": m["pair_id"] if kind == "cereal_box" else (m["product"] or stem),
+            "name": m["product"].replace("_", " "), "damaged": damaged, "bg_clean": "", "shelf_lines": "",
+            "lighting": "", "notes": m.get("damage_types", ""),
+            "license": "rendered for this project on a CC BY 2.0 Open Images photo" if rendered else "CC BY 2.0",
+            "annotation_method": ("mask from the set's renderer" if rendered
+                                  else "Open Images box" if boxed else "none (background)"),
+            "openimages_id": m["openimages_id"],
+            "generator_sha256": generator.hexdigest() if rendered else "",
+            "seed": _render_seeds(stem) if rendered else "",
+            "mask_path": f"{RENDERED_SET}/{m['mask_file']}" if rendered else "",
+            "box": ",".join(m[k] for k in ("gt_x1", "gt_y1", "gt_x2", "gt_y2")) if boxed else "",
+        })
+    for path in sorted((base / "images").glob("*")):
+        if path.suffix.lower() in IMAGE_EXTS and f"images/{path.name}".lower() not in listed:
+            errors.append(f"{RENDERED_SET}/images/{path.name}: in the folder but not in the set's manifest.csv")
+    return rows
+
+
+def read_sources() -> list[dict]:
+    """Every listed file from both sources, as rows with the same fields. cutouts.py reads this too."""
+    errors: list[str] = []
+    rows = read_own(errors) + read_rendered_set(errors)
+    if errors:
+        _fail("The source listings have problems", errors)
+    if not rows:
+        sys.exit(f"Nothing to work on. Expected data/raw/own/intake.csv, or {RENDERED_SET}/manifest.csv, or both.")
+    return sorted(rows, key=lambda r: r["source_path"])
+
+
 # ---------------------------------------------------------------- step 2: inventory
 
 def _exif_capture(image: Image.Image) -> datetime | None:
@@ -117,11 +215,11 @@ def _exif_capture(image: Image.Image) -> datetime | None:
         return None
 
 
-def inventory(rows: list[dict], own: Path, phash_bits: int) -> list[str]:
+def inventory(rows: list[dict], phash_bits: int) -> list[str]:
     """Adds md5, asset_id, phash and capture_date to every row. Reads pixels for the pHash only."""
     errors = []
     for r in rows:
-        path = own / r["filename"]
+        path = _p(r["source_path"])
         r["md5"] = hashlib.md5(path.read_bytes()).hexdigest()
         r["asset_id"] = "a_" + r["md5"][:10]  # same rule as cutouts.py
         try:
@@ -129,20 +227,21 @@ def inventory(rows: list[dict], own: Path, phash_bits: int) -> list[str]:
                 captured = _exif_capture(image)
                 upright = ImageOps.exif_transpose(image)
                 r["_hash"] = imagehash.phash(upright, hash_size=math.isqrt(phash_bits))
-                height = upright.height
+                r["_height"] = upright.height
         except OSError as err:
-            errors.append(f"{r['filename']}: cannot open ({err})")
+            errors.append(f"{r['source_path']}: cannot open ({err})")
             continue
         r["phash"] = str(r["_hash"])
+        r["capture_date"] = ""
+        if r["source"] != "own":
+            continue  # rendered and Open Images files have no camera EXIF; their origin is recorded instead
         # A file's modified time says when it was copied, not when it was shot, so it is never a fallback.
         if captured is None:
-            errors.append(f"{r['filename']}: no EXIF DateTimeOriginal. Transfer originals by cable so EXIF survives.")
+            errors.append(f"{r['source_path']}: no EXIF DateTimeOriginal. Transfer originals by cable so EXIF survives.")
         elif captured.date() <= MIN_CAPTURE_DATE:
-            errors.append(f"{r['filename']}: capture date {captured.date()} is not after {MIN_CAPTURE_DATE}")
+            errors.append(f"{r['source_path']}: capture date {captured.date()} is not after {MIN_CAPTURE_DATE}")
         else:
             r["capture_date"] = captured.isoformat()
-        if r.get("shelf_lines") and any(int(y) >= height for y in r["shelf_lines"].split("|")):
-            errors.append(f"{r['filename']}: a shelf line is outside the upright photo (height {height} px)")
     return errors
 
 
@@ -150,10 +249,10 @@ def inventory(rows: list[dict], own: Path, phash_bits: int) -> list[str]:
 
 def mark_md5_duplicates(rows: list[dict], log: list[str]) -> None:
     first: dict[str, dict] = {}
-    for r in rows:  # already in filename order
+    for r in rows:  # already in path order
         if r["md5"] in first:
             r["status"], r["reason"] = "excluded", f"md5 duplicate of {first[r['md5']]['asset_id']}"
-            log.append(f"  excluded {r['filename']}: same bytes as {first[r['md5']]['filename']}")
+            log.append(f"  excluded {r['source_path']}: same bytes as {first[r['md5']]['source_path']}")
         else:
             first[r["md5"]] = r
 
@@ -175,10 +274,10 @@ def assign_groups(rows: list[dict], max_hamming: int, log: list[str]) -> list[st
         if distance > max_hamming or ka == kb:
             continue
         if a["kind"] != b["kind"]:
-            errors.append(f"{a['filename']} ({a['kind']}) and {b['filename']} ({b['kind']}) are near duplicates "
-                          f"(pHash distance {distance}) but have different kinds. Check intake.csv.")
+            errors.append(f"{a['source_path']} ({a['kind']}) and {b['source_path']} ({b['kind']}) are near "
+                          f"duplicates (pHash distance {distance}) but have different kinds. Check the listing.")
             continue
-        log.append(f"  warning: {a['filename']} (group {a['group_name']}) and {b['filename']} (group "
+        log.append(f"  warning: {a['source_path']} (group {a['group_name']}) and {b['source_path']} (group "
                    f"{b['group_name']}) are {distance} bits apart, so the two groups were merged. Review this.")
         root_a, root_b = find(ka), find(kb)
         if root_a != root_b:
@@ -193,7 +292,32 @@ def assign_groups(rows: list[dict], max_hamming: int, log: list[str]) -> list[st
     return errors
 
 
-# ---------------------------------------------------------------- step 4: cutout status
+# ---------------------------------------------------------------- step 4: reviews and cutout status
+
+def apply_background_review(rows: list[dict]) -> list[str]:
+    """bg_clean and shelf lines for the set's backgrounds come from a file the author fills in after looking at them."""
+    todo = [r for r in rows if r["kind"] == "background" and r["source"] != "own"]
+    path = _p("data", "raw", "own", "background_review.csv")
+    if not todo:
+        return []
+    if not path.exists():
+        return ["data/raw/own/background_review.csv is missing. Look at each background in the rendered set and fill "
+                "it in by hand: file, bg_clean (yes or no), shelf_lines (optional, y pixels separated by |), note."]
+    review = {r["file"].lower(): r for r in _read_csv(path)}
+    errors = []
+    for r in todo:
+        row = review.get(Path(r["filename"]).name.lower())
+        shelf = (row or {}).get("shelf_lines", "")
+        if row is None:
+            errors.append(f"background_review.csv has no row for {Path(r['filename']).name}")
+        elif row.get("bg_clean") not in ("yes", "no"):
+            errors.append(f"background_review.csv: bg_clean for {row['file']} must be yes or no")
+        elif shelf and not all(part.isdigit() for part in shelf.split("|")):
+            errors.append(f"background_review.csv: shelf_lines for {row['file']} takes whole numbers separated by |")
+        else:
+            r["bg_clean"], r["shelf_lines"] = row["bg_clean"], shelf
+    return errors
+
 
 def apply_cutout_status(rows: list[dict], log: list[str]) -> list[str]:
     report_path, review_path = _p("data", "assets", "cutouts_report.csv"), _p("data", "raw", "own", "cutout_review.csv")
@@ -213,16 +337,18 @@ def apply_cutout_status(rows: list[dict], log: list[str]) -> list[str]:
         if r["kind"] == "background":
             if r["bg_clean"] == "no":
                 r["status"], r["reason"] = "excluded", "bg_clean no"
+            elif r["shelf_lines"] and any(int(y) >= r["_height"] for y in r["shelf_lines"].split("|")):
+                errors.append(f"{r['source_path']}: a shelf line is outside the photo (height {r['_height']} px)")
         elif r["asset_id"] not in report:
-            errors.append(f"{r['filename']} ({r['asset_id']}) has no row in cutouts_report.csv. Run src/cutouts.py.")
+            errors.append(f"{r['source_path']} ({r['asset_id']}) has no row in cutouts_report.csv. Run src/cutouts.py.")
         elif report[r["asset_id"]]["status"] != "ok":
             r["status"], r["reason"] = "excluded", "cutout rejected: " + report[r["asset_id"]]["reason"]
         elif r["asset_id"] not in review:
-            errors.append(f"{r['filename']} ({r['asset_id']}) has a cutout but no row in cutout_review.csv")
+            errors.append(f"{r['source_path']} ({r['asset_id']}) has a cutout but no row in cutout_review.csv")
         elif review[r["asset_id"]]["keep"] == "no":
             r["status"], r["reason"] = "excluded", "cutout review: " + (review[r["asset_id"]].get("note") or "keep no")
         if r["status"] == "excluded":
-            log.append(f"  excluded {r['filename']}: {r['reason']}")
+            log.append(f"  excluded {r['source_path']}: {r['reason']}")
 
     usable = {r["group_id"] for r in rows if r["status"] == "ok"}
     for group_id in sorted({r["group_id"] for r in rows} - usable):
@@ -258,14 +384,14 @@ def split_groups(rows: list[dict], cfg: dict) -> dict[str, str]:
         index = {"background": 0, "distractor": 3}.get(r["kind"], 1 if r["group_id"] in dented else 2)
         strata[index].add(r["group_id"])
 
-    short = [f"{STRATA[i]} groups: found {len(strata[i])}, need at least 3. Shoot {3 - len(strata[i])} more."
+    short = [f"{STRATA[i]} groups: found {len(strata[i])}, need at least 3. {3 - len(strata[i])} more needed."
              for i in (0, 1, 3) if len(strata[i]) < 3]
     if short:
         _fail("Not enough groups to give every split one of each kind", short)
 
     assignment = {}
     for index, group_ids in enumerate(strata):
-        ordered = sorted(group_ids)  # sorted first, so the order of rows in intake.csv cannot matter
+        ordered = sorted(group_ids)  # sorted first, so the order of rows in a listing cannot matter
         rng = np.random.default_rng(np.random.SeedSequence([int(cfg["seed"]), index]))
         shuffled = [ordered[i] for i in rng.permutation(len(ordered))]
         one_each = index != 2 or len(ordered) >= 3
@@ -283,23 +409,21 @@ def build() -> dict:
     """Everything data.py produces, in memory. Writes nothing."""
     with open(_p("config.yaml"), encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
-    own = _p("data", "raw", "own")
-    if not (own / "intake.csv").exists():
-        sys.exit("data/raw/own/intake.csv is missing. docs/intake_template.csv shows the columns.")
-    rows = _read_csv(own / "intake.csv")
-    errors = validate_intake(rows, own)
-    if errors:
-        _fail("intake.csv has problems", errors)
-    rows.sort(key=lambda r: r["filename"])
+    rows = read_sources()
     for r in rows:
         r["status"], r["reason"] = "ok", ""
 
+    by_source = ", ".join(f"{sum(r['source'] == s for r in rows)} {s}" for s in sorted({r["source"] for r in rows}))
     log = ["data.py log. No timestamps, so a rebuild is byte-identical.",
-           f"step 1 intake: {len(rows)} rows, " + ", ".join(f"{sum(r['kind'] == k for r in rows)} {k}" for k in KINDS)]
-    errors = inventory(rows, own, int(cfg["dedup"]["phash_bits"]))
+           f"step 1 sources: {len(rows)} rows ({by_source}); "
+           + ", ".join(f"{sum(r['kind'] == k for r in rows)} {k}" for k in KINDS)]
+    errors = inventory(rows, int(cfg["dedup"]["phash_bits"]))
     if errors:
-        _fail("Some photos fail the inventory", errors)
-    log.append(f"step 2 inventory: {len(rows)} files, every one with an EXIF capture date after {MIN_CAPTURE_DATE}")
+        _fail("Some files fail the inventory", errors)
+    n_own = sum(r["source"] == "own" for r in rows)
+    own_note = f"{n_own} own photos, every one with an EXIF capture date after {MIN_CAPTURE_DATE}" if n_own else "no own photos"
+    log.append(f"step 2 inventory: {len(rows)} files; {own_note}; {len(rows) - n_own} from the rendered set, "
+               "which has no camera EXIF")
 
     log.append("step 3 duplicates and groups:")
     mark_md5_duplicates(rows, log)
@@ -312,10 +436,10 @@ def build() -> dict:
     log.append(f"  {n_duplicates} exact duplicates excluded, {n_merges} near-duplicate pairs across group names, "
                f"{len({r['group_id'] for r in rows})} groups")
 
-    log.append("step 4 cutout status:")
-    errors = apply_cutout_status(rows, log)
+    log.append("step 4 reviews and cutout status:")
+    errors = apply_background_review(rows) + apply_cutout_status(rows, log)
     if errors:
-        _fail("Cutouts are not ready", errors)
+        _fail("Reviews or cutouts are not ready", errors)
     log.append(f"  {sum(r['status'] == 'ok' for r in rows)} usable assets, "
                f"{sum(r['status'] == 'excluded' for r in rows)} excluded in total")
 
@@ -339,13 +463,8 @@ def build() -> dict:
     log += ["step 5 split (groups, not images):"] + ["  " + line for line in summary]
 
     assets = [{**r, "damaged": {"yes": "true", "no": "false"}.get(r["damaged"], ""),
-               "bg_clean": {"yes": "true", "no": "false"}.get(r["bg_clean"], ""),
-               "source_path": "data/raw/own/" + r["filename"]} for r in rows]
-    provenance = [{"path": a["source_path"], "source": "own", "capture_date": a["capture_date"],
-                   "license": "own photo", "annotation_method": "intake.csv by hand", "lighting": a.get("lighting", ""),
-                   "angle": "", "occlusion": "", "md5": a["md5"], "phash": a["phash"], "group_id": a["group_id"],
-                   "parent_asset_ids": ""}
-                  for a in assets]
+               "bg_clean": {"yes": "true", "no": "false"}.get(r["bg_clean"], "")} for r in rows]
+    provenance = [{**a, "path": a["source_path"], "angle": "", "occlusion": "", "parent_asset_ids": ""} for a in assets]
     pools = sorted(({"asset_id": r["asset_id"], "group_id": r["group_id"], "kind": r["kind"],
                      "split": assignment[r["group_id"]]} for r in usable), key=lambda p: p["asset_id"])
     return {
@@ -361,7 +480,7 @@ def build() -> dict:
 
 
 def _synthetic_tail(disk: bytes, fresh: bytes) -> int | None:
-    """If disk is the fresh own rows followed only by synthetic rows, how many. Otherwise None."""
+    """If disk is the fresh rows followed only by composite rows, how many. Otherwise None."""
     if not disk.startswith(fresh):
         return None
     tail = list(csv.DictReader(io.StringIO(disk[len(fresh):].decode("utf-8")), fieldnames=PROVENANCE_FIELDS))
@@ -379,9 +498,9 @@ def verify(built: dict) -> bool:
             continue
         disk, note = path.read_bytes(), ""
         if path.name == "provenance.csv" and disk != fresh:
-            n_synthetic = _synthetic_tail(disk, fresh)  # make_synth.py appends its rows after the own rows
+            n_synthetic = _synthetic_tail(disk, fresh)  # make_synth.py appends its rows after the asset rows
             if n_synthetic is not None:
-                disk, note = fresh, f" (own rows; {n_synthetic} synthetic rows follow)"
+                disk, note = fresh, f" (asset rows; {n_synthetic} composite rows follow)"
         match = disk == fresh
         all_match &= match
         print(f"[verify] {name:<26} {'match' if match else 'MISMATCH'}  sha256 {_sha256(fresh)[:16]}{note}")
@@ -412,7 +531,7 @@ def main() -> None:
 
     provenance_path = _p("data", "provenance.csv")
     if provenance_path.exists() and b",synthetic," in provenance_path.read_bytes():
-        print("[data] provenance.csv had synthetic rows from make_synth.py. They are dropped by this rebuild, "
+        print("[data] provenance.csv had composite rows from make_synth.py. They are dropped by this rebuild, "
               "so rerun make_synth.py --split all --force afterwards.")
     for path, content in built["files"].items():
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -433,7 +552,7 @@ def main() -> None:
 # ---------------------------------------------------------------- the gate every other script uses
 
 def load_split(name: str, columns: list[str] | None = None, allow_test: bool = False) -> list[dict]:
-    """Rows for one split: its synthetic images (once make_synth.py has run), then its pool assets.
+    """Rows for one split: its composites (once make_synth.py has run), then its pool assets.
 
     The test split raises PermissionError unless allow_test is set. Only eval.py (images and
     annotations) and check_splits.py (six metadata columns) may set it.

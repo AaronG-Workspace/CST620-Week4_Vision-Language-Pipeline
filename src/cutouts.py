@@ -1,8 +1,11 @@
-"""Turn each product photo into an RGBA cutout with a clean alpha mask, once.
+"""Turn each product image into an RGBA cutout with a clean alpha mask, once.
 
 Spec: docs/cutouts_spec.md. Runs before data.py and touches products only.
 The paste mask becomes ground truth later, so nothing here may use SAM, Grounding DINO,
 CLIP, transformers or torch. rembg (onnxruntime) is the only model allowed.
+
+A file that ships with its own mask (the rendered set) is cut out with that mask.
+An own photo on a plain sheet is cut out by backdrop threshold, with rembg as the fallback.
 
     python src/cutouts.py [--force] [--only <asset_id>]
 """
@@ -21,14 +24,15 @@ import numpy as np
 import yaml
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
+from data import read_sources
+
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG_PATH = ROOT / "config.yaml"
-OWN_DIR = ROOT / "data" / "raw" / "own"          # read-only
-ASSETS_DIR = ROOT / "data" / "assets"
 
 PRODUCT_KINDS = ("cereal_box", "distractor")
 REPORT_FIELDS = ["asset_id", "filename", "method", "status", "reason", "fg_frac", "largest_frac",
                  "solidity", "touches_border", "width", "height"]
+ALL_RULES = ("foreground share", "largest piece", "solidity", "border")
+MASK_RULES = ("largest piece", "border")  # a shipped mask is exact, and its object is small in a real scene
 
 SHEET_COLUMNS = 5
 TILE_PX = 250
@@ -36,8 +40,12 @@ CAPTION_PX = 62
 OUTLINE_RGB = (255, 0, 255)
 
 
+def _p(*parts: str) -> Path:
+    return ROOT.joinpath(*parts)
+
+
 def load_config() -> dict:
-    with open(CONFIG_PATH, encoding="utf-8") as f:
+    with open(_p("config.yaml"), encoding="utf-8") as f:
         cfg = yaml.safe_load(f)["cutouts"]
     if cfg["method"] != "backdrop_threshold":
         sys.exit(f"cutouts.method is {cfg['method']!r}; only backdrop_threshold is implemented.")
@@ -46,23 +54,8 @@ def load_config() -> dict:
     return cfg
 
 
-def read_products() -> list[dict]:
-    intake = OWN_DIR / "intake.csv"
-    if not intake.exists():
-        sys.exit(f"Missing {intake}. Fill it in by hand; docs/intake_template.csv shows the columns.")
-    with open(intake, encoding="utf-8-sig", newline="") as f:
-        rows = [{k.strip(): (v or "").strip() for k, v in row.items() if k} for row in csv.DictReader(f)]
-    products = [r for r in rows if r.get("kind") in PRODUCT_KINDS]
-    for row in products:
-        row["filename"] = row["filename"].replace("\\", "/")
-    missing = [r["filename"] for r in products if not (OWN_DIR / r["filename"]).is_file()]
-    if missing:
-        sys.exit("intake.csv lists product photos that are not on disk:\n  " + "\n  ".join(missing))
-    return products
-
-
 def asset_id_for(path: Path) -> str:
-    """Same rule as data.py, so the two scripts never need to share state."""
+    """Same rule as data.py, so the two scripts agree without sharing state."""
     return "a_" + hashlib.md5(path.read_bytes()).hexdigest()[:10]
 
 
@@ -104,30 +97,32 @@ def rembg_mask(image: Image.Image, cfg: dict) -> np.ndarray:
     return np.asarray(alpha.convert("L")) >= 128
 
 
+def keep_largest(m: np.ndarray, cfg: dict) -> tuple[np.ndarray, float]:
+    """Keep the largest piece and erode it. Returns (mask, largest piece's share before the rest was dropped)."""
+    n_labels, labels, stats, _ = cv2.connectedComponentsWithStats(m.astype(np.uint8), connectivity=8)
+    if n_labels <= 1:
+        return np.zeros(m.shape, dtype=bool), 0.0
+    areas = stats[1:, cv2.CC_STAT_AREA]
+    largest_frac = float(areas.max() / areas.sum())
+    kept = (labels == 1 + int(np.argmax(areas))).astype(np.uint8)
+    if cfg["erode_px"] > 0:
+        kept = cv2.erode(kept, np.ones((3, 3), np.uint8), iterations=int(cfg["erode_px"]))  # trims edge fringe
+    return kept.astype(bool), largest_frac
+
+
 def clean_mask(raw: np.ndarray, cfg: dict) -> tuple[np.ndarray, float]:
-    """Close, open, fill holes, keep the largest piece, erode. Returns (mask, largest piece's share)."""
+    """For a mask found in a photo: close, open, fill holes, then keep the largest piece and erode."""
     k = int(cfg["morph_kernel_px"])
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))
     m = cv2.morphologyEx(raw.astype(np.uint8), cv2.MORPH_CLOSE, kernel)
     m = cv2.morphologyEx(m, cv2.MORPH_OPEN, kernel)
-
     # Flood the outside from a padded corner. Whatever the flood can't reach is product or a hole in it.
     padded = np.pad(m, 1)
     cv2.floodFill(padded, None, (0, 0), 2)
-    m = (padded[1:-1, 1:-1] != 2).astype(np.uint8)
-
-    n_labels, labels, stats, _ = cv2.connectedComponentsWithStats(m, connectivity=8)
-    if n_labels <= 1:
-        return np.zeros(raw.shape, dtype=bool), 0.0
-    areas = stats[1:, cv2.CC_STAT_AREA]
-    largest_frac = float(areas.max() / areas.sum())  # measured before the smaller pieces are dropped
-    m = (labels == 1 + int(np.argmax(areas))).astype(np.uint8)
-    if cfg["erode_px"] > 0:
-        m = cv2.erode(m, np.ones((3, 3), np.uint8), iterations=int(cfg["erode_px"]))  # trims backdrop fringe
-    return m.astype(bool), largest_frac
+    return keep_largest(padded[1:-1, 1:-1] != 2, cfg)
 
 
-def qa(mask: np.ndarray, largest_frac: float, cfg: dict) -> tuple[dict, list[str]]:
+def qa(mask: np.ndarray, largest_frac: float, cfg: dict, rules: tuple = ALL_RULES) -> tuple[dict, list[str]]:
     limits = cfg["qa"]
     area = int(mask.sum())
     fg_frac = area / mask.size
@@ -139,17 +134,15 @@ def qa(mask: np.ndarray, largest_frac: float, cfg: dict) -> tuple[dict, list[str
         solidity = area / int(hull.sum())
     touches = bool(mask[0].any() or mask[-1].any() or mask[:, 0].any() or mask[:, -1].any())
 
-    failures = []
     lo, hi = limits["fg_frac_range"]
-    if not lo <= fg_frac <= hi:
-        failures.append(f"foreground is {fg_frac:.2f} of the image (allowed {lo} to {hi})")
-    if largest_frac < limits["min_largest_component_frac"]:
-        failures.append(f"largest piece is {largest_frac:.2f} of the foreground "
-                        f"(needs {limits['min_largest_component_frac']})")
-    if solidity < limits["min_solidity"]:
-        failures.append(f"solidity {solidity:.2f} (needs {limits['min_solidity']})")
-    if touches and not limits["allow_border_touch"]:
-        failures.append("mask touches the image border")
+    found = {
+        "foreground share": None if lo <= fg_frac <= hi else f"foreground is {fg_frac:.2f} of the image (allowed {lo} to {hi})",
+        "largest piece": None if largest_frac >= limits["min_largest_component_frac"] else
+        f"largest piece is {largest_frac:.2f} of the foreground (needs {limits['min_largest_component_frac']})",
+        "solidity": None if solidity >= limits["min_solidity"] else f"solidity {solidity:.2f} (needs {limits['min_solidity']})",
+        "border": "mask touches the image border" if touches and not limits["allow_border_touch"] else None,
+    }
+    failures = ["the mask is empty"] if not area else [found[rule] for rule in rules if found[rule]]
     metrics = {"fg_frac": f"{fg_frac:.4f}", "largest_frac": f"{largest_frac:.4f}",
                "solidity": f"{solidity:.4f}", "touches_border": "yes" if touches else "no"}
     return metrics, failures
@@ -162,30 +155,61 @@ def make_cutout(rgb: np.ndarray, mask: np.ndarray, pad: int) -> Image.Image:
     top, bottom = max(rows[0] - pad, 0), min(rows[-1] + 1 + pad, mask.shape[0])
     left, right = max(cols[0] - pad, 0), min(cols[-1] + 1 + pad, mask.shape[1])
     rgba = np.zeros((*mask.shape, 4), dtype=np.uint8)
-    rgba[mask, :3] = rgb[mask]  # backdrop pixels are dropped, so none can bleed in when edges are feathered
+    rgba[mask, :3] = rgb[mask]  # surrounding pixels are dropped, so none can bleed in when edges are feathered
     rgba[mask, 3] = 255
     return Image.fromarray(rgba[top:bottom, left:right])
 
 
-def process_photo(path: Path, cfg: dict) -> tuple[dict, Image.Image | None]:
-    """Threshold first, rembg only if that fails QA. Returns (report fields, cutout or None)."""
+def _rejected(method: str, reason: str, metrics: dict | None = None) -> tuple[dict, None]:
+    blank = {"fg_frac": "", "largest_frac": "", "solidity": "", "touches_border": ""}
+    return {"method": method, "status": "rejected", "reason": reason, **(metrics or blank), "width": "", "height": ""}, None
+
+
+def _accepted(method: str, metrics: dict, cutout: Image.Image) -> tuple[dict, Image.Image]:
+    return {"method": method, "status": "ok", "reason": "", **metrics, "width": cutout.width, "height": cutout.height}, cutout
+
+
+def cutout_from_mask(path: Path, mask_path: Path, cfg: dict) -> tuple[dict, Image.Image | None]:
+    """A file that ships with its own mask: the mask is the outline. No thresholding and no model."""
+    with Image.open(path) as original, Image.open(mask_path) as shipped:
+        if ImageOps.exif_transpose(original).size != shipped.size:
+            return _rejected("mask", f"mask is {shipped.size}, image is {original.size}")
+        image = load_photo(path, cfg["max_long_side"])
+        raw = np.asarray(shipped.convert("L").resize(image.size, Image.Resampling.NEAREST)) > 127
+    mask, largest_frac = keep_largest(raw, cfg)
+    metrics, failures = qa(mask, largest_frac, cfg, rules=MASK_RULES)
+    if failures:
+        return _rejected("mask", "mask: " + "; ".join(failures), metrics)
+    return _accepted("mask", metrics, make_cutout(np.asarray(image), mask, int(cfg["pad_px"])))
+
+
+def cutout_from_photo(path: Path, cfg: dict) -> tuple[dict, Image.Image | None]:
+    """An own photo on a plain sheet: threshold first, rembg only if that fails QA."""
     image = load_photo(path, cfg["max_long_side"])
     rgb = np.asarray(image)
     attempts = [("threshold", lambda: threshold_mask(rgb, cfg))]
     if cfg["fallback"] == "rembg":
         attempts.append(("rembg", lambda: rembg_mask(image, cfg)))
-
     reasons = []
     for method, make_raw in attempts:
         mask, largest_frac = clean_mask(make_raw(), cfg)
         metrics, failures = qa(mask, largest_frac, cfg)
         if not failures:
-            cutout = make_cutout(rgb, mask, int(cfg["pad_px"]))
-            return {"method": method, "status": "ok", "reason": "", **metrics,
-                    "width": cutout.width, "height": cutout.height}, cutout
+            return _accepted(method, metrics, make_cutout(rgb, mask, int(cfg["pad_px"])))
         reasons.append(f"{method}: " + "; ".join(failures))
-    return {"method": method, "status": "rejected", "reason": " | ".join(reasons), **metrics,
-            "width": "", "height": ""}, None
+    return _rejected(method, " | ".join(reasons), metrics)
+
+
+def process(product: dict, cfg: dict) -> tuple[dict, Image.Image | None]:
+    path = _p(product["source_path"])
+    try:
+        if product["mask_path"]:
+            return cutout_from_mask(path, _p(product["mask_path"]), cfg)
+        if product["source"] == "own":
+            return cutout_from_photo(path, cfg)
+        return _rejected("", "no mask ships with this file, and it is not an own photo on a plain sheet")
+    except OSError as err:
+        return _rejected("", f"cannot open: {err}")
 
 
 # ---------------------------------------------------------------- report and review sheet
@@ -215,7 +239,7 @@ def _tile(row: dict, product: dict, font) -> Image.Image:
     tile = Image.new("RGB", (TILE_PX, TILE_PX + CAPTION_PX), "white")
     inner = TILE_PX - 16
     if row["status"] == "ok":
-        cutout = Image.open(ASSETS_DIR / "cutouts" / f"{row['asset_id']}.png")
+        cutout = Image.open(_p("data", "assets", "cutouts", f"{row['asset_id']}.png"))
         cutout.thumbnail((inner, inner), Image.Resampling.LANCZOS)
         board = _checkerboard(TILE_PX)
         offset = ((TILE_PX - cutout.width) // 2, (TILE_PX - cutout.height) // 2)
@@ -226,7 +250,7 @@ def _tile(row: dict, product: dict, font) -> Image.Image:
         pixels[offset[1]:offset[1] + cutout.height, offset[0]:offset[0] + cutout.width][edge] = OUTLINE_RGB
         tile.paste(Image.fromarray(pixels), (0, 0))
     else:
-        photo = load_photo(OWN_DIR / row["filename"], inner)
+        photo = load_photo(_p(row["filename"]), inner)
         tile.paste(Image.new("RGB", (TILE_PX, TILE_PX), (90, 90, 90)), (0, 0))
         tile.paste(photo, ((TILE_PX - photo.width) // 2, (TILE_PX - photo.height) // 2))
 
@@ -260,9 +284,9 @@ def _group_counts(rows: list[dict], products: list[dict]) -> tuple[int, int]:
         if row["status"] != "ok":
             continue
         if product["kind"] == "cereal_box":
-            states.setdefault(product.get("group_name", ""), set()).add(product.get("damaged", ""))
+            states.setdefault(product["group_name"], set()).add(product["damaged"])
         else:
-            distractors.add(product.get("group_name", ""))
+            distractors.add(product["group_name"])
     return sum(1 for s in states.values() if {"yes", "no"} <= s), len(distractors)
 
 
@@ -276,16 +300,16 @@ def main() -> None:
 
     start = time.perf_counter()
     cfg = load_config()
-    products = read_products()
-    cutouts_dir = ASSETS_DIR / "cutouts"
-    report_path = ASSETS_DIR / "cutouts_report.csv"
-    sheet_path = ASSETS_DIR / "cutouts_sheet.png"
+    products = [r for r in read_sources() if r["kind"] in PRODUCT_KINDS]
+    cutouts_dir = _p("data", "assets", "cutouts")
+    report_path = _p("data", "assets", "cutouts_report.csv")
+    sheet_path = _p("data", "assets", "cutouts_sheet.png")
     cutouts_dir.mkdir(parents=True, exist_ok=True)
     previous = read_report(report_path)
 
-    ids = [asset_id_for(OWN_DIR / p["filename"]) for p in products]
+    ids = [asset_id_for(_p(p["source_path"])) for p in products]
     if args.only and args.only not in ids:
-        sys.exit(f"--only {args.only}: no product row in intake.csv has that asset_id.")
+        sys.exit(f"--only {args.only}: no listed product has that asset_id.")
 
     done: dict[str, dict] = {}
     rows, kept_products, n_reused, n_waiting = [], [], 0, 0
@@ -303,21 +327,16 @@ def main() -> None:
             n_waiting += 1
             continue
         else:
-            try:
-                fields, cutout = process_photo(OWN_DIR / product["filename"], cfg)
-            except OSError as err:
-                fields, cutout = {"method": "", "status": "rejected", "reason": f"cannot open photo: {err}",
-                                  "fg_frac": "", "largest_frac": "", "solidity": "", "touches_border": "",
-                                  "width": "", "height": ""}, None
+            fields, cutout = process(product, cfg)
             note = ""
             if cutout is not None:
                 cutout.save(png, format="PNG")
             elif png.exists():
                 note = f"(an older {png.name} is still on disk; nothing was deleted)"
         done[asset_id] = fields
-        rows.append({"asset_id": asset_id, "filename": product["filename"], **fields})
+        rows.append({"asset_id": asset_id, "filename": product["source_path"], **fields})
         kept_products.append(product)
-        print(f"[cutout] {asset_id}  {Path(product['filename']).name:<24} {fields['method']:<9} "
+        print(f"[cutout] {asset_id}  {Path(product['source_path']).name[:38]:<38} {fields['method']:<9} "
               f"{fields['status']:<8} fg {fields['fg_frac'] or '-':<6} solidity {fields['solidity'] or '-':<6} {note}")
         if fields["status"] == "rejected":
             print(f"         reason: {fields['reason']}")
@@ -326,17 +345,18 @@ def main() -> None:
     write_sheet(sheet_path, rows, kept_products)
 
     n_ok = sum(r["status"] == "ok" for r in rows)
-    n_rembg = sum(r["status"] == "ok" and r["method"] == "rembg" for r in rows)
+    by_method = {m: sum(r["status"] == "ok" and r["method"] == m for r in rows) for m in ("mask", "threshold", "rembg")}
     box_groups, distractor_groups = _group_counts(rows, kept_products)
     share = f"{100 * n_ok / len(rows):.0f}%" if rows else "n/a"
     print(f"[cutout] {len(rows)} product rows: {n_ok} ok ({share}), {len(rows) - n_ok} rejected, "
-          f"{n_rembg} by the rembg fallback, {n_reused} kept from the last run")
+          f"{n_reused} kept from the last run")
+    print(f"[cutout] ok by method: {by_method['mask']} shipped mask, {by_method['threshold']} threshold, "
+          f"{by_method['rembg']} rembg")
     if n_waiting:
         print(f"[cutout] {n_waiting} product rows have no cutout yet. Run without --only to make them.")
     print(f"[cutout] cereal-box groups with an intact and a dented cutout: {box_groups} (gate: 9 or more after review)")
     print(f"[cutout] distractor groups with a cutout: {distractor_groups} (gate: 5 or more after review)")
-    base = ASSETS_DIR.parent.parent
-    print(f"[cutout] report {report_path.relative_to(base)}, sheet {sheet_path.relative_to(base)}")
+    print(f"[cutout] report {report_path.relative_to(ROOT).as_posix()}, sheet {sheet_path.relative_to(ROOT).as_posix()}")
     print("[cutout] Next: look at the sheet, then fill data/raw/own/cutout_review.csv by hand "
           "(asset_id, keep yes or no, note).")
     print(f"[time] cutouts {time.perf_counter() - start:.1f} s")
