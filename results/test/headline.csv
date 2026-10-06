@@ -1,0 +1,5 @@
+category,precision,recall,f1,miou,tp,fp,fn
+cereal_box,0.9897,0.9897,0.9897,0.955,96,1,1
+damaged_cereal_box,0.4583,0.2821,0.3492,0.9531,11,13,28
+misaligned_label,0.0,0.0,0.0,nan,0,20,38
+macro,,,0.4463,,,,

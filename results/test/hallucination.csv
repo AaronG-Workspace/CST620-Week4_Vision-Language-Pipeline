@@ -1,0 +1,11 @@
+image_id,category,wording,score,box,fp_type,word_scores,verifier_margin
+s_test_0009,damaged_cereal_box,crushed cereal box,0.7359,"[329.7, 356.0, 538.2, 643.8]",attribute,"{""crushed"": 0.15, ""cereal"": 0.733, ""box"": 0.736}",0.1952
+s_test_0009,damaged_cereal_box,damaged cereal box,0.7313,"[329.6, 355.9, 538.4, 643.9]",attribute,"{""damaged"": 0.123, ""cereal"": 0.731, ""box"": 0.729}",0.1952
+s_test_0002,damaged_cereal_box,crushed cereal box,0.7205,"[744.8, 499.4, 927.1, 750.1]",attribute,"{""crushed"": 0.117, ""cereal"": 0.721, ""box"": 0.72}",0.1373
+s_test_0002,damaged_cereal_box,damaged cereal box,0.719,"[744.6, 499.2, 927.2, 750.1]",attribute,"{""damaged"": 0.049, ""cereal"": 0.717, ""box"": 0.719}",0.1373
+s_test_0011,damaged_cereal_box,crushed cereal box,0.7022,"[108.4, 230.6, 286.8, 469.7]",attribute,"{""crushed"": 0.212, ""cereal"": 0.702, ""box"": 0.698}",0.2928
+s_test_0011,damaged_cereal_box,damaged cereal box,0.6897,"[108.2, 230.3, 287.1, 469.7]",attribute,"{""damaged"": 0.348, ""cereal"": 0.69, ""box"": 0.681}",0.3036
+s_test_0026,damaged_cereal_box,crushed cereal box,0.6719,"[321.1, 303.0, 506.7, 559.0]",attribute,"{""crushed"": 0.118, ""cereal"": 0.672, ""box"": 0.667}",0.1445
+s_test_0019,damaged_cereal_box,crushed cereal box,0.6593,"[325.0, 704.9, 533.3, 991.3]",attribute,"{""crushed"": 0.127, ""cereal"": 0.657, ""box"": 0.659}",0.045
+s_test_0026,damaged_cereal_box,damaged cereal box,0.6556,"[320.9, 302.9, 506.9, 559.0]",attribute,"{""damaged"": 0.056, ""cereal"": 0.656, ""box"": 0.65}",0.1445
+s_test_0019,damaged_cereal_box,damaged cereal box,0.6405,"[324.9, 704.8, 533.5, 991.3]",attribute,"{""damaged"": 0.059, ""cereal"": 0.641, ""box"": 0.639}",0.045
