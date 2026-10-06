@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .pytest_cache/
-
+docs/*
 # val-only model caches, rebuilt by tune_val.py
 cache/
 
